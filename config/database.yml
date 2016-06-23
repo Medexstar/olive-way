@@ -4,12 +4,15 @@ default: &default
   pool: 5
   username: postgres
   password:
-  host: db
 
 development:
   <<: *default
-  database: olive-way-dev
+  database: db/olive-way-dev
 
 test:
   <<: *default
-  database: olive-way-test
+  database: db/olive-way-test
+
+production:
+  <<: *default
+  database: db/olive-way-prod
