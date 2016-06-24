@@ -1,0 +1,23 @@
+#mens{
+  height: 100%;
+  width: 100%;
+}
+.catalogue__container{
+  height: 90%;
+  .catalogue__filter{
+    border-right: 1px solid black;
+    height: 100%;
+  }
+  .catalogue__products{
+    height: 100%;
+    overflow-y: auto;
+    .catalogue__product-wrapper{
+      height: 400px;
+      padding: 10px;
+    }
+    .catalogue__product{
+      height: 100%;
+      border: 1px solid black;
+    }
+  }
+}

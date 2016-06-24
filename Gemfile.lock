@@ -41,7 +41,12 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
     arel (6.0.3)
+    autoprefixer-rails (6.3.6)
+      execjs
     awesome_print (1.7.0)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.5)
     capybara (2.7.1)
@@ -249,6 +254,7 @@ PLATFORMS
 DEPENDENCIES
   annotate (~> 2.7.0)
   awesome_print
+  bootstrap-sass (~> 3.3.6)
   capybara
   dotenv-rails
   factory_girl_rails

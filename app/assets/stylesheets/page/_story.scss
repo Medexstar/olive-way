@@ -1,0 +1,32 @@
+#story{
+  height: 90%;
+  overflow-x: hidden;
+  @include set_flex(row, flex-start, center);
+  .story__title{
+    height: 100%;
+    transform: skew(-30deg) translateX(5%);
+    text-align: right;
+    border-right: 1px solid black;
+    /* wrapper, unskew and place the text back as if it is normal */
+    >div{
+      transform: skew(30deg) translateX(-5%);
+    }
+  }
+  .story__content{
+    height: 100%;
+    width: 200%;
+    transform: skew(-30deg) translateX(5%);
+    overflow: hidden;
+    .content__text{
+      padding: 5px;
+      transform: skew(30deg) translateX(-1%);
+    }
+    .content__one, .content__two{
+      position: absolute;
+      height: 40%;
+      border: 1px solid black;
+      transform: skew(30deg) translate(-50%, 100%);
+      margin-right: 10px;
+    }
+  }
+}
