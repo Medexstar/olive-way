@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
   has_many :orders
   
   validate :validate_username
+  validate :password_complexity
   attr_accessor :login
   
   def self.find_for_database_authentication(warden_conditions)
@@ -23,6 +24,12 @@ class User < ActiveRecord::Base
   def validate_username
     if User.where(email: username).exists?
       errors.add(:username, :invalid)
+    end
+  end
+  
+  def password_complexity
+    if password.present? and not password.match(/^(?=.*\d). /)
+      errors.add :password, "must include at least one digit"
     end
   end
 end
