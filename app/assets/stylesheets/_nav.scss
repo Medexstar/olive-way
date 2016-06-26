@@ -1,0 +1,45 @@
+#nav{
+  /* container-fluid */
+  >div{ height: 100%; }
+  /* row */
+  >div >div{ height: 100%; }
+}
+
+/* Brand */
+.nav--brand{
+  height: 60%;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  @include set_flex (row, center, center);
+  #brand{
+    height: 100%;
+    width: 10%;
+    background-color: red;
+  }
+}
+/* ================ */
+
+/* Navigation */
+#nav{
+  height: $header-height;
+  width: 100%;
+  .nav--list{
+    @include set_flex(row, space-between, center);
+  }
+  ul{
+    padding: 10px 0;
+    li{
+      display: inline-block;
+      a{
+        text-decoration: none;
+        @include set_font(16px, $btn-font-color, normal);
+        &:hover{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+/* ================ */

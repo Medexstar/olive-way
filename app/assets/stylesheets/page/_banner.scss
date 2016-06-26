@@ -1,0 +1,31 @@
+#landing{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+  .image--container{
+    height: 100%;
+    >div{
+      padding: 0;
+      height: 100%;
+
+      /* Turn Div in triangle */
+      /* Border size set dynamically via Javascript for responsiveness */
+      .triangle__down, .triangle__up, .triangle__up-border, .triangle__down-border{
+        width:100%;
+        position: absolute;
+        z-index: 999;
+      }
+
+      .triangle__up-border, .triangle__down-border{
+        z-index: -1;
+      }
+
+      /* Actual Image in the triangle */
+      .image{
+        background: url(http://www.wallpaperfo.com/thumbnails/detail/20120430/cool%20starsthis%20is%20the%20best%20cool%20random%20starsdoes%20any%20else%201918x1080%20wallpaper_www.wallpaperfo.com_24.jpg);
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

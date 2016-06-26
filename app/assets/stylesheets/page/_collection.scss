@@ -1,0 +1,25 @@
+#collection{
+  height: 100%;
+  width: 100%;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  #collection__main{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+    @include set_flex(row, flex-start, center);
+  }
+  #collection__sub-one{
+    height: 100%;
+    width: 80%;
+    border-right: 10px solid white;
+    transform: skew(-50deg) translateX(-50%);
+  }
+  #collection__sub-two{
+    height: 100%;
+    width: 80%;
+    border-left: 10px solid white;
+    transform: skew(50deg) translateX(50%);
+  }
+}
