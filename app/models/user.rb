@@ -3,9 +3,9 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
-  has_many :measurements
-  has_many :shipping_addresses
-  has_many :billing_addresses
+  has_one :measurements
+  has_one :shipping_addresses
+  has_one :billing_addresses
   has_many :orders
   
   validate :validate_username
