@@ -26,16 +26,16 @@ ActiveRecord::Schema.define(version: 20160625032230) do
 
   create_table "billing_addresses", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "company"
-    t.string   "street"
-    t.integer  "postcode"
-    t.string   "suburb"
-    t.string   "state"
-    t.string   "country"
-    t.integer  "phone"
-    t.string   "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "company",    default: "", null: false
+    t.string   "street",     default: "", null: false
+    t.integer  "postcode",   default: 0,  null: false
+    t.string   "suburb",     default: "", null: false
+    t.string   "state",      default: "", null: false
+    t.string   "country",    default: "", null: false
+    t.integer  "phone",      default: 0,  null: false
+    t.string   "type",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
@@ -91,16 +91,16 @@ ActiveRecord::Schema.define(version: 20160625032230) do
 
   create_table "shipping_addresses", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "company"
-    t.string   "street"
-    t.integer  "postcode"
-    t.string   "suburb"
-    t.string   "state"
-    t.string   "country"
-    t.integer  "phone"
-    t.string   "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "company",    default: "", null: false
+    t.string   "street",     default: "", null: false
+    t.integer  "postcode",   default: 0,  null: false
+    t.string   "suburb",     default: "", null: false
+    t.string   "state",      default: "", null: false
+    t.string   "country",    default: "", null: false
+    t.integer  "phone",      default: 0,  null: false
+    t.string   "type",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   add_index "shipping_addresses", ["user_id"], name: "index_shipping_addresses_on_user_id", using: :btree
@@ -122,8 +122,8 @@ ActiveRecord::Schema.define(version: 20160625032230) do
     t.string   "username",               default: "", null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "first_name",             default: "", null: false
+    t.string   "last_name",              default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
