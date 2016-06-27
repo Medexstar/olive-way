@@ -1,5 +1,11 @@
 nav#nav
   .container-fluid
+    #list__right.row
+      ul.nav--list
+        li#account
+          = link_to "ACCOUNT", account_path
+        li#subscribe
+          = link_to "FAKER", account_path
     .row
       .col-xs-12.nav--brand
         #brand
@@ -9,8 +15,6 @@ nav#nav
             = link_to "MENS", mens_path
           li#nav__womens
             = link_to "WOMENS", womens_path
-          li#nav__shirts
-            = link_to "SHIRTS", shirts_path
           li#nav__accessories
             = link_to "ACCESSORIES", accessories_path
           li#nav__collection

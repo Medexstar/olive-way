@@ -8,9 +8,6 @@ class PagesController < ApplicationController
   def womens
   end
 
-  def shirts
-  end
-
   def accessories
   end
 
@@ -21,5 +18,8 @@ class PagesController < ApplicationController
   end
 
   def story
+  end
+
+  def account
   end
 end
