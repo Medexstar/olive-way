@@ -1,0 +1,21 @@
+#account{
+  height: 80%;
+}
+
+#account--login, #account--sign_up{
+  height: 100%;
+  .section-content{
+    @include set_flex(row, center, center);
+  }
+  input[type="text"], input[type="email"], input[type="password"]{
+    background-color: gray;
+    color: black;
+  }
+  .btn{
+    float: right;
+  }
+}
+
+#account--login{
+    border-right: 1px solid black;
+}

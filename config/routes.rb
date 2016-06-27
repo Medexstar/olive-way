@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get   '/collection' => 'pages#collection'
   get   '/foundation' => 'pages#foundation'
   get   '/story' => 'pages#story'
+  get   '/account' => 'pages#account'
 end
