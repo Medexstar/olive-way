@@ -1,13 +1,10 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: admin_users
 #
 #  id                     :integer          not null, primary key
-#  username               :string           default(""), not null
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
-#  first_name             :string           default(""), not null
-#  last_name              :string           default(""), not null
 #  reset_password_token   :string
 #  reset_password_sent_at :datetime
 #  remember_created_at    :datetime
@@ -20,8 +17,19 @@
 #  updated_at             :datetime         not null
 #
 
-require 'rails_helper'
+class AdminUser < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable,
+         :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  attr_accessor :login
+  
+  protected
+
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    login = conditions.delete(:login)
+    where(conditions).where(["lower(email) = :value", { :value => login.strip.downcase }]).first
+  end
 end

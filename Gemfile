@@ -12,10 +12,11 @@ gem 'turbolinks'
 
 gem 'pg'
 
-gem 'devise'
-gem "paperclip", "~> 5.0.0.beta1"
-
 gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+
+gem 'aws-sdk'
+gem "paperclip", "~> 5.0.0.beta1"
 
 group :development do
   gem 'awesome_print'

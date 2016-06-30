@@ -1,13 +1,10 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: admin_users
 #
 #  id                     :integer          not null, primary key
-#  username               :string           default(""), not null
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
-#  first_name             :string           default(""), not null
-#  last_name              :string           default(""), not null
 #  reset_password_token   :string
 #  reset_password_sent_at :datetime
 #  remember_created_at    :datetime
@@ -20,8 +17,8 @@
 #  updated_at             :datetime         not null
 #
 
-require 'rails_helper'
-
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+FactoryGirl.define do
+  factory :admin_user do
+    
+  end
 end
