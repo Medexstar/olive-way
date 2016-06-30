@@ -14,6 +14,7 @@ gem 'pg'
 
 gem 'devise'
 gem "paperclip", "~> 5.0.0.beta1"
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 group :development do
