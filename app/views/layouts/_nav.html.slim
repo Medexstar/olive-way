@@ -1,25 +1,35 @@
-nav#nav
+nav.navbar.navbar-default
   .container-fluid
-    #list__right.row
-      ul.nav--list
-        li#account
+    .nav--misc
+      ul.nav.navbar-nav
+        li
           = link_to "ACCOUNT", account_path
-        li#subscribe
-          = link_to "FAKER", account_path
-    .row
-      .col-xs-12.nav--brand
-        #brand
-      .col-xs-8.col-xs-offset-2
-        ul.nav--list
-          li#nav__mens
-            = link_to "MENS", mens_path
-          li#nav__womens
-            = link_to "WOMENS", womens_path
-          li#nav__accessories
-            = link_to "ACCESSORIES", accessories_path
-          li#nav__collection
-            = link_to "COLLECTION", collection_path
-          li#nav__foundation
-            = link_to "FOUNDATION", foundation_path
-          li#nav__story
-            = link_to "OUR STORY", story_path
+        li
+          = link_to "SUBSCRIBE", account_path
+    .nav--brand
+      = link_to "", root_path, {id: "brand"}
+    .navbar-header
+      button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#nav-collapsable" aria-expanded="false"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to "Olive Way", root_path, { class: "navbar-brand"}
+    #nav-collapsable.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li#nav__mens
+          = link_to "MENS", mens_path
+        li#nav__womens
+          = link_to "WOMENS", womens_path
+        li#nav__accessories
+          = link_to "ACCESSORIES", accessories_path
+        li#nav__collection
+          = link_to "COLLECTION", collection_path
+        li#nav__foundation
+          = link_to "FOUNDATION", foundation_path
+        li#nav__story
+          = link_to "OUR STORY", story_path
+        li#nav__account
+          = link_to "ACCOUNT", account_path
+        li#nav__subscribe
+          = link_to "SUBSCRIBE", account_path

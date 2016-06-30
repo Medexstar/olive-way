@@ -2,16 +2,14 @@
   .row
     .col-xs-12
       #landing
-        .image--container
-          .col-xs-4
-            .triangle__down
-            .triangle__down-border
-            .image
-          .col-xs-4
-            .triangle__up
-            .triangle__up-border
-            .image
-          .col-xs-4
-            .triangle__down
-            .triangle__down-border
-            .image
+        svg viewbox="0 0 100 60"
+          defs
+            pattern id="image" patternUnits="userSpaceOnUse" height="100" width="100"
+              image x="0" y="0" height="100" width="100" xlink:href="http://i.imgur.com/7Nlcay7.jpg"
+            pattern id="image1" patternUnits="userSpaceOnUse" height="100" width="100"
+              image x="0" y="0" height="550" width="1140" xlink:href="http://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg"
+            pattern id="image2" patternUnits="userSpaceOnUse" height="100" width="100"
+              image x="0" y="0" height="641" width="962" xlink:href="http://i.dailymail.co.uk/i/pix/2016/03/22/13/32738A6E00000578-3504412-image-a-6_1458654517341.jpg"
+          polygon class="first" points="1,1 47,1 22.5,58" fill="url(#image)" stroke="rgb(79, 136, 153)" stroke-linecap="round"
+          polygon class="second" points="99,1 53,1 77.5,58" fill="url(#image1)" stroke="rgb(101, 64, 126)" stroke-linecap="round"
+          polygon class="three" points="25,59 75,59 50,2" fill="url(#image2)"  stroke="rgb(253, 224, 151)" stroke-linecap="round"

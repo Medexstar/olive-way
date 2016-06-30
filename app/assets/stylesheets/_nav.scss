@@ -1,57 +1,54 @@
-#nav{
-  /* container-fluid */
-  >div{ height: 100%; }
-  /* row */
-  >div >div{ height: 100%; }
-}
+
 
 /* Brand */
 .nav--brand{
-  height: 60%;
   width: 100%;
-  margin-top: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
   @include set_flex (row, center, center);
   #brand{
-    height: 100%;
-    width: 10%;
+    height: 64px;
+    width: 64px;
     background-color: red;
   }
 }
 /* ================ */
-
 /* Navigation */
-#nav{
-  height: $header-height;
-  width: 100%;
-  .nav--list{
-    @include set_flex(row, space-between, center);
+.navbar{
+  .nav--misc ul{
+    float: right;
   }
-  ul{
-    padding: 10px 0;
-    li{
-      display: inline-block;
-      a{
-        text-decoration: none;
-        @include set_font(16px, $btn-font-color, normal);
-        &:hover{
-          font-weight: bold;
-        }
+
+  #nav-collapsable{
+    a{
+      text-decoration: none;
+      @include set_font(16px, $btn-font-color, normal);
+      &:hover{
+        font-weight: bold;
       }
     }
   }
 }
-#list__right{
-  height: 0 !important;
-  .nav--list{
-    @include set_flex(row, flex-end, center);
-    li{
-      margin: 0 10px;
-    }
+/* ================ */
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+  }
+  .navbar-brand, #nav__account, #nav__subscribe{
+    display: none;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
   }
 }
-/* ================ */
+
+@media (max-width: 767px){
+  .nav--misc, .nav--brand{
+    display: none;
+  }
+}
 
 #pages_landing #nav__landing,
 #pages_mens #nav__mens,
