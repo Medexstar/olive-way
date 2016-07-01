@@ -25,15 +25,17 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
-  has_one :measurements
-  has_one :shipping_addresses
-  has_one :billing_addresses
-  has_many :orders
-  
+
+  has_one   :measurement
+  has_one   :shipping_address
+  has_one   :billing_address
+  has_many  :orders
+  has_many  :order_objects,     through: :orders
+
   validate :validate_username
   validate :password_complexity
   attr_accessor :login
-  
+
   def self.find_for_database_authentication(warden_conditions)
       conditions = warden_conditions.dup
       if login = conditions.delete(:login)
@@ -48,7 +50,7 @@ class User < ActiveRecord::Base
       errors.add(:username, :invalid)
     end
   end
-  
+
   def password_complexity
     if password.present? and not password.match(/^(?=.*\d). /)
       errors.add :password, "must include at least one digit"

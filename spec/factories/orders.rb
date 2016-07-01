@@ -3,11 +3,10 @@
 # Table name: orders
 #
 #  id          :integer          not null, primary key
-#  user_id     :integer
-#  total_price :decimal(, )
-#  ordered_on  :datetime
+#  total_price :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  user_id     :integer
 #
 
 FactoryGirl.define do

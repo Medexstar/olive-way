@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160629105308) do
+ActiveRecord::Schema.define(version: 20160701160158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,25 +19,22 @@ ActiveRecord::Schema.define(version: 20160629105308) do
   create_table "accessories", force: :cascade do |t|
     t.string   "name"
     t.integer  "quantity"
-    t.decimal  "unit_price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "unit_price"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "image_one_file_name"
+    t.string   "image_one_content_type"
+    t.integer  "image_one_file_size"
+    t.datetime "image_one_updated_at"
+    t.string   "image_two_file_name"
+    t.string   "image_two_content_type"
+    t.integer  "image_two_file_size"
+    t.datetime "image_two_updated_at"
+    t.string   "image_three_file_name"
+    t.string   "image_three_content_type"
+    t.integer  "image_three_file_size"
+    t.datetime "image_three_updated_at"
   end
-
-  create_table "active_admin_comments", force: :cascade do |t|
-    t.string   "namespace"
-    t.text     "body"
-    t.string   "resource_id",   null: false
-    t.string   "resource_type", null: false
-    t.integer  "author_id"
-    t.string   "author_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
-  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
-  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
   create_table "admin_users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -58,7 +55,6 @@ ActiveRecord::Schema.define(version: 20160629105308) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "billing_addresses", force: :cascade do |t|
-    t.integer  "user_id"
     t.string   "company",    default: "", null: false
     t.string   "street",     default: "", null: false
     t.integer  "postcode",   default: 0,  null: false
@@ -69,20 +65,18 @@ ActiveRecord::Schema.define(version: 20160629105308) do
     t.string   "type",       default: "", null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.integer  "user_id"
   end
 
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
 
   create_table "measurements", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "name"
-    t.string   "unit"
     t.float    "shoulder"
     t.float    "half_chest"
     t.float    "half_jacket_waist"
-    t.float    "half_hern"
+    t.float    "half_hem"
     t.float    "back_length"
-    t.float    "sleeve_outstern"
+    t.float    "sleeve_outstem"
     t.float    "bicep"
     t.float    "pant_outseam"
     t.float    "half_pant_waist"
@@ -92,38 +86,40 @@ ActiveRecord::Schema.define(version: 20160629105308) do
     t.float    "hip"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.integer  "user_id"
+    t.integer  "order_object_id"
   end
 
+  add_index "measurements", ["order_object_id"], name: "index_measurements_on_order_object_id", using: :btree
   add_index "measurements", ["user_id"], name: "index_measurements_on_user_id", using: :btree
 
+  create_table "order_objects", force: :cascade do |t|
+    t.integer  "type",           null: false
+    t.integer  "jacket_lapels"
+    t.integer  "jacket_vents"
+    t.integer  "jacket_buttons"
+    t.integer  "status",         null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "suit_id"
+    t.integer  "accessory_id"
+    t.integer  "order_id"
+  end
+
+  add_index "order_objects", ["accessory_id"], name: "index_order_objects_on_accessory_id", using: :btree
+  add_index "order_objects", ["order_id"], name: "index_order_objects_on_order_id", using: :btree
+  add_index "order_objects", ["suit_id"], name: "index_order_objects_on_suit_id", using: :btree
+
   create_table "orders", force: :cascade do |t|
-    t.integer  "user_id"
-    t.decimal  "total_price"
-    t.datetime "ordered_on"
+    t.integer  "total_price"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
 
   add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
 
-  create_table "orders_accessories", id: false, force: :cascade do |t|
-    t.integer "order_id"
-    t.integer "accessory_id"
-  end
-
-  add_index "orders_accessories", ["accessory_id"], name: "index_orders_accessories_on_accessory_id", using: :btree
-  add_index "orders_accessories", ["order_id"], name: "index_orders_accessories_on_order_id", using: :btree
-
-  create_table "orders_suits", id: false, force: :cascade do |t|
-    t.integer "order_id"
-    t.integer "suit_id"
-  end
-
-  add_index "orders_suits", ["order_id"], name: "index_orders_suits_on_order_id", using: :btree
-  add_index "orders_suits", ["suit_id"], name: "index_orders_suits_on_suit_id", using: :btree
-
   create_table "shipping_addresses", force: :cascade do |t|
-    t.integer  "user_id"
     t.string   "company",    default: "", null: false
     t.string   "street",     default: "", null: false
     t.integer  "postcode",   default: 0,  null: false
@@ -134,21 +130,30 @@ ActiveRecord::Schema.define(version: 20160629105308) do
     t.string   "type",       default: "", null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.integer  "user_id"
   end
 
   add_index "shipping_addresses", ["user_id"], name: "index_shipping_addresses_on_user_id", using: :btree
 
   create_table "suits", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "quantity"
-    t.decimal  "unit_price"
-    t.string   "sex"
-    t.string   "colour"
-    t.string   "jacket_lapels"
-    t.string   "jacket_vents"
-    t.string   "jacket_buttons"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "name",                     null: false
+    t.integer  "quantity",                 null: false
+    t.integer  "unit_price",               null: false
+    t.integer  "sex",                      null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "image_one_file_name"
+    t.string   "image_one_content_type"
+    t.integer  "image_one_file_size"
+    t.datetime "image_one_updated_at"
+    t.string   "image_two_file_name"
+    t.string   "image_two_content_type"
+    t.integer  "image_two_file_size"
+    t.datetime "image_two_updated_at"
+    t.string   "image_three_file_name"
+    t.string   "image_three_content_type"
+    t.integer  "image_three_file_size"
+    t.datetime "image_three_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
@@ -171,5 +176,14 @@ ActiveRecord::Schema.define(version: 20160629105308) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
+  add_foreign_key "billing_addresses", "users"
+  add_foreign_key "measurements", "order_objects"
+  add_foreign_key "measurements", "users"
+  add_foreign_key "order_objects", "accessories"
+  add_foreign_key "order_objects", "orders"
+  add_foreign_key "order_objects", "suits"
+  add_foreign_key "orders", "users"
+  add_foreign_key "shipping_addresses", "users"
 end

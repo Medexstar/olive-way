@@ -1,4 +1,6 @@
 ActiveAdmin.register Suit do
+  permit_params :name, :quantity, :unit_price, :sex, :colour,
+                :image_one, :image_two, :image_three
   index do
     selectable_column
     id_column
@@ -7,13 +9,11 @@ ActiveAdmin.register Suit do
     column :unit_price
     column :sex
     column :colour
-    column :jacket_lapels
-    column :jacket_vents
-    column :jacket_buttons
     column :created_at
     column :updated_at
     actions
   end
+  
   filter :sex
 
   form do |f|
@@ -23,11 +23,9 @@ ActiveAdmin.register Suit do
       f.input :unit_price
       f.input :sex
       f.input :colour
-      f.input :jacket_lapels
-      f.input :jacket_vents
-      f.input :jacket_buttons
-      f.input :created_at
-      f.input :updated_at
+      f.input :image_one, as: :file
+      f.input :image_two, as: :file
+      f.input :image_three, as: :file
     end
     f.actions
   end

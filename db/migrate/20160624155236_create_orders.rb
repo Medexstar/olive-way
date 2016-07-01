@@ -1,10 +1,12 @@
 class CreateOrders < ActiveRecord::Migration
-  def change
+  def self.up
     create_table :orders do |t|
-      t.belongs_to :user, index:true
-      t.decimal :total_price
-      t.datetime :ordered_on
+      t.integer   :total_price
       t.timestamps null: false
     end
+  end
+
+  def self.down
+    drop_table :orders
   end
 end

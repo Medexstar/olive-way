@@ -1,21 +1,22 @@
 ActiveAdmin::register Order do
+  permit_params :user_id, :total_price
   index do
     selectable_column
     id_column
     column :user_id
+    column :total_price
     column :ordered_on
     column :created_at
     column :updated_at
     actions
   end
+
   filter :user_id
 
   form do |f|
     f.inputs "Order Details" do
       f.input :user_id
-      f.input :ordered_on
-      f.input :created_at
-      f.input :updated_at
+      f.input :total_price
     end
     f.actions
   end
