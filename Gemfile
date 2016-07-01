@@ -12,11 +12,12 @@ gem 'turbolinks'
 
 gem 'pg'
 
+gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
-gem "paperclip", "~> 5.0.0.beta1"
+
 gem 'aws-sdk'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem "paperclip", "~> 5.0.0.beta1"
+
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'

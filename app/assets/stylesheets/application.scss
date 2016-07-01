@@ -1,3 +1,5 @@
+@import 'override';
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
@@ -11,7 +13,6 @@
 @import "page/catalogue";
 @import "page/foundation";
 @import "page/story";
-@import "page/collection";
 @import "page/account";
 
 html, body{

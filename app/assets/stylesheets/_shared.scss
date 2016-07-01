@@ -5,8 +5,19 @@
 }
 
 @mixin set_flex($direction, $justify, $align){
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
   flex-direction: $direction;
+
+  -webkit-justify-content: $justify;
+  -ms-justify-content: $justify;
   justify-content: $justify;
+
+  -webkit-align-content: $align;
+  -ms-align-content: $align;
   align-content: $align;
 }
