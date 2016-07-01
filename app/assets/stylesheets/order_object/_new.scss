@@ -1,0 +1,68 @@
+#new_order_object{
+  height: 100%;
+  #customisation, #measurement{
+    height: 100%;
+  }
+}
+#customisation{
+  .section__content{
+    height: 90%;
+    width: 100%;
+    >div:first-child{
+      height:90%
+    }
+    >div:last-child{
+      height:10%;
+      float: right;
+      >div>div{
+        padding: 0 10%;
+      }
+    }
+    >div>div{
+      height: 100%;
+    }
+    background-color: $order_object_custom_bg;
+  }
+}
+
+.form-field--wrapper{
+  height: 100%;
+  padding: 0 10% 10% 10%;
+  .form-field__header{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .form-field__container{
+    height: 90%;
+    @include set_flex(column, flex-start, center, center);
+    .form-field__selector{
+      height: 25%;
+      margin: 5px;
+      width: 100%;
+      background-color: green;
+      @include set_flex(row, center, center, center);
+      >div{
+        height: 100%;
+        width: 50%;
+        word-wrap: break-word;
+        @include set_flex(col, center, center, center);
+      }
+      .form-field__name{
+        padding: 15px;
+        text-align: center;
+      }
+      .form-field__tick{
+        padding: 15px;
+        div{
+          height: 100%;
+          width: 100%;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+#measurement{
+  display: none;
+}

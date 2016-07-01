@@ -1,5 +1,4 @@
 #story{
-  height: 90%;
   overflow-x: hidden;
   @include set_flex(row, flex-start, center);
   .story__title{

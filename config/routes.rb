@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get   '/foundation' => 'pages#foundation'
   get   '/story' => 'pages#story'
   get   '/account' => 'pages#account'
+
+  resources :order_objects, only: [:new, :create, :destroy]
 end
