@@ -3,14 +3,10 @@
 # Table name: suits
 #
 #  id                       :integer          not null, primary key
-#  name                     :string
-#  quantity                 :integer
-#  unit_price               :decimal(, )
-#  sex                      :string
-#  colour                   :string
-#  jacket_lapels            :string
-#  jacket_vents             :string
-#  jacket_buttons           :string
+#  name                     :string           not null
+#  quantity                 :integer          not null
+#  unit_price               :integer          not null
+#  sex                      :integer          not null
 #  created_at               :datetime         not null
 #  updated_at               :datetime         not null
 #  image_one_file_name      :string

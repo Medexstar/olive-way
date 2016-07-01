@@ -1,4 +1,6 @@
 ActiveAdmin::register Accessory do
+  permit_params :name, :quantity, :unit_price,
+                :image_one, :image_two, :image_three
   index do
     selectable_column
     id_column
@@ -9,6 +11,7 @@ ActiveAdmin::register Accessory do
     column :updated_at
     actions
   end
+  
   filter :unit_price
 
   form do |f|
@@ -16,8 +19,9 @@ ActiveAdmin::register Accessory do
       f.input :name
       f.input :quantity
       f.input :unit_price
-      f.input :created_at
-      f.input :updated_at
+      f.input :image_one, as: :file
+      f.input :image_two, as: :file
+      f.input :image_three, as: :file
     end
     f.actions
   end

@@ -11,8 +11,11 @@
   .catalogue__products{
     height: 100%;
     overflow-y: auto;
+    @include set_flex(row, flex-start, space-between);
+    flex-wrap: wrap;
     .catalogue__product-wrapper{
       height: 400px;
+      width: 300px;
       padding: 10px;
     }
     .catalogue__product{

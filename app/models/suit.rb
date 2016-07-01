@@ -3,14 +3,10 @@
 # Table name: suits
 #
 #  id                       :integer          not null, primary key
-#  name                     :string
-#  quantity                 :integer
-#  unit_price               :decimal(, )
-#  sex                      :string
-#  colour                   :string
-#  jacket_lapels            :string
-#  jacket_vents             :string
-#  jacket_buttons           :string
+#  name                     :string           not null
+#  quantity                 :integer          not null
+#  unit_price               :integer          not null
+#  sex                      :integer          not null
 #  created_at               :datetime         not null
 #  updated_at               :datetime         not null
 #  image_one_file_name      :string
@@ -28,9 +24,9 @@
 #
 
 class Suit < ActiveRecord::Base
-  has_and_belongs_to_many :orders
-
-  # This method associates the attribute ":photo" with a file attachment
+  has_many :order_objects
+  has_many :orders,       through: :order_objects
+  
   has_attached_file :image_one,
       styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
       :path => "images/:class/:id/one/:style.:extension"
