@@ -3,7 +3,6 @@
 # Table name: order_objects
 #
 #  id             :integer          not null, primary key
-#  type           :integer          not null
 #  jacket_lapels  :integer
 #  jacket_vents   :integer
 #  jacket_buttons :integer

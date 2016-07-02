@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160701160158) do
+ActiveRecord::Schema.define(version: 20160702122741) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,7 +94,6 @@ ActiveRecord::Schema.define(version: 20160701160158) do
   add_index "measurements", ["user_id"], name: "index_measurements_on_user_id", using: :btree
 
   create_table "order_objects", force: :cascade do |t|
-    t.integer  "type",           null: false
     t.integer  "jacket_lapels"
     t.integer  "jacket_vents"
     t.integer  "jacket_buttons"
