@@ -1,0 +1,110 @@
+#new_order_object{
+  height: 100%;
+  #customisation, #measurement{
+    height: 100%;
+  }
+}
+#customisation{
+  .section__content{
+    width: 100%;
+    >div:first-child{
+      height:90%
+    }
+    >div:last-child{
+      height:10%;
+      float: right;
+      >div>div{
+        padding: 0 10%;
+      }
+    }
+    >div>div{
+      height: 100%;
+    }
+    background-color: $order_object_custom_bg;
+  }
+}
+
+.form-field--wrapper{
+  height: 100%;
+  padding: 0 10% 10% 10%;
+  .form-field__header{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .form-field__container{
+    height: 90%;
+    @include set_flex(column, flex-start, center, center);
+    .form-field__selector{
+      height: 20%;
+      margin: 5px;
+      width: 100%;
+      @include set_flex(row, center, center, center);
+      >div{
+        height: 100%;
+        width: 50%;
+        word-wrap: break-word;
+        @include set_flex(col, center, center, center);
+      }
+      .form-field__name{
+        padding: 15px;
+        text-align: center;
+      }
+      .form-field__tick{
+        padding: 15px;
+        div{
+          height: 100%;
+          width: 100%;
+          border: 1px solid white;
+          text-indent: 9999px;
+        }
+      }
+    }
+    div[id^="lapels"]{
+      background-color: $customisation-lapels;
+    }
+    div[id^="vent"]{
+      background-color: $customisation-vents;
+    }
+    div[id^="jacket-button"]{
+      background-color: $customisation-buttons;
+    }
+  }
+}
+
+#measurement{
+  display: none;
+  >div>div{
+    height: 100%;
+    >div{
+      height: 100%;
+    }
+  }
+  .measurement__title{
+    text-align: center;
+    border-right: 1px solid black;
+  }
+  .measurement__content{
+    padding-left: 40px;
+    overflow-y: auto;
+  }
+  .measurement__section{
+    margin: 15px 0;
+    .measurement__section-title{
+      margin-bottom: 15px;
+      @include set_font(12px, black, bold);
+    }
+    .measurement__section-content{
+      padding-right: 0;
+      padding-left: 0;
+      .field{
+        padding-right: 0;
+        padding-left: 0;
+        margin: 2px 0 2px 0;
+        div{
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

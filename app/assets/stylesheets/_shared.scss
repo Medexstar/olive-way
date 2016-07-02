@@ -4,7 +4,7 @@
   font-weight: $weight;
 }
 
-@mixin set_flex($direction, $justify, $align){
+@mixin set_flex($direction, $justify, $align-content, $align-items: stretch){
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -17,7 +17,11 @@
   -ms-justify-content: $justify;
   justify-content: $justify;
 
-  -webkit-align-content: $align;
-  -ms-align-content: $align;
-  align-content: $align;
+  -webkit-align-content: $align-content;
+  -ms-align-content: $align-content;
+  align-content: $align-content;
+
+  -webkit-align-items: $align-items;
+  -ms-align-items: $align-items;
+  align-items: $align-items;
 }

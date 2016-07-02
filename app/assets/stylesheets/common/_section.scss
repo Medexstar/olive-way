@@ -1,8 +1,14 @@
-.section-title{
+.section__title{
     text-align: center;
     margin-bottom: 50px;
 }
+.section__content{
+  height: 90%;
+}
 
-#story, #mens, #womens, #accessories, #foundation, #shirts, #collection{
-  margin-top: $content-top-margin;
+#story, #mens, #womens, #accessories, #foundation, #shirts, #collection,
+#customisation, #measurement{
+  height: 100% !important;
+  width: 100% !important;
+  margin: $content-top-margin 0 $main-margin-bottom 0;
 }
