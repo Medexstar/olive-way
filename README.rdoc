@@ -1,3 +1,11 @@
+TODO
+
+Show Pages
+
+Add some Records to database through ActiveAdmin
+
+Stripe
+
 == README
 
 This README would normally document whatever steps are necessary to get the
