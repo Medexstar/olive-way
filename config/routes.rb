@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get   '/account' => 'pages#account'
 
   resources :order_objects, only: [:new, :create, :destroy]
+  resources :suits, only: [:show]
 end

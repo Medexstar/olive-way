@@ -1,0 +1,12 @@
+.container-fluid
+  .row
+    .col-xs-10.col-xs-offset-1
+      #object
+        .row.object__container
+          .col-xs-4.object__title
+            .object__name SUIT NAME
+            .object__price PRICE
+            .object__description ???
+            .object__purchase
+              = link_to "PURCHASE", new_order_object_path
+          .col-xs-8.object__contents
