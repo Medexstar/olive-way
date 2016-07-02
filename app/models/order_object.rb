@@ -20,4 +20,5 @@ class OrderObject < ActiveRecord::Base
   belongs_to  :suit
   belongs_to  :accessory
   has_one     :measurement
+  accepts_nested_attributes_for :measurement
 end

@@ -1,0 +1,85 @@
+.section__content.container-fluid
+  .row
+    .col-xs-3.measurement__title MEASUREMENTS
+    .col-xs-9.measurement__content
+      .row.measurement__guide Choose your best fitting Jacket and Pants and
+        enter the measurements below. For standard size tweaking, the
+        measurements provided below are from all InStitchu finished standard
+        size garment.
+      .row.measurement__input
+        .col-xs-6.col-remove-padding
+          = f.fields_for :measurement do |ff|
+            .measurement__section
+              .measurement__section-title MENS
+            .measurement__section
+              .measurement__section-title JACKET
+              .measurement__section-content.container-fluid
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '1. Shoulder'
+                  .field__field.col-xs-3
+                    = ff.number_field :shoulder
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '2. Half Chest'
+                  .field__field.col-xs-3
+                    = ff.number_field :half_chest
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '3. Half Waist'
+                  .field__field.col-xs-3
+                    = ff.number_field :half_jacket_waist
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '4. Half Hem'
+                  .field__field.col-xs-3
+                    = ff.number_field :half_hem
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '5. Back Length'
+                  .field__field.col-xs-3
+                    = ff.number_field :back_length
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '6. Sleeve Outstem'
+                  .field__field.col-xs-3
+                    = ff.number_field :sleeve_outstem
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '7. Bicep'
+                  .field__field.col-xs-3
+                    = ff.number_field :bicep
+            .measurement__section
+              .measurement__section-title PANTS
+              .measurement__section-content.container-fluid
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '1. Pant Outseam'
+                  .field__field.col-xs-3
+                    = ff.number_field :pant_outseam
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '2. Half Waist'
+                  .field__field.col-xs-3
+                    = ff.number_field :half_pant_waist
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '3. Half Bottom'
+                  .field__field.col-xs-3
+                    = ff.number_field :half_bottom
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '4. Crotch'
+                  .field__field.col-xs-3
+                    = ff.number_field :crotch
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '5. Thigh'
+                  .field__field.col-xs-3
+                    = ff.number_field :thigh
+                .field.row
+                  .field__label.col-xs-6
+                    = ff.label :shoulder, '6. Hip'
+                  .field__field.col-xs-3
+                    = ff.number_field :hip
+        .col-xs-6
