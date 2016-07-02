@@ -16,5 +16,5 @@
 !/log/.keep
 /tmp
 
-# Ignore aws config.
-/config/aws.yml
+# Ignore env.
+.env
