@@ -7,9 +7,9 @@
     text-align: right;
     border-right: 1px solid black;
   }
-  .checkout__content{
-    height: 100%;
-    width: 200%;
+  .checkout__container{
+    height: 90%;
+    width: 99%;
     overflow-y: auto;
     padding-top: 5px;
     padding-left: 50px;
@@ -17,14 +17,33 @@
       font-size: 20px;
       text-align: center;
       border-bottom: 1px solid black;
-      padding-left: 0px;
-      padding-right: 0px;
     }
-    .content__image,{
-      position: absolute;
-      height: 20%;
-      border: 1px solid black;
-      margin-right: 10px;
+    .content__header:first-child{
+      text-align: left;
+    }
+  }
+  .checkout__content{
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 5px;
+    .content__photo_container{
+      display: inline-block;
+      height: 100%;
+      .content__photo{
+        height: 100px;
+        width: 75px;
+        border: 1px solid black;
+        margin: 10px 0px 10px 0px;
+      }
+    }
+    .content__text{
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+      .text__item{
+      text-align: left;
+      }
     }
   }
 }
