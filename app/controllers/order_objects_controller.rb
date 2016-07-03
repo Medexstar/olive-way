@@ -1,6 +1,6 @@
 class OrderObjectsController < ApplicationController
   def new
-    redirect_to root_path if !user_signed_in?
+    redirect_to account_path if !user_signed_in?
 
     @order_object = OrderObject.new
     @order_object.measurement ||= Measurement.new
@@ -17,7 +17,7 @@ class OrderObjectsController < ApplicationController
       @order_object = OrderObject.new()
       @order_object.accessory = Accessory.find(params[:accesory_id])
     end
-    
+
     @order_object.user = current_user
     @order_object.status = 0
 
