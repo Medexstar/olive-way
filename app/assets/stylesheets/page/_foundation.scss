@@ -1,6 +1,8 @@
 .foundation__texts{
   padding-top: 20px;
   border-top: 1px solid black;
+  height: 90%;
+  overflow-y: auto;
   .foundation__text{
     margin-bottom: 10px;
   }

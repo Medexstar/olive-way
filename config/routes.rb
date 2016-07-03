@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  devise_for :users
+  devise_for :users, controllers: {sessions:'users/sessions'}
 
   root 'pages#landing'
   get   '/mens' => 'pages#mens'
@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   get   '/foundation' => 'pages#foundation'
   get   '/story' => 'pages#story'
   get   '/account' => 'pages#account'
+  get   '/faq' => 'pages#faq'
+  get   '/guarantee' => 'pages#guarantee'
+  get   '/how' => 'pages#how'
+  get   '/privacy' => 'pages#privacy'
+  get   '/ship_return' => 'pages#ship_return'
 
   resources :orders, only: [:new]
   resources :order_objects, only: [:new, :create, :destroy]
