@@ -1,9 +1,13 @@
 .footer{
-  background-color: gray;
+  background-color: $footer-color;;
   height: 200px;
   width: 100%;
   margin-top: 50px;
   padding-top: 15px;
+  .footer__site-map{
+    list-style-type: none;
+    text-decoration: none;
+  }
   .footer__social-container{
     float: right;
     li{
