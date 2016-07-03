@@ -9,7 +9,7 @@
   }
   .checkout__container{
     height: 90%;
-    width: 99%;
+    width: 100%;
     overflow-y: auto;
     padding-top: 5px;
     padding-left: 50px;
@@ -17,9 +17,18 @@
       font-size: 20px;
       text-align: center;
       border-bottom: 1px solid black;
+      .header__total-price{
+        text-align: right;
+      }
     }
     .content__header:first-child{
       text-align: left;
+    }
+    .content__total-price{
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
     }
   }
   .checkout__content{
@@ -42,7 +51,10 @@
       text-align: center;
       padding: 10px;
       .text__item{
-      text-align: left;
+        text-align: left;
+      }
+      .text__total-price{
+        text-align: right;
       }
     }
   }
