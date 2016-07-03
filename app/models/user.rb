@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
   has_one   :shipping_address
   has_one   :billing_address
   has_many  :orders
-  has_many  :order_objects,     through: :orders
+  has_many  :order_objects
 
   validate :validate_username
   validates :password, presence: true, length: {minimum: 5, maximum: 120}, on: :create

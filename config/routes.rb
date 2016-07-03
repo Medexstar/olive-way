@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get   '/story' => 'pages#story'
   get   '/account' => 'pages#account'
 
+  resources :orders, only: [:new]
   resources :order_objects, only: [:new, :create, :destroy]
   resources :suits, only: [:show]
   resources :accessories, only: [:show]
