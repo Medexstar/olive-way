@@ -27,16 +27,17 @@ class Accessory < ActiveRecord::Base
     has_many :orders, through: :order_objects
 
     has_attached_file :image_one,
-        styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-        :path => "images/:class/:id/one/:style.:extension"
+        styles: { thumb: '300x400>', main: '200x300>', option: '300x200>' }
     has_attached_file :image_two,
-        styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-        :path => "images/:class/:id/two/:style.:extension"
+        styles: { thumb: '300x400>', main: '200x300>', option: '300x200>' }
     has_attached_file :image_three,
-        styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-        :path => "images/:class/:id/three/:style.:extension"
+        styles: { thumb: '300x400>', main: '200x300>', option: '300x200>' }
 
     validates_attachment_content_type :image_one, content_type: /\Aimage\/.*\Z/
     validates_attachment_content_type :image_two, content_type: /\Aimage\/.*\Z/
     validates_attachment_content_type :image_three, content_type: /\Aimage\/.*\Z/
+
+    def formatted_cost
+      unit_price/100.0
+    end
 end

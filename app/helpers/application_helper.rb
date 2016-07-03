@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def inline_svg(path)
+    return "public/images/#{path}"
+  end
+
   def resource_name
     :user
   end

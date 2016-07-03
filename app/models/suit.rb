@@ -27,17 +27,24 @@ class Suit < ActiveRecord::Base
   has_many :order_objects
   has_many :orders,       through: :order_objects
 
+  enum sex: { male: 0, female: 1, uni: 2}
+
+  scope :male, -> { where(sex: 0 )}
+  scope :female, -> { where(sex: 1) }
+  scope :uni, -> { where(sex: 2) }
+
   has_attached_file :image_one,
-      styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-      :path => "images/:class/:id/one/:style.:extension"
+      styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
   has_attached_file :image_two,
-      styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-      :path => "images/:class/:id/two/:style.:extension"
+      styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
   has_attached_file :image_three,
-      styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
-      :path => "images/:class/:id/three/:style.:extension"
+      styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
 
   validates_attachment_content_type :image_one, content_type: /\Aimage\/.*\Z/
   validates_attachment_content_type :image_two, content_type: /\Aimage\/.*\Z/
   validates_attachment_content_type :image_three, content_type: /\Aimage\/.*\Z/
+
+  def formatted_cost
+    unit_price/100.0
+  end
 end

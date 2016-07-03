@@ -2,8 +2,12 @@ nav.navbar.navbar-default
   .container-fluid
     .nav--misc
       ul.nav.navbar-nav
-        li
-          = link_to "ACCOUNT", account_path
+        - if user_signed_in?
+          li
+            = link_to "CHECKOUT", account_path
+        - else
+          li
+            = link_to "ACCOUNT", account_path
         li
           = link_to "SUBSCRIBE", account_path
     .nav--brand
@@ -29,7 +33,11 @@ nav.navbar.navbar-default
           = link_to "FOUNDATION", foundation_path
         li#nav__story
           = link_to "OUR STORY", story_path
-        li#nav__account
-          = link_to "ACCOUNT", account_path
+        - if user_signed_in?
+          li#nav__checkout
+            = link_to "CHECKOUT", account_path
+        - else
+          li#nav__account
+            = link_to "ACCOUNT", account_path
         li#nav__subscribe
           = link_to "SUBSCRIBE", account_path
