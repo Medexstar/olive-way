@@ -1,0 +1,30 @@
+#checkout{
+  overflow-x: hidden;
+  @include set_flex(row, flex-start, center);
+  .checkout__title{
+    height: 100%;
+    margin-top: -20px;
+    text-align: right;
+    border-right: 1px solid black;
+  }
+  .checkout__content{
+    height: 100%;
+    width: 200%;
+    overflow-y: auto;
+    padding-top: 5px;
+    padding-left: 50px;
+    .content__header{
+      font-size: 20px;
+      text-align: center;
+      border-bottom: 1px solid black;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .content__image,{
+      position: absolute;
+      height: 20%;
+      border: 1px solid black;
+      margin-right: 10px;
+    }
+  }
+}
