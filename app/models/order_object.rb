@@ -18,11 +18,12 @@ class OrderObject < ActiveRecord::Base
   belongs_to  :order
   belongs_to  :suit
   belongs_to  :accessory
+  belongs_to  :user
   has_one     :measurement
   accepts_nested_attributes_for :measurement
 
   enum status: { pending: 0, checked_out: 1, uni: 2}
 
-  scope :pending, -> { where(status: 0) }
+  scope :pending, -> (cur_user) { where(user: cur_user, status: 0) }
   scope :checked_out, -> { where(status: 1) }
 end
