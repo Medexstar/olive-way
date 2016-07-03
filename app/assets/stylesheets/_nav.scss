@@ -5,9 +5,10 @@
   border-bottom: 1px solid black;
   @include set_flex (row, center, center);
   #brand{
-    height: 64px;
-    width: 64px;
-    background-color: red;
+    height: 128px;
+    width: 181px;
+    background: image-url("logo.jpg") no-repeat;
+    background-size: contain;
   }
 }
 /* ================ */

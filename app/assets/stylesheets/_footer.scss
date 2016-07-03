@@ -1,0 +1,37 @@
+.footer{
+  background-color: $footer-color;;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 15px;
+  .footer__site-map{
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .footer__social-container{
+    float: right;
+    li{
+      display: inline;
+      list-style-type: none;
+      padding: 10px 15px;
+    }
+    #facebook{
+      div{
+        height: 64px;
+        width: 64px;
+      }
+    }
+    #twitter{
+      div{
+        height: 64px;
+        width: 64px;
+      }
+    }
+    #instagram{
+      div{
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
+}
