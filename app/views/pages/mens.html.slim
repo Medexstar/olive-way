@@ -7,19 +7,11 @@
         .row.catalogue__container
           .col-xs-2.catalogue__filter
           .col-xs-10.catalogue__products
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
-            .catalogue__product-wrapper
-              .catalogue__product
+            - @mens.find_each do |men|
+              .catalogue__product-wrapper
+                .product__photo_container
+                  .product__photo
+                    = link_to image_tag(men.image_one.url(:thumb)), suit_path(men)
+                .product__info
+                  .product__name #{men.name}
+                  .product__cost #{number_to_currency(men.formatted_cost, unit: "$", eparator: ",")}

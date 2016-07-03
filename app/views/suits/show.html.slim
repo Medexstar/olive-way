@@ -4,14 +4,17 @@
       #object
         .row.object__container
           .col-xs-2.col-lg-3.object__title
-            .object__name SUIT NAME
-            .object__price PRICE
+            .object__name #{@suit.name}
+            .object__price #{number_to_currency(@suit.formatted_cost, unit: "$", eparator: ",")}
             .object__description ???
             .object__purchase
-              = link_to "PURCHASE", new_order_object_path, 'data-no-turbolink' => true
+              = link_to "PURCHASE", new_order_object_path(suit_id: @suit.id), 'data-no-turbolink' => true
           .col-xs-10.col-lg-9.object__contents
             .object--main
               #image--main
+                = image_tag(@suit.image_one.url(:main))
             .object--options
               .option
+                = image_tag(@suit.image_two.url(:option))
               .option
+                = image_tag(@suit.image_three.url(:option))

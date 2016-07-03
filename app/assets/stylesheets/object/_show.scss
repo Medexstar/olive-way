@@ -11,19 +11,21 @@
 }
 
 .object__contents{
-    .object--main, .object--options{
-      display: inline-block;
-      height: 100%;
-    }
-    #image--main{
-      height: 400px;
-      width: 300px;
-      border: 1px solid black;
-    }
-    .option{
-      height: 100px;
-      width: 75px;
-      border: 1px solid black;
-      margin: 0 10px 10px 10px;
-    }
+  .object--main, .object--options{
+    display: inline-block;
+    height: 100%;
+  }
+  #image--main{
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+  }
+  .option{
+    height: 100px;
+    width: 75px;
+    border: 1px solid black;
+    margin: 0 10px 10px 10px;
+  }
+  @include set_flex(row, flex-start, flex-start);
 }

@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   has_many  :order_objects,     through: :orders
 
   validate :validate_username
-  validate :password_complexity
+  validates :password, presence: true, length: {minimum: 5, maximum: 120}, on: :create
   attr_accessor :login
 
   def self.find_for_database_authentication(warden_conditions)
