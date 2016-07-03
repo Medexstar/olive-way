@@ -15,7 +15,9 @@ gem 'pg'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
-gem "paperclip", "~> 5.0.0.beta1"
+gem 'paperclip', '~> 5.0.0.beta1'
+
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'awesome_print'
