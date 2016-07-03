@@ -1,5 +1,7 @@
 class OrderObjectsController < ApplicationController
   def new
+    redirect_to root_path if !user_signed_in?
+
     @order_object = OrderObject.new
     @order_object.measurement ||= Measurement.new
     if params.has_key?(:suit_id)
