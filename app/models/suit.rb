@@ -26,7 +26,7 @@
 class Suit < ActiveRecord::Base
   has_many :order_objects
   has_many :orders,       through: :order_objects
-  
+
   has_attached_file :image_one,
       styles: { big: '400x600>', potrait: '200x300>', landscape: '300x200>' },
       :path => "images/:class/:id/one/:style.:extension"
