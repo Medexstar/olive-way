@@ -9,6 +9,10 @@
 <body id="<%= controller_name %>_<%= action_name %>">
   <%= render "layouts/nav" %>
   <main>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: "alert alert-info" %>
+    <% end %>
+
     <%= yield %>
   </main>
   <%= render "layouts/footer" %>

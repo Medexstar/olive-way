@@ -5,17 +5,21 @@
   border-bottom: 1px solid black;
   @include set_flex (row, center, center);
   #brand{
-    height: 128px;
-    width: 181px;
-    background: image-url("logo.jpg") no-repeat;
+    height: 130px;
+    width: 128px;
+    background: image-url("logo.png") no-repeat;
     background-size: contain;
   }
 }
 /* ================ */
 /* Navigation */
 .navbar{
-  .nav--misc ul{
-    float: right;
+  .nav--misc{
+    position: absolute;
+    right: 0;
+    ul{
+      float: right;
+    }
   }
 
   #nav-collapsable{

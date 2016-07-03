@@ -17,7 +17,7 @@
     transform: skew(-30deg) translateX(5%);
     overflow: hidden;
     .content__text{
-      padding: 5px;
+      padding: 20px;
       width: 75%;
       transform: skew(30deg) translateX(-1%);
     }
@@ -25,7 +25,7 @@
       position: absolute;
       height: 40%;
       border: 1px solid black;
-      transform: skew(30deg) translate(-50%, 100%);
+      transform: skew(30deg) translate(-50%, 80%);
       margin-right: 10px;
     }
   }
