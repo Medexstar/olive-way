@@ -2,11 +2,22 @@ class OrderObjectsController < ApplicationController
   def new
     @order_object = OrderObject.new
     @order_object.measurement ||= Measurement.new
+    if params.has_key?(:suit_id)
+      @order_object.suit = Suit.find(params[:suit_id])
+    end
   end
 
   def create
-    @order_object = OrderObject.new(order_object_params)
+    if params.has_key?(:suit_id)
+      @order_object = OrderObject.new(order_object_params)
+      @order_object.suit = Suit.find(params[:suit_id])
+    else
+      @order_object = OrderObject.new()
+      @order_object.accessory = Accessory.find(params[:accesory_id])
+    end
+
     @order_object.status = 0
+
     if @order_object.save
       flash[:notice] = 'Success! New Item Added to Cart!'
     else

@@ -20,4 +20,9 @@ class OrderObject < ActiveRecord::Base
   belongs_to  :accessory
   has_one     :measurement
   accepts_nested_attributes_for :measurement
+
+  enum status: { pending: 0, checked_out: 1, uni: 2}
+
+  scope :pending, -> { where(status: 0) }
+  scope :checked_out, -> { where(status: 1) }
 end

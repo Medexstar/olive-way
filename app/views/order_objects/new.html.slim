@@ -2,6 +2,7 @@
   = f.number_field :jacket_lapels,  {class: "hidden"}
   = f.number_field :jacket_vents,   {class: "hidden"}
   = f.number_field :jacket_buttons, {class: "hidden"}
+  = hidden_field_tag(:suit_id, @order_object.suit_id)
   #customisation
     = render "customisation"
   #measurement

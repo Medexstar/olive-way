@@ -8,6 +8,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'slim-rails'
 gem 'uglifier', '>= 1.3.0'
 
+gem 'jquery-turbolinks'
 gem 'turbolinks'
 
 gem 'pg'
@@ -15,9 +16,8 @@ gem 'pg'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
-gem 'paperclip', '~> 5.0.0.beta1'
-
-gem 'jquery-turbolinks'
+gem 'paperclip', '~> 4.3'
+gem 'aws-sdk',   '~> 1.6'
 
 group :development do
   gem 'awesome_print'
@@ -33,6 +33,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
+  gem 'dotenv-rails'
   gem 'factory_girl_rails'
   gem 'spring'
 end
