@@ -8,7 +8,6 @@ class Users::SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   def create
-    binding.pry
     resource = User.find_for_authentication(email: params[:user][:email])
     sign_in(resource_name, resource)
     super
