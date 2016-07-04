@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def beta
   end
-  
+
   def landing
   end
 
@@ -27,7 +27,7 @@ class PagesController < ApplicationController
   end
 
   def account
-    redirect_to root_path if user_signed_in?
+    redirect_to landing_path if user_signed_in?
   end
 
   def faq
