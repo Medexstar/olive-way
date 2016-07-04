@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  def beta
+  end
+  
   def landing
   end
 

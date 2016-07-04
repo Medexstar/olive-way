@@ -46,3 +46,22 @@ main{
 .alert{
   height: 0;
 }
+
+#pages_beta{
+  height:100%;
+  >div{
+    height:100%;
+    >div{
+      height: 100%;
+      >div{
+        height:100%;
+      }
+    }
+  }
+}
+
+#beta{
+  height: 100%;
+  text-align: center;
+  @include set_flex(column, center, center);
+}

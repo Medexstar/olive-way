@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users, controllers: {sessions:'users/sessions'}
 
-  root 'pages#landing'
+  root 'pages#beta'
+  get   '/landing' => 'pages#landing'
   get   '/mens' => 'pages#mens'
   get   '/womens' => 'pages#womens'
   get   '/shirts' => 'pages#shirts'
