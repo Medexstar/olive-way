@@ -9,7 +9,7 @@
             .col-xs-10
               = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
                 .form-group
-                  = f.text_field :email, autofocus: true, class: "form-control", placeholder: "Email:"
+                  = f.text_field :login, autofocus: true, class: "form-control", placeholder: "Email/Username:"
                 .form-group
                   = f.password_field :password, autocomplete: 'off', class: "form-control", placeholder: "Password:"
                 = f.submit 'LOG IN', class: 'btn btn-primary'
