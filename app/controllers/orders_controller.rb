@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
           order_object.suit != nil ? @order.total_price += (order_object.suit.formatted_cost * order_object.suit.quantity)
           : @order.total_price += (order_object.accessory.formatted_cost * order_object.accessory.quantity)
       end
-
+  end
 
   private
 
