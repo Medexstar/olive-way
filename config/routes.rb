@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   get   '/privacy' => 'pages#privacy'
   get   '/ship_return' => 'pages#ship_return'
 
+  get   '/profile'  => 'address#edit'
+  patch '/profile'  => 'address#update'
+  post  '/profile'  => 'address#update'
   resources :orders, only: [:new]
   resources :order_objects, only: [:new, :create, :destroy]
   resources :suits, only: [:show]
