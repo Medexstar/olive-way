@@ -25,8 +25,6 @@ gem 'stripe'
 
 gem 'airbrake'
 
-gem 'rails_12factor'
-
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'
@@ -50,6 +48,10 @@ group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'faker'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
