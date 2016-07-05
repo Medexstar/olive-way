@@ -40,7 +40,8 @@
       float: none;
       vertical-align: top;
   }
-  .navbar-brand, #nav__account, #nav__subscribe, #nav__checkout{
+  .navbar-brand, #nav__account, #nav__subscribe, #nav__checkout
+  ,#nav__sign_out, #nav__user{
     display: none;
   }
 

@@ -6,6 +6,8 @@ nav.navbar.navbar-default
           li
             = link_to "CHECKOUT", new_order_path
           li
+            = link_to "ACCOUNT", profile_path
+          li
             = link_to "SIGN OUT", destroy_user_session_path, method: :delete
         - else
           li
@@ -38,6 +40,10 @@ nav.navbar.navbar-default
         - if user_signed_in?
           li#nav__checkout
             = link_to "CHECKOUT", new_order_path
+          li#nav__user
+            = link_to "ACCOUNT", profile_path
+          li#nav__sign_out
+            = link_to "SIGN OUT", destroy_user_session_path, method: :delete
         - else
           li#nav__account
             = link_to "ACCOUNT", account_path

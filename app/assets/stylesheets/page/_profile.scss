@@ -13,12 +13,17 @@
     padding-left: 40px;
     overflow-y: auto;
     .content__section{
+      margin-bottom: 10px;
       .section__title{
         text-align: left;
         margin-bottom:0;
       }
       .section__content{
-
+        input[type="text"]{
+          border:0;
+          background-color: lightgray;
+          margin: 10px;
+        }
       }
     }
 

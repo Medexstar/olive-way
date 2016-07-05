@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160703074249) do
+ActiveRecord::Schema.define(version: 20160705034519) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,17 +55,19 @@ ActiveRecord::Schema.define(version: 20160703074249) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "billing_addresses", force: :cascade do |t|
-    t.string   "company",    default: "", null: false
-    t.string   "street",     default: "", null: false
-    t.integer  "postcode",   default: 0,  null: false
-    t.string   "suburb",     default: "", null: false
-    t.string   "state",      default: "", null: false
-    t.string   "country",    default: "", null: false
-    t.integer  "phone",      default: 0,  null: false
-    t.string   "type",       default: "", null: false
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string   "company",      default: "", null: false
+    t.string   "street",       default: "", null: false
+    t.integer  "postcode",     default: 0,  null: false
+    t.string   "suburb",       default: "", null: false
+    t.string   "state",        default: "", null: false
+    t.string   "country",      default: "", null: false
+    t.integer  "phone",        default: 0,  null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.integer  "user_id"
+    t.integer  "address_type"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
@@ -121,17 +123,19 @@ ActiveRecord::Schema.define(version: 20160703074249) do
   add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
 
   create_table "shipping_addresses", force: :cascade do |t|
-    t.string   "company",    default: "", null: false
-    t.string   "street",     default: "", null: false
-    t.integer  "postcode",   default: 0,  null: false
-    t.string   "suburb",     default: "", null: false
-    t.string   "state",      default: "", null: false
-    t.string   "country",    default: "", null: false
-    t.integer  "phone",      default: 0,  null: false
-    t.string   "type",       default: "", null: false
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string   "company",      default: "", null: false
+    t.string   "street",       default: "", null: false
+    t.integer  "postcode",     default: 0,  null: false
+    t.string   "suburb",       default: "", null: false
+    t.string   "state",        default: "", null: false
+    t.string   "country",      default: "", null: false
+    t.integer  "phone",        default: 0,  null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.integer  "user_id"
+    t.integer  "address_type"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "shipping_addresses", ["user_id"], name: "index_shipping_addresses_on_user_id", using: :btree

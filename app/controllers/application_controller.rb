@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
+  before_filter :store_current_location, unless: :devise_controller?
   before_action :config_permit_params, if: :devise_controller?
 
   protect_from_forgery with: :exception
@@ -23,11 +24,12 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def store_current_location
+    store_location_for(:user, request.url)
+  end
 
   def after_sign_in_path_for(resource)
-    if resource.is_a?(Admin)
-      admin_root_path
-    else
+    if resource.is_a? User
       request.referrer || landing_path
     end
   end
