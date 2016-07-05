@@ -23,6 +23,8 @@ gem 'aws-sdk',   '~> 1.6'
 
 gem 'stripe'
 
+gem 'rails_12factor'
+
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'
