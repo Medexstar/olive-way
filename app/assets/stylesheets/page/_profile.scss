@@ -19,10 +19,25 @@
         margin-bottom:0;
       }
       .section__content{
-        input[type="text"]{
-          border:0;
-          background-color: lightgray;
-          margin: 10px;
+        .field__field{
+          margin-right: -10px;
+          input[type="text"]{
+            border:0;
+            font-size: 16px;
+            background-color: lightgray;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: -30px;
+            width: 100%;
+            padding: 7px;
+          }
+        }
+        .radio__button{
+          text-align: center;
+          margin-left: -30px;
+          input[type="radio"]{
+            margin-right: 5px;
+          }
         }
       }
     }
