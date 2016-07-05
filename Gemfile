@@ -23,6 +23,8 @@ gem 'aws-sdk',   '~> 1.6'
 
 gem 'stripe'
 
+gem 'airbrake'
+
 gem 'rails_12factor'
 
 group :development do
