@@ -26,7 +26,7 @@ class OrderObjectsController < ApplicationController
     else
       flash[:alert] = "Oops! Invalid input. #{@offer.errors.full_messages.join('. ')}"
     end
-    redirect_to root_path
+    redirect_to landing_path
   end
 
   def destroy

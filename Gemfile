@@ -21,6 +21,12 @@ gem 'devise'
 gem 'paperclip', '~> 4.3'
 gem 'aws-sdk',   '~> 1.6'
 
+gem 'stripe'
+
+gem 'airbrake'
+
+gem 'rails_12factor'
+
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'

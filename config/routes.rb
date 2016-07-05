@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   resources :order_objects, only: [:new, :create, :destroy]
   resources :suits, only: [:show]
   resources :accessories, only: [:show]
+  resources :charges, only: [:create]
 end
