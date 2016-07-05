@@ -35,4 +35,4 @@
               input type="hidden" id="order_total_price" name="order[total_price]" value="#{@order.total_price}"
               | <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="
               = Rails.configuration.stripe[:publishable_key]
-              | " data-name="Olive Way" data-description="Payment Details" data-amount=@order.total_price*100 data-currency="aud" data-label="PAY NOW" data-locale="auto">
+              | " data-name="Olive Way" data-description="Payment Details" data-amount="#{@order.total_price*100}" data-currency="aud" data-label="PAY NOW" data-locale="auto" data-zip-code="true">
