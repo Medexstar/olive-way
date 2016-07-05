@@ -29,8 +29,10 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    if resource.is_a? User
+    if resource.is_a?(User)
       request.referrer || landing_path
+    elsif resource.is_a?(AdminUser) 
+      admin_dashboard_path(resource)
     end
   end
 
