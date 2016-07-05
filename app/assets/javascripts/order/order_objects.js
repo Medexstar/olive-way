@@ -32,3 +32,4 @@ var order_object_transition = function(){
 
 $(document).on('ready', order_object_transition);
 $(document).on('page:load', order_object_transition);
+$(document).on('page:change', order_object_transition);

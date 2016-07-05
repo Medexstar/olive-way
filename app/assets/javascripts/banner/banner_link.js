@@ -14,3 +14,4 @@ var triangleTransition = function(){
 
 $(document).on('ready', triangleTransition);
 $(document).on('page:load', triangleTransition);
+$(document).on('page:change', triangleTransition);
