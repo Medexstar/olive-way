@@ -8,7 +8,6 @@ class AddressController < ApplicationController
   end
 
   def update
-    binding.pry
     shipping = current_user.shipping_address
     shipping.first_name = params[:ship_firt_name] || ""
     shipping.last_name = params[:ship_last_name] || ""
