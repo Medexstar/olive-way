@@ -1,7 +1,7 @@
 class OrderObjectsController < ApplicationController
-  def new
-    redirect_to account_path if !user_signed_in?
+  before_action :require_log_in
 
+  def new
     @order_object = OrderObject.new
     @order_object.measurement ||= Measurement.new
     if params.has_key?(:suit_id)

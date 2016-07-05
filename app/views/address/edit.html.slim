@@ -1,0 +1,56 @@
+#profile.section__content.container-fluid
+  .row
+    .col-xs-3.profile__title PROFILE
+    .col-xs-9.profile__content
+      = form_tag(profile_path, method: "post")
+        .row.content__section
+          .measurement__section-title Username: #{@user.username}
+        .row.content__section
+          .measurement__section-title Email: #{@user.email}
+        .row.content__section
+          .section__title Shipping Address:
+          .section__content.col-xs-5
+            .field__field.col-xs-6
+              = text_field_tag "ship_first_name", @shipping.first_name, placeholder: "First Name:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_postcode", @shipping.postcode, placeholder: "Postcode:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_last_name", @shipping.last_name, placeholder: "Last Name:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_suburb", @shipping.suburb, placeholder: "Suburb:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_company", @shipping.company, placeholder: "Company:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_state", @shipping.state, placeholder: "State:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_street", @shipping.street, placeholder: "Street Address:"
+            .field__field.col-xs-6
+              = text_field_tag "ship_country", @shipping.country, placeholder: "Country:"
+            .field__field.col-xs-6
+              = text_field_tag ""
+            .field__field.col-xs-6
+              = text_field_tag "ship_phone", @shipping.phone, placeholder: "Phone:"
+        .row.content__section
+          .section__title Billing Address:
+          .section__content.col-xs-5
+            .field__field.col-xs-6
+              = text_field_tag "bill_first_name", @billing.first_name, placeholder: "First Name:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_postcode", @billing.country, placeholder: "Postcode:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_last_name", @billing.last_name, placeholder: "Last Name:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_suburb", @billing.country, placeholder: "Suburb:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_company", @billing.country, placeholder: "Company:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_state", @billing.country, placeholder: "State:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_street", @billing.country, placeholder: "Street Address:"
+            .field__field.col-xs-6
+              = text_field_tag "bill_country", @billing.country, placeholder: "Country:"
+            .field__field.col-xs-6
+              = text_field_tag ""
+            .field__field.col-xs-6
+              = text_field_tag "bill_phone", @billing.phone, placeholder: "Phone:"
+            = submit_tag "Save"

@@ -23,6 +23,8 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  after_create :build_user
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :authentication_keys => [:login]
@@ -39,6 +41,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: {minimum: 5, maximum: 120}, on: :create
 
   attr_accessor :login
+  private
 
   def self.find_for_database_authentication(warden_conditions)
     conditions = warden_conditions.dup
@@ -61,5 +64,11 @@ class User < ActiveRecord::Base
     if password.present? and not password.match(/^(?=.*\d). /)
       errors.add :password, "must include at least one digit"
     end
+  end
+
+  def build_user
+    build_shipping_address.save!(validate: false)
+    build_billing_address.save!(validate: false)
+    build_measurement.save!(validate: false)
   end
 end
