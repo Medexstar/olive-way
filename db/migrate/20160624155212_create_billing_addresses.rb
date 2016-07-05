@@ -3,11 +3,11 @@ class CreateBillingAddresses < ActiveRecord::Migration
     create_table :billing_addresses do |t|
       t.string  :company,        null: false, default: ""
       t.string  :street,         null: false, default: ""
-      t.integer :postcode,       null: false, default: 0
+      t.string :postcode,       null: false, default: ""
       t.string  :suburb,         null: false, default: ""
       t.string  :state,          null: false, default: ""
       t.string  :country,        null: false, default: ""
-      t.integer :phone,          null: false, default: 0
+      t.string :phone,          null: false, default: ""
       t.string  :type,           null: false, default: ""
       t.timestamps null: false
     end

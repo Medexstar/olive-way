@@ -57,11 +57,11 @@ ActiveRecord::Schema.define(version: 20160705034519) do
   create_table "billing_addresses", force: :cascade do |t|
     t.string   "company",      default: "", null: false
     t.string   "street",       default: "", null: false
-    t.integer  "postcode",     default: 0,  null: false
+    t.string   "postcode",     default: "", null: false
     t.string   "suburb",       default: "", null: false
     t.string   "state",        default: "", null: false
     t.string   "country",      default: "", null: false
-    t.integer  "phone",        default: 0,  null: false
+    t.string   "phone",        default: "", null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.integer  "user_id"
@@ -125,11 +125,11 @@ ActiveRecord::Schema.define(version: 20160705034519) do
   create_table "shipping_addresses", force: :cascade do |t|
     t.string   "company",      default: "", null: false
     t.string   "street",       default: "", null: false
-    t.integer  "postcode",     default: 0,  null: false
+    t.string   "postcode",     default: "", null: false
     t.string   "suburb",       default: "", null: false
     t.string   "state",        default: "", null: false
     t.string   "country",      default: "", null: false
-    t.integer  "phone",        default: 0,  null: false
+    t.string   "phone",        default: "", null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.integer  "user_id"
