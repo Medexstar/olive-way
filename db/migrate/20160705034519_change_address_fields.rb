@@ -12,9 +12,11 @@ class ChangeAddressFields < ActiveRecord::Migration
   end
 
   def self.down
+    remove_column :shipping_addresses, :address_type
     remove_column :shipping_addresses, :first_name
     remove_column :shipping_addresses, :last_name
 
+    remove_column :billing_addresses, :address_type
     remove_column :billing_addresses, :first_name
     remove_column :billing_addresses, :last_name
   end

@@ -18,6 +18,7 @@ class AddressController < ApplicationController
     shipping.street = params[:ship_street] || ""
     shipping.country = params[:ship_country] || ""
     shipping.phone = params[:ship_phone] || ""
+    shipping.address_type = params[:ship_type] || 1
 
     billing = current_user.billing_address
     billing.first_name = params[:bill_firt_name] || ""
@@ -29,8 +30,8 @@ class AddressController < ApplicationController
     billing.street = params[:bill_street] || ""
     billing.country = params[:bill_country] || ""
     billing.phone = params[:bill_phone] || ""
+    billing.address_type = params[:bill_type] || 1
 
-    puts "TEST"
     if shipping.save && billing.save
         flash[:success] = "Changes saved successfully!"
       redirect_to profile_path

@@ -9,7 +9,7 @@
           .measurement__section-title Email: #{@user.email}
         .row.content__section
           .section__title Shipping Address:
-          .section__content.col-xs-5
+          .section__content.col-xs-6
             .field__field.col-xs-6
               = text_field_tag "ship_first_name", @shipping.first_name, placeholder: "First Name:"
             .field__field.col-xs-6
@@ -30,9 +30,16 @@
               = text_field_tag ""
             .field__field.col-xs-6
               = text_field_tag "ship_phone", @shipping.phone, placeholder: "Phone:"
+            .col-xs-6
+            .radio__button.col-xs-3
+              = radio_button_tag "ship_type", "0", @shipping.address_type == 0 ? true : false
+              = label_tag "ship_type_0", "Business"
+            .radio__button.col-xs-3
+              = radio_button_tag "ship_type","1", @shipping.address_type == 1 ? true : false
+              = label_tag "ship_type_1", "Residential"
         .row.content__section
           .section__title Billing Address:
-          .section__content.col-xs-5
+          .section__content.col-xs-6
             .field__field.col-xs-6
               = text_field_tag "bill_first_name", @billing.first_name, placeholder: "First Name:"
             .field__field.col-xs-6
@@ -53,4 +60,11 @@
               = text_field_tag ""
             .field__field.col-xs-6
               = text_field_tag "bill_phone", @billing.phone, placeholder: "Phone:"
+            .col-xs-6
+            .radio__button.col-xs-3
+              = radio_button_tag "bill_type", "0", @billing.address_type == 0 ? true : false
+              = label_tag "bill_type_0", "Business"
+            .radio__button.col-xs-3
+              = radio_button_tag "bill_type", "1", @billing.address_type == 1 ? true : false
+              = label_tag "bill_type_1", "Residential"
             = submit_tag "Save"
