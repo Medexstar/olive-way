@@ -14,4 +14,6 @@ class Order < ActiveRecord::Base
     has_many    :order_objects
     has_many    :suits,        through: :order_objects
     has_many    :accessories,  through: :order_objects
+    
+    scope :checked_out, -> (cur_user) { where(user: cur_user) }
 end

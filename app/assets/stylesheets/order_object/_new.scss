@@ -83,7 +83,44 @@
     }
   }
   .measurement__title{
-    text-align: center;
+    text-align: right;
+    border-right: 1px solid black;
+  }
+  .measurement__content{
+    padding-left: 40px;
+    overflow-y: auto;
+  }
+  .measurement__section{
+    margin: 15px 0;
+    .measurement__section-title{
+      margin-bottom: 15px;
+      @include set_font(12px, black, bold);
+    }
+    .measurement__section-content{
+      padding-right: 0;
+      padding-left: 0;
+      .field{
+        padding-right: 0;
+        padding-left: 0;
+        margin: 2px 0 2px 0;
+        div{
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+#measurements{
+  >div>div{
+    height: 100%;
+    >div{
+      height: 100%;
+    }
+  }
+  .measurement__title{
+    text-align: right;
     border-right: 1px solid black;
   }
   .measurement__content{

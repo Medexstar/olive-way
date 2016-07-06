@@ -9,7 +9,7 @@ class AddressController < ApplicationController
 
   def update
     shipping = current_user.shipping_address
-    shipping.first_name = params[:ship_firt_name] || ""
+    shipping.first_name = params[:ship_first_name] || ""
     shipping.last_name = params[:ship_last_name] || ""
     shipping.postcode = params[:ship_postcode] || ""
     shipping.suburb = params[:ship_suburb] || ""
@@ -21,7 +21,7 @@ class AddressController < ApplicationController
     shipping.address_type = params[:ship_type] || 1
 
     billing = current_user.billing_address
-    billing.first_name = params[:bill_firt_name] || ""
+    billing.first_name = params[:bill_first_name] || ""
     billing.last_name = params[:bill_last_name] || ""
     billing.postcode = params[:bill_postcode] || ""
     billing.suburb = params[:bill_suburb] || ""
