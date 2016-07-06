@@ -1,6 +1,8 @@
 #profile.section__content.container-fluid
   .row
-    .col-xs-3.profile__title PROFILE
+    .col-xs-3.profile__title
+      div
+        h1 PROFILE
     .col-xs-9.profile__content
       = form_tag(profile_path, method: "post")
         .row.content__section

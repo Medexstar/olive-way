@@ -1,6 +1,8 @@
 .section__content.container-fluid
   .row
-    .col-xs-3.measurement__title MEASUREMENTS
+    .col-xs-3.measurement__title
+      div
+        h1 MEASUREMENTS
     .col-xs-9.measurement__content
       .row.measurement__guide Choose your best fitting Jacket and Pants and
         enter the measurements below. For standard size tweaking, the
@@ -10,7 +12,7 @@
         .col-xs-6.col-remove-padding
           = f.fields_for :measurement do |ff|
             .measurement__section
-              .measurement__section-title MENS
+              .measurement__section-title YOUR PRESET MEASUREMENTS
             .measurement__section
               .measurement__section-title JACKET
               .measurement__section-content.container-fluid
@@ -18,37 +20,37 @@
                   .field__label.col-xs-6
                     = ff.label :shoulder, '1. Shoulder'
                   .field__field.col-xs-3
-                    = ff.number_field :shoulder
+                    = ff.number_field :shoulder, :value => @measurement.shoulder
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '2. Half Chest'
                   .field__field.col-xs-3
-                    = ff.number_field :half_chest
+                    = ff.number_field :half_chest, :value => @measurement.half_chest
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '3. Half Waist'
                   .field__field.col-xs-3
-                    = ff.number_field :half_jacket_waist
+                    = ff.number_field :half_jacket_waist, :value => @measurement.half_jacket_waist
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '4. Half Hem'
                   .field__field.col-xs-3
-                    = ff.number_field :half_hem
+                    = ff.number_field :half_hem, :value => @measurement.half_hem
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '5. Back Length'
                   .field__field.col-xs-3
-                    = ff.number_field :back_length
+                    = ff.number_field :back_length, :value => @measurement.back_length
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '6. Sleeve Outstem'
                   .field__field.col-xs-3
-                    = ff.number_field :sleeve_outstem
+                    = ff.number_field :sleeve_outstem, :value => @measurement.sleeve_outstem
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '7. Bicep'
                   .field__field.col-xs-3
-                    = ff.number_field :bicep
+                    = ff.number_field :bicep, :value => @measurement.bicep
             .measurement__section
               .measurement__section-title PANTS
               .measurement__section-content.container-fluid
@@ -56,32 +58,32 @@
                   .field__label.col-xs-6
                     = ff.label :shoulder, '1. Pant Outseam'
                   .field__field.col-xs-3
-                    = ff.number_field :pant_outseam
+                    = ff.number_field :pant_outseam, :value => @measurement.pant_outseam
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '2. Half Waist'
                   .field__field.col-xs-3
-                    = ff.number_field :half_pant_waist
+                    = ff.number_field :half_pant_waist, :value => @measurement.half_pant_waist
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '3. Half Bottom'
                   .field__field.col-xs-3
-                    = ff.number_field :half_bottom
+                    = ff.number_field :half_bottom, :value => @measurement.half_bottom
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '4. Crotch'
                   .field__field.col-xs-3
-                    = ff.number_field :crotch
+                    = ff.number_field :crotch, :value => @measurement.crotch
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '5. Thigh'
                   .field__field.col-xs-3
-                    = ff.number_field :thigh
+                    = ff.number_field :thigh, :value => @measurement.thigh
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :shoulder, '6. Hip'
                   .field__field.col-xs-3
-                    = ff.number_field :hip
+                    = ff.number_field :hip, :value => @measurement.hip
         .col-xs-6
       .row
         = f.submit 'Save'

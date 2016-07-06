@@ -6,14 +6,12 @@ nav.navbar.navbar-default
           li
             = link_to "CHECKOUT", new_order_path
           li
-            = link_to "ACCOUNT", profile_path
+            = link_to "ACCOUNT", account_hub_path
           li
             = link_to "SIGN OUT", destroy_user_session_path, method: :delete
         - else
           li
             = link_to "ACCOUNT", account_path
-        li
-          = link_to "SUBSCRIBE", account_path
     .nav--brand
       = link_to "", root_path, {id: "brand"}
     .navbar-header
@@ -41,11 +39,9 @@ nav.navbar.navbar-default
           li#nav__checkout
             = link_to "CHECKOUT", new_order_path
           li#nav__user
-            = link_to "ACCOUNT", profile_path
+            = link_to "ACCOUNT", account_hub_path
           li#nav__sign_out
             = link_to "SIGN OUT", destroy_user_session_path, method: :delete
         - else
           li#nav__account
-            = link_to "ACCOUNT", account_path
-        li#nav__subscribe
-          = link_to "SUBSCRIBE", account_path
+            = link_to "ACCOUNT", account_hub_path

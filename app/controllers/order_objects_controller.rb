@@ -2,7 +2,9 @@ class OrderObjectsController < ApplicationController
   before_action :require_log_in
 
   def new
+    @user = current_user
     @order_object = OrderObject.new
+    @measurement = @user.measurement
     @order_object.measurement ||= Measurement.new
     if params.has_key?(:suit_id)
       @order_object.suit = Suit.find(params[:suit_id])

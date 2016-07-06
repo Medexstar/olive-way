@@ -25,5 +25,5 @@ class OrderObject < ActiveRecord::Base
   enum status: { pending: 0, checked_out: 1, uni: 2}
 
   scope :pending, -> (cur_user) { where(user: cur_user, status: 0) }
-  scope :checked_out, -> { where(status: 1) }
+  scope :checked_out, -> (cur_user, order_id) { where(user: cur_user, status: 1, order_id: order_id) }
 end

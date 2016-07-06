@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
 
   def new
       @order = Order.new
-      @order.user ||= current_user
+      @order.user = current_user
       @order_objects = OrderObject.pending(current_user);
       @order.total_price = 0
       @order_objects.find_each do |order_object|

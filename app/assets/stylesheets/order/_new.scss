@@ -57,5 +57,15 @@
         text-align: right;
       }
     }
+    .content__link{
+      a:link, a:visited{
+        text-decoration: underline;
+        color: black;
+      }
+      a:hover, a:active{
+        text-decoration: none;
+        color: gray;
+      }
+    }
   }
 }
