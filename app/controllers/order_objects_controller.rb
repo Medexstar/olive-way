@@ -32,6 +32,9 @@ class OrderObjectsController < ApplicationController
   end
 
   def destroy
+    @order_object = OrderObject.find(params[:id])
+    @order_object.destroy
+    redirect_to new_order_path
   end
 
   private
