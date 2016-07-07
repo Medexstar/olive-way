@@ -27,11 +27,14 @@ class Suit < ActiveRecord::Base
   has_many :order_objects
   has_many :orders,       through: :order_objects
 
-  enum sex: { male: 0, female: 1, uni: 2}
+  enum sex: { male: 0, female: 1, uni: 2, collection_male: 3, collection_female: 4}
 
-  scope :male, -> { where(sex: 0 )}
+  scope :male, -> { where(sex: 0 ) }
   scope :female, -> { where(sex: 1) }
   scope :uni, -> { where(sex: 2) }
+  scope :collection, -> { where('sex=? OR sex=?', 3, 4) }
+  scope :collection_male, -> { where(sex: 3) }
+  scope :collection_female, -> { where(sex: 4) }
 
   has_attached_file :image_one,
       styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
