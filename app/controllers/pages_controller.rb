@@ -17,7 +17,11 @@ class PagesController < ApplicationController
     @accessories = Accessory.all
   end
 
+  def collections
+  end
+  
   def collection
+    @collection = Suit.collection
   end
 
   def foundation

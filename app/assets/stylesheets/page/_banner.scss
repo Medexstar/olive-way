@@ -1,15 +1,31 @@
-#pages_landing, #pages_collection{
+#pages_landing, #pages_collections{
   main{
     height: 70%;
-    #landing, #collection{
+    #landing{
       height: 100%;
+    }
+  }
+}
+
+#pages_collections{
+  main{
+    height: 100%;
+    #collections{
+      height: 100%;
+      .collage__image{
+        position: relative;
+        zoom: 0.40;
+        -moz-transform: scale(0.40);
+        text-align: center;
+        top: -150px;
+      }
     }
   }
 }
 
 svg{
   display:block;
-  width:100%;
+  width: 100%;
   height: 100%;
   polygon{
    cursor: pointer;

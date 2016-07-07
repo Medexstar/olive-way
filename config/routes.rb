@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get   '/womens' => 'pages#womens'
   get   '/shirts' => 'pages#shirts'
   get   '/accessories' => 'pages#accessories'
+  get   '/collections' => 'pages#collections'
   get   '/collection' => 'pages#collection'
   get   '/foundation' => 'pages#foundation'
   get   '/story' => 'pages#story'
