@@ -11,6 +11,7 @@
           .col-xs-2.content__header unit price
           .col-xs-2.content__header
             .header__total-price total price
+          .col-xs-1.content__header delete
           .col-xs-12.checkout__content
             - @order_objects.find_each do |order_object|
               .row
@@ -23,6 +24,8 @@
                 .col-xs-2.content__text #{order_object.suit != nil ? number_to_currency(order_object.suit.formatted_cost, unit: "$", eparator: ",") : number_to_currency(order_object.accessory.formatted_cost, unit: "$", eparator: ",")}
                 .col-xs-2.content__text
                   .text__total-price #{order_object.suit != nil ? number_to_currency(order_object.suit.formatted_cost * order_object.suit.quantity, unit: "$", eparator: ",") : number_to_currency(order_object.accessory.formatted_cost * order_object.accessory.quantity, unit: "$", eparator: ",")}
+                .col-xs-1.content__text
+                  = link_to "remove", order_object_path(order_object.id), :method => :delete
           .col-xs-11.content__total-price Total: #{number_to_currency(@order.total_price, unit: "$", eparator: ",")}
           .col-xs-10
           .col-xs-2
