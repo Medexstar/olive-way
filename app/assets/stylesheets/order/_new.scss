@@ -3,9 +3,21 @@
   @include set_flex(row, flex-start, center);
   .checkout__title{
     height: 100%;
-    margin-top: -20px;
     text-align: right;
     border-right: 1px solid black;
+    .checkout__current{
+      font-weight: bold;
+    }
+    .checkout__link{
+      a:link, a:visited{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active{
+        text-decoration: none;
+        color: gray;
+      }
+    }
   }
   .checkout__container{
     height: 90%;

@@ -2,7 +2,11 @@
   .row
     .col-xs-3.profile__title
       div
-        h1 PROFILE
+        h1.profile__current PROFILE
+        h1.profile__link
+          = link_to "ORDERS", orders_path
+        h1.profile__link
+          = link_to "MEASUREMENTS", measurements_path
     .col-xs-9.profile__content
       = form_tag(profile_path, method: "post")
         .row.content__section
