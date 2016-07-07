@@ -122,6 +122,19 @@
   .measurement__title{
     text-align: right;
     border-right: 1px solid black;
+    .measurement__current{
+      font-weight: bold;
+    }
+    .measurement__link{
+      a:link, a:visited{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover, a:active{
+        text-decoration: none;
+        color: gray;
+      }
+    }
   }
   .measurement__content{
     padding-left: 40px;

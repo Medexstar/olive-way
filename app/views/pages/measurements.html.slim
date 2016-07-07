@@ -3,7 +3,11 @@
     .row
       .col-xs-3.measurement__title
         div
-          h1 MEASUREMENTS
+          h1.measurement__link
+            = link_to "PROFILE", profile_path
+          h1.measurement__link
+            = link_to "ORDERS", orders_path
+          h1.measurement__current MEASUREMENTS
       .col-xs-9.measurement__content
         .row.measurement__guide Choose your best fitting Jacket and Pants and
           enter the measurements below. For standard size tweaking, the
