@@ -4,6 +4,8 @@
       div
         h1.profile__current PROFILE
         h1.profile__link
+          = link_to "PASSWORD", edit_user_registration_path
+        h1.profile__link
           = link_to "ORDERS", orders_path
         h1.profile__link
           = link_to "MEASUREMENTS", measurements_path
