@@ -1,4 +1,4 @@
-#pages_landing, #pages_collections{
+#pages_landing{
   main{
     height: 70%;
     #landing{
@@ -12,12 +12,17 @@
     height: 100%;
     #collections{
       height: 100%;
-      .collage__image{
-        position: relative;
-        zoom: 0.40;
-        -moz-transform: scale(0.40);
-        text-align: center;
-        top: -150px;
+      div{
+        height: 110%;
+        margin-top: -60px;
+        width: 100%;
+        img{
+          display: block;
+          max-height: 100%;
+          height: auto;
+          width: auto;
+          margin: auto;
+        }
       }
     }
   }
