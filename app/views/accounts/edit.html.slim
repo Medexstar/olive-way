@@ -1,14 +1,7 @@
 #profile.section__content.container-fluid
   .row
     .col-xs-3.profile__title
-      div
-        h1.profile__current PROFILE
-        h1.profile__link
-          = link_to "PASSWORD", edit_user_registration_path
-        h1.profile__link
-          = link_to "ORDERS", orders_path
-        h1.profile__link
-          = link_to "MEASUREMENTS", measurements_path
+      = render partial: "layouts/profile_nav"
     .col-xs-9.profile__content
       = form_tag(profile_path, method: "post")
         .row.content__section
@@ -38,13 +31,13 @@
               = text_field_tag ""
             .field__field.col-xs-6
               = text_field_tag "ship_phone", @shipping.phone, placeholder: "Phone:"
-            .col-xs-6
-            .radio__button.col-xs-3
-              = radio_button_tag "ship_type", "0", @shipping.address_type == 0 ? true : false
-              = label_tag "ship_type_0", "Business"
-            .radio__button.col-xs-3
-              = radio_button_tag "ship_type","1", @shipping.address_type == 1 ? true : false
-              = label_tag "ship_type_1", "Residential"
+            .col-xs-12
+              .radio__button.col-xs-4.col-xs-offset-4
+                = radio_button_tag "ship_type", "0", @shipping.address_type == 0 ? true : false
+                = label_tag "ship_type_0", "Business"
+              .radio__button.col-xs-4
+                = radio_button_tag "ship_type","1", @shipping.address_type == 1 ? true : false
+                = label_tag "ship_type_1", "Residential"
         .row.content__section
           .section__title Billing Address:
           .section__content.col-xs-6
@@ -69,10 +62,11 @@
             .field__field.col-xs-6
               = text_field_tag "bill_phone", @billing.phone, placeholder: "Phone:"
             .col-xs-6
-            .radio__button.col-xs-3
-              = radio_button_tag "bill_type", "0", @billing.address_type == 0 ? true : false
+            .radio__button.col-xs-4.col-xs-offset-4
+              = radio_button_tag "bill_type", "0", @billing.address_type
               = label_tag "bill_type_0", "Business"
-            .radio__button.col-xs-3
-              = radio_button_tag "bill_type", "1", @billing.address_type == 1 ? true : false
+            .radio__button.col-xs-4
+              = radio_button_tag "bill_type", "1", @billing.address_type
               = label_tag "bill_type_1", "Residential"
-            = submit_tag "Save"
+            .col-xs-12
+              = submit_tag "Save"

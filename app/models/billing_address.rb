@@ -20,8 +20,7 @@
 
 class BillingAddress < ActiveRecord::Base
     belongs_to :user
-    validates_format_of :phone, :with => /\A0\d{9}\Z/,
+    validates_format_of :phone, :with => /\A[0]{1}[0-9]{9}\z/,
                                 :message => "Must be a 10 digit number including 0; eg 0123456789",
-                                :numericality => true,
-                                :length => { is: 10 }
+                                :numericality => true
 end
