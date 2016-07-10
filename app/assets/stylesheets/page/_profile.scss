@@ -1,10 +1,4 @@
 #profile{
-  >div>div{
-    height: 100%;
-    >div{
-      height: 100%;
-    }
-  }
   .profile__title{
     text-align: right;
     border-right: 1px solid black;
@@ -20,40 +14,48 @@
       }
       .section__content{
         .field__field{
-          margin-right: -10px;
           input[type="text"]{
             border:0;
             font-size: 16px;
             background-color: lightgray;
-            margin-bottom: 5px;
-            margin-top: 5px;
-            margin-left: -30px;
+            margin: 5px 0;
             width: 100%;
             padding: 7px;
           }
         }
+        input[type="submit"]{
+          float: right;
+        }
         .radio__button{
           text-align: center;
-          margin-left: -30px;
           input[type="radio"]{
             margin-right: 5px;
           }
         }
       }
     }
-  }
-  .profile__current{
-    font-weight: bold;
+    .content__header{
+      border-bottom: 1px solid black;
+    }
   }
   .profile__link{
-    padding-left: 40px;
-    a:link, a:visited{
-      text-decoration: none;
-      color: black;
-    }
-    a:hover, a:active{
-      text-decoration: none;
+    a{
+      text-align: right;
       color: gray;
+      text-decoration: none;
+      &:hover{
+        color: black;
+      }
     }
+  }
+}
+
+#accounts_edit #profile-edit,
+#registrations_edit #password-edit,
+#orders_index #order-show,
+#pages_measurements #measurement-edit{
+  a{
+    color: black;
+    font-weight: bold;
   }
 }

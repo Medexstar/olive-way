@@ -1,6 +1,10 @@
 class OrdersController < ApplicationController
   before_action :require_log_in
 
+  def index
+    @orders = Order.checked_out current_user
+  end
+
   def new
       @order = Order.new
       @order.user = current_user

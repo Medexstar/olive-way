@@ -1,92 +1,86 @@
-#measurements
-  .section__content.container-fluid
+#profile.section__content.container-fluid
+  .col-xs-3.profile__title
+    = render partial: "layouts/profile_nav"
+  .col-xs-9.profile__content
     .row
-      .col-xs-3.measurement__title
-        div
-          h1.measurement__link
-            = link_to "PROFILE", profile_path
-          h1.measurement__link
-            = link_to "ORDERS", orders_path
-          h1.measurement__current MEASUREMENTS
-      .col-xs-9.measurement__content
-        .row.measurement__guide Choose your best fitting Jacket and Pants and
-          enter the measurements below. For standard size tweaking, the
-          measurements provided below are from all InStitchu finished standard
-          size garment.
-        .row.measurement__input
-          .col-xs-6.col-remove-padding
-            = form_tag(measurements_path, method: "post")
-              .measurement__section
-                .measurement__section-title YOUR PRESET MEASUREMENTS
-              .measurement__section
-                .measurement__section-title JACKET
-                .measurement__section-content.container-fluid
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "shoulder", '1. Shoulder'
-                    .field__field.col-xs-3
-                      = number_field_tag "shoulder", @measurement.shoulder, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "half_chest", '2. Half Chest'
-                    .field__field.col-xs-3
-                      = number_field_tag "half_chest", @measurement.half_chest, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "half_jacket_waist", '3. Half Waist'
-                    .field__field.col-xs-3
-                      = number_field_tag "half_jacket_waist", @measurement.half_jacket_waist, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "half_hem", '4. Half Hem'
-                    .field__field.col-xs-3
-                      = number_field_tag "half_hem", @measurement.half_hem, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "back_length", '5. Back Length'
-                    .field__field.col-xs-3
-                      = number_field_tag "back_length",  @measurement.back_length, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "sleeve_outstem", '6. Sleeve Outstem'
-                    .field__field.col-xs-3
-                      = number_field_tag "sleeve_outstem", @measurement.sleeve_outstem, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "bicep", '7. Bicep'
-                    .field__field.col-xs-3
-                      = number_field_tag "bicep", @measurement.bicep, :step => 0.01
-              .measurement__section
-                .measurement__section-title PANTS
-                .measurement__section-content.container-fluid
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "pant_outseam", '1. Pant Outseam'
-                    .field__field.col-xs-3
-                      = number_field_tag "pant_outseam", @measurement.pant_outseam, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "half_pant_waist", '2. Half Waist'
-                    .field__field.col-xs-3
-                      = number_field_tag "half_pant_waist", @measurement.half_pant_waist, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "half_bottom", '3. Half Bottom'
-                    .field__field.col-xs-3
-                      = number_field_tag "half_bottom", @measurement.half_bottom, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "crotch", '4. Crotch'
-                    .field__field.col-xs-3
-                      = number_field_tag "crotch", @measurement.crotch, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "thigh", '5. Thigh'
-                    .field__field.col-xs-3
-                      = number_field_tag "thigh", @measurement.thigh, :step => 0.01
-                  .field.row
-                    .field__label.col-xs-6
-                      = label_tag "hip", '6. Hip'
-                    .field__field.col-xs-3
-                      = number_field_tag "hip", @measurement.hip, :step => 0.01
-                  = submit_tag 'Save'
+      .content__section Choose your best fitting Jacket and Pants and
+        enter the measurements below. For standard size tweaking, the
+        measurements provided below are from all InStitchu finished standard
+        size garment.
+      .content__section
+        .col-xs-6.col-remove-padding
+          = form_tag(measurements_path, method: "post")
+            div
+              .measurement__section-title YOUR PRESET MEASUREMENTS
+            div
+              .measurement__section-title JACKET
+              .measurement__section-content.container-fluid
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "shoulder", '1. Shoulder'
+                  .field__field.col-xs-3
+                    = number_field_tag "shoulder", @measurement.shoulder, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "half_chest", '2. Half Chest'
+                  .field__field.col-xs-3
+                    = number_field_tag "half_chest", @measurement.half_chest, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "half_jacket_waist", '3. Half Waist'
+                  .field__field.col-xs-3
+                    = number_field_tag "half_jacket_waist", @measurement.half_jacket_waist, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "half_hem", '4. Half Hem'
+                  .field__field.col-xs-3
+                    = number_field_tag "half_hem", @measurement.half_hem, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "back_length", '5. Back Length'
+                  .field__field.col-xs-3
+                    = number_field_tag "back_length",  @measurement.back_length, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "sleeve_outstem", '6. Sleeve Outstem'
+                  .field__field.col-xs-3
+                    = number_field_tag "sleeve_outstem", @measurement.sleeve_outstem, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "bicep", '7. Bicep'
+                  .field__field.col-xs-3
+                    = number_field_tag "bicep", @measurement.bicep, :step => 0.01
+            div
+              .measurement__section-title PANTS
+              .measurement__section-content.container-fluid
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "pant_outseam", '1. Pant Outseam'
+                  .field__field.col-xs-3
+                    = number_field_tag "pant_outseam", @measurement.pant_outseam, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "half_pant_waist", '2. Half Waist'
+                  .field__field.col-xs-3
+                    = number_field_tag "half_pant_waist", @measurement.half_pant_waist, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "half_bottom", '3. Half Bottom'
+                  .field__field.col-xs-3
+                    = number_field_tag "half_bottom", @measurement.half_bottom, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "crotch", '4. Crotch'
+                  .field__field.col-xs-3
+                    = number_field_tag "crotch", @measurement.crotch, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "thigh", '5. Thigh'
+                  .field__field.col-xs-3
+                    = number_field_tag "thigh", @measurement.thigh, :step => 0.01
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "hip", '6. Hip'
+                  .field__field.col-xs-3
+                    = number_field_tag "hip", @measurement.hip, :step => 0.01
+                = submit_tag 'Save'

@@ -1,14 +1,7 @@
 #profile.section__content.container-fluid
   .row
     .col-xs-3.profile__title
-      div
-        h3.profile__link PROFILE
-          = link_to "PROFILE", profile_path
-        h3.profile__current PASSWORD
-        h3.profile__link
-          = link_to "ORDERS", orders_path
-        h3.profile__link
-          = link_to "MEASUREMENTS", measurements_path
+      = render partial: "layouts/profile_nav"
     .col-xs-9.profile__content.section-content
       = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f|
         = devise_error_messages!

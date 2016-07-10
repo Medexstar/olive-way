@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get   '/story' => 'pages#story'
   get   '/account' => 'pages#account'
   get   '/account_hub' => 'pages#account_hub'
-  get   '/orders' => 'pages#orders'
   get   '/order' => 'pages#order'
   get   '/measurements' => 'pages#measurements'
   patch '/measurements' => 'pages#measurements_update'
@@ -26,10 +25,11 @@ Rails.application.routes.draw do
   get   '/privacy' => 'pages#privacy'
   get   '/ship_return' => 'pages#ship_return'
 
-  get   '/profile'  => 'address#edit'
-  patch '/profile'  => 'address#update'
-  post  '/profile'  => 'address#update'
-  resources :orders, only: [:new]
+  get   '/profile'  => 'accounts#edit'
+  patch '/profile'  => 'accounts#update'
+  post  '/profile'  => 'accounts#update'
+
+  resources :orders, only: [:index, :new]
   resources :order_objects, only: [:new, :create, :destroy]
   resources :suits, only: [:show]
   resources :accessories, only: [:show]
