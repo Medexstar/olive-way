@@ -21,6 +21,10 @@
 #  image_three_content_type :string
 #  image_three_file_size    :integer
 #  image_three_updated_at   :datetime
+#  main_image_file_name     :string
+#  main_image_content_type  :string
+#  main_image_file_size     :integer
+#  main_image_updated_at    :datetime
 #
 
 FactoryGirl.define do

@@ -7,7 +7,13 @@
   .footer__site-map{
     float: left;
     list-style-type: none;
-    text-decoration: none;
+    a{
+      color: black;
+      text-decoration: none;
+      &:hover{
+        font-weight: bold;
+      }
+    }
   }
   .footer__social-container{
     float: right;
@@ -15,23 +21,8 @@
       display: inline;
       list-style-type: none;
       padding: 10px 15px;
-    }
-    #facebook{
-      div{
-        height: 64px;
-        width: 64px;
-      }
-    }
-    #twitter{
-      div{
-        height: 64px;
-        width: 64px;
-      }
-    }
-    #instagram{
-      div{
-        height: 64px;
-        width: 64px;
+      a{
+        color: black;
       }
     }
   }

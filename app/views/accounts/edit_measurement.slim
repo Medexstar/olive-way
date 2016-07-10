@@ -9,7 +9,7 @@
         size garment.
       .content__section
         .col-xs-6.col-remove-padding
-          = form_tag(measurements_path, method: "post")
+          = form_for @measurement, url: measurements_path, method: "post" do |f|
             div
               .measurement__section-title YOUR PRESET MEASUREMENTS
             div
@@ -17,70 +17,70 @@
               .measurement__section-content.container-fluid
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "shoulder", '1. Shoulder'
+                    = f.label :shoulder, '1. Shoulder'
                   .field__field.col-xs-3
-                    = number_field_tag "shoulder", @measurement.shoulder, :step => 0.01
+                    = f.text_field :shoulder, placeholder: "shoulder"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "half_chest", '2. Half Chest'
+                    = f.label :half_chest, '2. Half Chest'
                   .field__field.col-xs-3
-                    = number_field_tag "half_chest", @measurement.half_chest, :step => 0.01
+                    = f.text_field :half_chest, placeholder: "Half Chest"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "half_jacket_waist", '3. Half Waist'
+                    = f.label :half_jacket_waist, '3. Half Waist'
                   .field__field.col-xs-3
-                    = number_field_tag "half_jacket_waist", @measurement.half_jacket_waist, :step => 0.01
+                    = f.text_field :half_jacket_waist, placeholder: "Half Waist"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "half_hem", '4. Half Hem'
+                    = f.label :half_hem, '4. Half Hem'
                   .field__field.col-xs-3
-                    = number_field_tag "half_hem", @measurement.half_hem, :step => 0.01
+                    = f.text_field :half_hem, placeholder: "Half Hem"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "back_length", '5. Back Length'
+                    = f.label :back_length, '5. Back Length'
                   .field__field.col-xs-3
-                    = number_field_tag "back_length",  @measurement.back_length, :step => 0.01
+                    = f.text_field :back_length, placeholder: "Back Length"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "sleeve_outstem", '6. Sleeve Outstem'
+                    = f.label :sleeve_outstem, '6. Sleeve Outstem'
                   .field__field.col-xs-3
-                    = number_field_tag "sleeve_outstem", @measurement.sleeve_outstem, :step => 0.01
+                    = f.text_field :sleeve_outstem, placeholder: "Sleeve Outstem"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "bicep", '7. Bicep'
+                    = f.label :bicep, '7. Bicep'
                   .field__field.col-xs-3
-                    = number_field_tag "bicep", @measurement.bicep, :step => 0.01
+                    = f.text_field :bicep, placeholder: "Bicep"
             div
               .measurement__section-title PANTS
               .measurement__section-content.container-fluid
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "pant_outseam", '1. Pant Outseam'
+                    = f.label :pant_outseam, '1. Pant Outseam'
                   .field__field.col-xs-3
-                    = number_field_tag "pant_outseam", @measurement.pant_outseam, :step => 0.01
+                    = f.text_field :pant_outseam, placeholder: "Pant Outseam"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "half_pant_waist", '2. Half Waist'
+                    = f.label :half_pant_waist, '2. Half Waist'
                   .field__field.col-xs-3
-                    = number_field_tag "half_pant_waist", @measurement.half_pant_waist, :step => 0.01
+                    = f.text_field :half_pant_waist, placeholder: "Half Waist"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "half_bottom", '3. Half Bottom'
+                    = f.label :half_bottom, '3. Half Bottom'
                   .field__field.col-xs-3
-                    = number_field_tag "half_bottom", @measurement.half_bottom, :step => 0.01
+                    = f.text_field :half_bottom, placeholder: "Half Bottom"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "crotch", '4. Crotch'
+                    = f.label :crotch, '4. Crotch'
                   .field__field.col-xs-3
-                    = number_field_tag "crotch", @measurement.crotch, :step => 0.01
+                    = f.text_field :crotch, placeholder: "Crotch"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "thigh", '5. Thigh'
+                    = f.label :thigh, '5. Thigh'
                   .field__field.col-xs-3
-                    = number_field_tag "thigh", @measurement.thigh, :step => 0.01
+                    = f.text_field :thigh, placeholder: "Thigh"
                 .field.row
                   .field__label.col-xs-6
-                    = label_tag "hip", '6. Hip'
+                    = f.label :hip, '6. Hip'
                   .field__field.col-xs-3
-                    = number_field_tag "hip", @measurement.hip, :step => 0.01
+                    = f.text_field :hip, placeholder: "Hip"
                 = submit_tag 'Save'
