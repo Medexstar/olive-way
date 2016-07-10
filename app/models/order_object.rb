@@ -12,6 +12,7 @@
 #  suit_id        :integer
 #  accessory_id   :integer
 #  order_id       :integer
+#  user_id        :integer
 #
 
 class OrderObject < ActiveRecord::Base

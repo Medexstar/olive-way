@@ -35,6 +35,9 @@ class User < ActiveRecord::Base
   has_many  :orders
   has_many  :order_objects
 
+  accepts_nested_attributes_for :shipping_address
+  accepts_nested_attributes_for :billing_address
+
   validates :username, presence: true, uniqueness: {case_sensitive: false}
   validate :validate_username
 
