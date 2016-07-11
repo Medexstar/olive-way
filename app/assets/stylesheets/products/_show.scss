@@ -1,31 +1,24 @@
-.object__container{
+.product__container{
   height: 100%;
-  .object__title{
+  .product__info{
     height: 100%;
     border-right: 1px solid;
     text-align: right;
   }
-  .object__contents{
-    height: 100%;
-  }
 }
-
-.object__contents{
-  .object--main, .object--options{
-    display: inline-block;
-    height: 100%;
-  }
-  #image--main{
+.product__contents{
+  @include set_flex(row, flex-start, flex-start);
+  height: 100%;
+  .product__image--main{
     padding: 10px;
     height: 400px;
     width: 300px;
     border: 1px solid black;
   }
-  .option{
+  .product__image--selection div{
     height: 100px;
     width: 75px;
     border: 1px solid black;
     margin: 0 10px 10px 10px;
   }
-  @include set_flex(row, flex-start, flex-start);
 }

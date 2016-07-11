@@ -1,17 +1,16 @@
 .container-fluid
   .row
     .col-xs-10.col-xs-offset-1
-      #womens
-        .section__title
+      #womens.catalogue--suits
+        .catalogue__title
           h3 WOMEN'S SUITS
-        .row.catalogue__container
+        .row.catalogue__contents
           .col-xs-2.catalogue__filter
           .col-xs-10.catalogue__products
             - @womens.find_each do |women|
-              .catalogue__product-wrapper
-                .product__photo_container
-                  .product__photo
-                    = link_to image_tag(women.main_image.url(:thumb)), suit_path(women)
+              .catalogue__product
+                .product__photo
+                  = link_to image_tag(men.main_image.url(:thumb)), suit_path(women)
                 .product__info
                   .product__name #{women.name}
                   .product__cost #{number_to_currency(women.formatted_cost, unit: "$", eparator: ",")}

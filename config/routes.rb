@@ -19,9 +19,9 @@ Rails.application.routes.draw do
   get   '/account' => 'accounts#account'
   get   '/hub' => 'accounts#account_hub'
 
-  get   '/profile'  => 'accounts#edit'
-  patch '/profile'  => 'accounts#update'
-  post  '/profile'  => 'accounts#update'
+  get   '/profile'  => 'accounts#edit_addresses'
+  patch '/profile'  => 'accounts#update_addresses'
+  post  '/profile'  => 'accounts#update_addresses'
 
   get   '/measurements' => 'accounts#edit_measurement'
   patch '/measurements' => 'accounts#update_measurement'

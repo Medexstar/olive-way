@@ -1,17 +1,16 @@
 .container-fluid
   .row
     .col-xs-10.col-xs-offset-1
-      #accessories
-        .section__title
-          h3 ACCESSORIES
-        .row.catalogue__container
+      #accessories.catalogue--suits
+        .catalogue__title
+          h3 ACCESORRIES
+        .row.catalogue__contents
           .col-xs-2.catalogue__filter
           .col-xs-10.catalogue__products
             - @accessories.find_each do |accessory|
-              .catalogue__product-wrapper
-                .product__photo_container
-                  .product__photo
-                    = link_to image_tag(accessory.main_image.url(:thumb)), accessory_path(accessory)
+              .catalogue__product
+                .product__photo
+                  = link_to image_tag(accessory.main_image.url(:thumb)), accesory_path(accessory)
                 .product__info
                   .product__name #{accessory.name}
                   .product__cost #{number_to_currency(accessory.formatted_cost, unit: "$", eparator: ",")}

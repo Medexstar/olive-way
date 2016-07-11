@@ -21,6 +21,7 @@ ActiveAdmin.register Suit do
       f.input :quantity
       f.input :unit_price
       f.input :sex
+      f.input :main_image, as: :file
       f.input :image_one, as: :file
       f.input :image_two, as: :file
       f.input :image_three, as: :file

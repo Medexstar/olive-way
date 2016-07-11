@@ -11,7 +11,7 @@ ActiveAdmin::register Accessory do
     column :updated_at
     actions
   end
-  
+
   filter :unit_price
 
   form do |f|
@@ -19,6 +19,7 @@ ActiveAdmin::register Accessory do
       f.input :name
       f.input :quantity
       f.input :unit_price
+      f.input :main_image, as: :file
       f.input :image_one, as: :file
       f.input :image_two, as: :file
       f.input :image_three, as: :file

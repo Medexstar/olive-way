@@ -1,14 +1,18 @@
-#profile.section__content.container-fluid
+.container-fluid
   .row
-    .col-xs-3.profile__title
+    .col-xs-3.account__title
       = render partial: "layouts/profile_nav"
-    .col-xs-9.profile__content.section-content
+    .col-xs-9.account__content
       = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f|
-        = devise_error_messages!
-        .form-group
-          = f.password_field :current_password, autocomplete: "off", placeholder: "Current Password"
-        .form-group
-          = f.password_field :password, autofocus: true, autocomplete: "off", placeholder: "New Password"
-        .form-group
-          = f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm Password"
-        = f.submit "Change My Password"
+        .container-fluid
+          .row.section--account
+            .section__title--account Change Password
+            .section__content--account
+              .col-xs-12
+                = f.password_field :current_password, autocomplete: "off", placeholder: "Current Password"
+              .col-xs-12
+                = f.password_field :password, autofocus: true, autocomplete: "off", placeholder: "New Password"
+              .col-xs-12
+                = f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm Password"
+              .col-xs-12
+                = f.submit "Change My Password"
