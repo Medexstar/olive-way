@@ -25,6 +25,8 @@ gem 'stripe'
 
 gem 'airbrake'
 
+gem 'sitemap_generator'
+
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'
