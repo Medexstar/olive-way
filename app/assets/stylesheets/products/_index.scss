@@ -26,6 +26,8 @@
   .catalogue__product{
     height: 440px;
     width: 300px;
+    min-height: 440px;
+    min-width: 300px;
     padding: 10px;
     display: inline-block;
     border: 1px solid black;

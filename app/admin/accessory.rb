@@ -1,5 +1,5 @@
 ActiveAdmin::register Accessory do
-  permit_params :name, :quantity, :unit_price,
+  permit_params :name, :quantity, :unit_price, :main_image,
                 :image_one, :image_two, :image_three
   index do
     selectable_column

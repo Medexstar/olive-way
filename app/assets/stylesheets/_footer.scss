@@ -4,8 +4,8 @@
   width: 100%;
   margin-top: 50px;
   padding-top: 15px;
+  @include set_flex(row, space-around, flex-start);
   .footer__site-map{
-    float: left;
     list-style-type: none;
     a{
       color: black;
@@ -16,7 +16,6 @@
     }
   }
   .footer__social-container{
-    float: right;
     li{
       display: inline;
       list-style-type: none;

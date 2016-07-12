@@ -17,8 +17,12 @@
   }
   .product__image--selection div{
     height: 100px;
-    width: 75px;
+    width: 85px;
     border: 1px solid black;
     margin: 0 10px 10px 10px;
+    padding: 2px;
+  }
+  .product__image--main div, .product__image--selection div{
+    @include set_flex(row, center, center);
   }
 }
