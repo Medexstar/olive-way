@@ -1,0 +1,29 @@
+.section__title--account #{title}:
+.section__content--account.col-xs-6
+  .col-xs-6
+    = f.text_field :first_name, placeholder: "First Name:"
+  .col-xs-6
+    = f.text_field :postcode, placeholder: "Postcode:"
+  .col-xs-6
+    = f.text_field :last_name, placeholder: "Last Name:"
+  .col-xs-6
+    = f.text_field :suburb, placeholder: "Suburb:"
+  .col-xs-6
+    = f.text_field :company, placeholder: "Company:"
+  .col-xs-6
+    = f.text_field :state, placeholder: "State:"
+  .col-xs-6
+    = f.text_field :street, placeholder: "Street Address:"
+  .col-xs-6
+    = f.text_field :country, placeholder: "Country:"
+  .col-xs-6
+    = text_field_tag ""
+  .col-xs-6
+    = f.text_field :phone, placeholder: "Phone:"
+  .col-xs-12
+    .col-xs-6.input--radio__right
+      = f.radio_button :address_type, "0"
+      = f.label :address_type, "Business", value: "0"
+    .col-xs-6.input--radio__right
+      = f.radio_button :address_type, "1"
+      = f.label :address_type, "Residential", value: "1"

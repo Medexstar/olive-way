@@ -1,0 +1,30 @@
+.section--account{
+  margin: 5px;
+  .section__title--account{
+    text-align: left;
+    @include set_font(1.25em, black, bold);
+  }
+  .section__content--account >div{
+      margin: 3px 0;
+      .input--radio__right{
+        text-align: right;
+      }
+      input[type="radio"]{
+        margin-right: 5px;
+      }
+  }
+}
+
+
+.section--register{
+  border-left: 1px solid black;
+}
+.section--register, .section--login{
+  text-align: center;
+  input[type="text"], input[type="password"], input[type="email"]{
+    background-color: lightgray;
+  }
+  .section--login__submit{
+      text-align: right;
+  }
+}

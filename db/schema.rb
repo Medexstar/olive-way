@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710151019) do
+ActiveRecord::Schema.define(version: 20160712104820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,14 @@ ActiveRecord::Schema.define(version: 20160710151019) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "ambassadors", force: :cascade do |t|
+    t.string  "email",                          null: false
+    t.string  "first_name",                     null: false
+    t.string  "last_name",                      null: false
+    t.string  "promotion_code",                 null: false
+    t.boolean "approved",       default: false
+  end
 
   create_table "billing_addresses", force: :cascade do |t|
     t.string   "company",      default: "",  null: false
@@ -110,9 +118,12 @@ ActiveRecord::Schema.define(version: 20160710151019) do
     t.integer  "accessory_id"
     t.integer  "order_id"
     t.integer  "user_id"
+    t.integer  "price"
+    t.integer  "ambassador_id"
   end
 
   add_index "order_objects", ["accessory_id"], name: "index_order_objects_on_accessory_id", using: :btree
+  add_index "order_objects", ["ambassador_id"], name: "index_order_objects_on_ambassador_id", using: :btree
   add_index "order_objects", ["order_id"], name: "index_order_objects_on_order_id", using: :btree
   add_index "order_objects", ["suit_id"], name: "index_order_objects_on_suit_id", using: :btree
   add_index "order_objects", ["user_id"], name: "index_order_objects_on_user_id", using: :btree
@@ -195,6 +206,7 @@ ActiveRecord::Schema.define(version: 20160710151019) do
   add_foreign_key "measurements", "order_objects"
   add_foreign_key "measurements", "users"
   add_foreign_key "order_objects", "accessories"
+  add_foreign_key "order_objects", "ambassadors"
   add_foreign_key "order_objects", "orders"
   add_foreign_key "order_objects", "suits"
   add_foreign_key "order_objects", "users"

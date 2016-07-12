@@ -1,0 +1,28 @@
+.product__container{
+  height: 100%;
+  .product__info{
+    height: 100%;
+    border-right: 1px solid;
+    text-align: right;
+  }
+}
+.product__contents{
+  @include set_flex(row, flex-start, flex-start);
+  height: 100%;
+  .product__image--main{
+    padding: 10px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+  }
+  .product__image--selection div{
+    height: 100px;
+    width: 85px;
+    border: 1px solid black;
+    margin: 0 10px 10px 10px;
+    padding: 2px;
+  }
+  .product__image--main div, .product__image--selection div{
+    @include set_flex(row, center, center);
+  }
+}

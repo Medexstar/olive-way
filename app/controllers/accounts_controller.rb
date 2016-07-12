@@ -1,5 +1,12 @@
 class AccountsController < ApplicationController
-  before_action :require_log_in
+  before_action :require_log_in, except: [:account]
+
+  def account
+    redirect_to landing_path if user_signed_in?
+  end
+
+  def account_hub
+  end
 
   def edit_measurement
     @measurement = current_user.measurement
@@ -19,13 +26,13 @@ class AccountsController < ApplicationController
     end
   end
 
-  def edit
+  def edit_addresses
     @user = current_user
     @shipping = @user.shipping_address
     @billing = @user.billing_address
   end
 
-  def update
+  def update_addresses
     @user = current_user
     @user.update_attributes!(address_params)
     if @user.save

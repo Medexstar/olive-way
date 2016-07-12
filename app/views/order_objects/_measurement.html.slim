@@ -2,7 +2,7 @@
   .row
     .col-xs-3.measurement__title
       div
-        h1 MEASUREMENTS
+        h3 MEASUREMENTS
     .col-xs-9.measurement__content
       .row.measurement__guide Choose your best fitting Jacket and Pants and
         enter the measurements below. For standard size tweaking, the
@@ -84,6 +84,13 @@
                     = ff.label :shoulder, '6. Hip'
                   .field__field.col-xs-3
                     = ff.number_field :hip, :value => @measurement.hip
+            .measurement__section
+              .measurement__section-content.container-fluid
+                .field.row
+                  .field__label.col-xs-6
+                    = label_tag "Promotion Code"
+                  .field__field.col-xs-3
+                    = text_field_tag "promo_code", nil, placeholder: "Type Promo Code"
         .col-xs-6
       .row
         = f.submit 'Save'

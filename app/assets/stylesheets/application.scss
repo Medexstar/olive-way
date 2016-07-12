@@ -13,17 +13,18 @@
 @import "nav";
 @import "footer";
 
+@import "products/index";
+@import "products/show";
+
+@import "accounts/nav";
+@import "accounts/section";
+
 @import "page/banner";
-@import "page/catalogue";
-@import "page/foundation";
-@import "page/story";
-@import "page/account";
-@import "page/profile";
+@import "page/generic";
 
 @import "order/new";
 @import "order_object/new";
 
-@import "object/show";
 
 html, body{
   width: 100%;
@@ -37,7 +38,7 @@ main{
   height: $content-height;
   margin-top: $content-top-margin;
   /* container-fluid */
-  >div { height: 100%;}
+  >div { height: 100%; padding: 10px;}
   /* row */
   >div>div { height: 100%; }
   /* col */

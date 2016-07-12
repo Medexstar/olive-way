@@ -1,20 +1,26 @@
-#profile.section__content.container-fluid
+.container-fluid
   .row
-    .col-xs-3.profile__title
+    .col-xs-3.account__title
       = render partial: "layouts/profile_nav"
-    .col-xs-9.profile__content
-      .row
-        .col-xs-3.content__header order date
-        .col-xs-2.content__header number of items
-        .col-xs-2.content__header order details
-        .col-xs-2.content__header
-          .header__total-price total price
-      - @orders.find_each do |order|
-        .row
-          .col-xs-3.content__text
-            .text__item #{order.created_at.in_time_zone('Melbourne')}
-          .col-xs-2.content__text #{order.order_objects.count}
-          .col-xs-2.content__text.content__link
-            = link_to "details", order_path(:order_id => order.id)
-          .col-xs-2.content__text
-            .text__total-price #{number_to_currency(order.total_price, unit: "$", eparator: ",")}
+    .col-xs-9.account__content
+      = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f|
+        .container-fluid
+          .row.section--account
+            .section__title--account ORDER DETAILS
+            .section__content--account
+              .col-xs-12
+                table.table
+                  thead.thead-default
+                    tr
+                      th.col-xs-3 Date
+                      th.col-xs-2 Number of Items
+                      th.col-xs-2 Details
+                      th.col-xs-2 Total Price
+                  tbody
+                    - @orders.find_each do |order|
+                      tr
+                        td #{order.created_at.in_time_zone('Melbourne')}
+                        td #{order.order_objects.count}
+                        td
+                          = link_to "details", order_path(:order_id => order.id)
+                        td #{number_to_currency(order.total_price, unit: "$", eparator: ",")}

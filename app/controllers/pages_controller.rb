@@ -5,18 +5,6 @@ class PagesController < ApplicationController
   def landing
   end
 
-  def mens
-    @mens = Suit.male
-  end
-
-  def womens
-    @womens = Suit.female
-  end
-
-  def accessories
-    @accessories = Accessory.all
-  end
-
   def collections
   end
 
@@ -30,13 +18,6 @@ class PagesController < ApplicationController
   def story
   end
 
-  def account
-    redirect_to landing_path if user_signed_in?
-  end
-
-  def account_hub
-  end
-  
   def faq
   end
 

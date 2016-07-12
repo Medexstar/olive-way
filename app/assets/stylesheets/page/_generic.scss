@@ -1,7 +1,21 @@
-#story{
+.section--double-column{
+  height: 90%;
+  .section--double-column__title{
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+  .section--double-column__text{
+    margin-bottom: 10px;
+    overflow-y: auto;
+    height: 100%
+  }
+}
+
+.section--slanted{
+  height: 100%;
   overflow-x: hidden;
   @include set_flex(row, flex-start, center);
-  .story__title{
+  .section--slanted__title{
     height: 100%;
     transform: skew(-30deg) translateX(5%);
     text-align: right;
@@ -11,12 +25,12 @@
       transform: skew(30deg) translateX(-5%);
     }
   }
-  .story__content{
+  .section--slanted__content{
     height: 100%;
     width: 200%;
     transform: skew(-30deg) translateX(5%);
     overflow: hidden;
-    .content__text{
+    .section--slanted__content__text{
       padding: 20px;
       width: 75%;
       transform: skew(30deg) translateX(-1%);
