@@ -15,9 +15,15 @@ class OrderObjectsController < ApplicationController
     if params.has_key?(:suit_id)
       @order_object = OrderObject.new(order_object_params)
       @order_object.suit = Suit.find(params[:suit_id])
+      @order_object.price = @order_object.suit.unit_price
     else
       @order_object = OrderObject.new()
       @order_object.accessory = Accessory.find(params[:accesory_id])
+      @order_object.price = @order_object.accessory.unit_price
+    end
+
+    if params.has_key?(:promo_code)
+      @order_object.price *= 0.9
     end
 
     @order_object.user = current_user

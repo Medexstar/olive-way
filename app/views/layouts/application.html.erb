@@ -9,6 +9,8 @@
 <body id="<%= controller_name %>_<%= action_name %>">
   <% if action_name == 'beta' %>
     <%= yield %>
+  <% elsif controller_name == 'ambassadors'%>
+    <%= yield %>
   <% else %>
   <%= render "layouts/nav" %>
   <main>

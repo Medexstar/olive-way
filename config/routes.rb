@@ -37,6 +37,11 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :new]
   resources :order_objects, only: [:new, :create, :destroy]
 
+  namespace :ambassador do
+    resources :ambassadors, only: [:create]
+    get '/apply' => 'ambassadors#new'
+    get '/thanks' => 'ambassadors#thanks'
+  end
 
   resources :charges, only: [:create]
 end

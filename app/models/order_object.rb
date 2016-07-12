@@ -20,7 +20,8 @@ class OrderObject < ActiveRecord::Base
   belongs_to  :suit
   belongs_to  :accessory
   belongs_to  :user
-  has_one     :measurement
+  belongs_to  :ambassador
+  has_one     :measurement, dependent: :destroy
   accepts_nested_attributes_for :measurement
 
   enum status: { pending: 0, checked_out: 1, uni: 2}
