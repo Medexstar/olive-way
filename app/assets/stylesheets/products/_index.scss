@@ -34,7 +34,7 @@
     margin: 5px;
     .product__photo{
       height: 380px;
-      @include set_flex(column, center, center);
+      @include set_flex(row, center, center);
     }
     .product__info{
       text-align: center;

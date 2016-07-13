@@ -1,0 +1,12 @@
+.checkout__title{
+  height: 100%;
+}
+.checkout__content{
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.checkout__title{
+  text-align: right;
+  border-right: 1px solid black;
+}

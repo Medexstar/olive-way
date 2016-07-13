@@ -12,12 +12,12 @@
   <% elsif controller_name == 'ambassadors'%>
     <%= yield %>
   <% else %>
-  <%= render "layouts/nav" %>
-  <main>
-    <%= flash_messages %>
-    <%= yield %>
-  </main>
-  <%= render "layouts/footer" %>
+    <%= render "layouts/nav" %>
+    <main>
+      <%= flash_messages %>
+      <%= yield %>
+    </main>
+    <%= render "layouts/footer" %>
   <% end %>
 </body>
 </html>

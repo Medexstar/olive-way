@@ -24,7 +24,7 @@ class OrderObject < ActiveRecord::Base
   has_one     :measurement, dependent: :destroy
   accepts_nested_attributes_for :measurement
 
-  enum status: { pending: 0, checked_out: 1, uni: 2}
+  enum status: { pending: 0, checked_out: 1}
 
   scope :pending, -> (cur_user) { where(user: cur_user, status: 0) }
   scope :checked_out, -> (cur_user, order_id) { where(user: cur_user, status: 1, order_id: order_id) }

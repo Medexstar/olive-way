@@ -80,7 +80,7 @@ Rails.application.configure do
   #Amazon Web Services S3
   config.paperclip_defaults = {
     :storage => :s3,
-    :path => "images/:class/:id/three/:style.:extension",
+    :path => "images/:class/:id/:attachment/:style.:extension",
     :s3_credentials => {
       :bucket => ENV['S3_BUCKET_NAME'],
       :access_key_id => ENV['AWS_ACCESS_KEY'],

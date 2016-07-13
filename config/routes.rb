@@ -31,10 +31,11 @@ Rails.application.routes.draw do
   get   '/womens' => 'suits#womens'
   resources :suits, only: [:show]
 
-  get   '/accessories' => 'accessories#index'
-  resources :accessories, only: [:show]
+  resources :accessories, only: [:index, :show]
 
-  resources :orders, only: [:index, :new]
+  resources :orders, only: [:index, :new, :create]
+  get   '/checkout' => 'orders#checkout'
+
   resources :order_objects, only: [:new, :create, :destroy]
 
   namespace :ambassador do
