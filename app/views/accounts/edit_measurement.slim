@@ -10,78 +10,81 @@
             enter the measurements below. For standard size tweaking, the
             measurements provided below are from all InStitchu finished standard
             size garment.
-      = form_for @measurement, url: measurements_path, method: "post" do |f|
-        .row.section--account
-          .section__title--account JACKET
-          .section__content--account
-            .row
-              .col-xs-6
-                = f.label :shoulder, '1. Shoulder'
-              .col-xs-3
-                = f.text_field :shoulder, placeholder: "shoulder"
-            .row
-              .col-xs-6
-                = f.label :half_chest, '2. Half Chest'
-              .col-xs-3
-                = f.text_field :half_chest, placeholder: "Half Chest"
-            .row
-              .col-xs-6
-                = f.label :half_jacket_waist, '3. Half Waist'
-              .col-xs-3
-                = f.text_field :half_jacket_waist, placeholder: "Half Waist"
-            .row
-              .col-xs-6
-                = f.label :half_hem, '4. Half Hem'
-              .col-xs-3
-                = f.text_field :half_hem, placeholder: "Half Hem"
-            .row
-              .col-xs-6
-                = f.label :back_length, '5. Back Length'
-              .col-xs-3
-                = f.text_field :back_length, placeholder: "Back Length"
-            .row
-              .col-xs-6
-                = f.label :sleeve_outstem, '6. Sleeve Outstem'
-              .col-xs-3
-                = f.text_field :sleeve_outstem, placeholder: "Sleeve Outstem"
-            .row
-              .col-xs-6
-                = f.label :bicep, '7. Bicep'
-              .col-xs-3
-                = f.text_field :bicep, placeholder: "Bicep"
-        .row.section--account
-          .section__title--account PANTS
-          .section__content--account
-            .row
-              .col-xs-6
-                = f.label :pant_outseam, '1. Pant Outseam'
-              .col-xs-3
-                = f.text_field :pant_outseam, placeholder: "Pant Outseam"
-            .row
-              .col-xs-6
-                = f.label :half_pant_waist, '2. Half Waist'
-              .col-xs-3
-                = f.text_field :half_pant_waist, placeholder: "Half Waist"
-            .row
-              .col-xs-6
-                = f.label :half_bottom, '3. Half Bottom'
-              .col-xs-3
-                = f.text_field :half_bottom, placeholder: "Half Bottom"
-            .row
-              .col-xs-6
-                = f.label :crotch, '4. Crotch'
-              .col-xs-3
-                = f.text_field :crotch, placeholder: "Crotch"
-            .row
-              .col-xs-6
-                = f.label :thigh, '5. Thigh'
-              .col-xs-3
-                = f.text_field :thigh, placeholder: "Thigh"
-            .row
-              .col-xs-6
-                = f.label :hip, '6. Hip'
-              .col-xs-3
-                = f.text_field :hip, placeholder: "Hip"
-        .row.section--account
-          .col-xs-9
-            = submit_tag 'Save'
+      .section__content--measurement
+        .section__content--measurement-form
+          = form_for @measurement, url: measurements_path, method: "post" do |f|
+            .row.section--account
+              .section__title--account JACKET
+              .section__content--account
+                .row
+                  .col-xs-6
+                    = f.label :shoulder, '1. Shoulder'
+                  .col-xs-3
+                    = f.text_field :shoulder, placeholder: "shoulder"
+                .row
+                  .col-xs-6
+                    = f.label :half_chest, '2. Half Chest'
+                  .col-xs-3
+                    = f.text_field :half_chest, placeholder: "Half Chest"
+                .row
+                  .col-xs-6
+                    = f.label :half_jacket_waist, '3. Half Waist'
+                  .col-xs-3
+                    = f.text_field :half_jacket_waist, placeholder: "Half Waist"
+                .row
+                  .col-xs-6
+                    = f.label :half_hem, '4. Half Hem'
+                  .col-xs-3
+                    = f.text_field :half_hem, placeholder: "Half Hem"
+                .row
+                  .col-xs-6
+                    = f.label :back_length, '5. Back Length'
+                  .col-xs-3
+                    = f.text_field :back_length, placeholder: "Back Length"
+                .row
+                  .col-xs-6
+                    = f.label :sleeve_outstem, '6. Sleeve Outstem'
+                  .col-xs-3
+                    = f.text_field :sleeve_outstem, placeholder: "Sleeve Outstem"
+                .row
+                  .col-xs-6
+                    = f.label :bicep, '7. Bicep'
+                  .col-xs-3
+                    = f.text_field :bicep, placeholder: "Bicep"
+            .row.section--account
+              .section__title--account PANTS
+              .section__content--account
+                .row
+                  .col-xs-6
+                    = f.label :pant_outseam, '1. Pant Outseam'
+                  .col-xs-3
+                    = f.text_field :pant_outseam, placeholder: "Pant Outseam"
+                .row
+                  .col-xs-6
+                    = f.label :half_pant_waist, '2. Half Waist'
+                  .col-xs-3
+                    = f.text_field :half_pant_waist, placeholder: "Half Waist"
+                .row
+                  .col-xs-6
+                    = f.label :half_bottom, '3. Half Bottom'
+                  .col-xs-3
+                    = f.text_field :half_bottom, placeholder: "Half Bottom"
+                .row
+                  .col-xs-6
+                    = f.label :crotch, '4. Crotch'
+                  .col-xs-3
+                    = f.text_field :crotch, placeholder: "Crotch"
+                .row
+                  .col-xs-6
+                    = f.label :thigh, '5. Thigh'
+                  .col-xs-3
+                    = f.text_field :thigh, placeholder: "Thigh"
+                .row
+                  .col-xs-6
+                    = f.label :hip, '6. Hip'
+                  .col-xs-3
+                    = f.text_field :hip, placeholder: "Hip"
+            .row.section--account
+              .col-xs-9
+                = submit_tag 'Save'
+        .section__content--measurement-video VIDEO GOES HERE

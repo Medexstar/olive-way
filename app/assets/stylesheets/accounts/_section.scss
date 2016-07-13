@@ -28,3 +28,21 @@
       text-align: right;
   }
 }
+
+.section__content--measurement{
+  width: 100%;
+  min-width: 820px;
+}
+
+.section__content--measurement-form, .section__content--measurement-video{
+  display: inline-block;
+}
+
+.section__content--measurement-form{
+    width: 40%;
+    min-width: 400px;
+}
+.section__content--measurement-video{
+  width: 50%;
+  min-width: 400px;
+}

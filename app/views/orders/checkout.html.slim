@@ -1,0 +1,35 @@
+.container-fluid
+  .row
+    .col-xs-12
+      .col-xs-4.checkout__title
+          div
+            h3 YOUR CART
+          div
+            = link_to "CHECKOUT", new_order_path
+      .col-xs-8.checkout__content
+        table.table
+          thead.thead-default
+            tr
+              th.col-xs-2
+              th.col-xs-2 Product Name
+              th.col-xs-2 Quantity
+              th.col-xs-2 Product Price
+              th.col-xs-2 Total Price
+              th.col-xs-2 Remove
+          tbody
+            - @order_objects.find_each do |o|
+              tr
+                td
+                  = image_tag(o.suit != nil ? o.suit.image_one.url(:option) : o.accessory.image_one.url(:option))
+                td #{o.suit != nil ? o.suit.name : o.accessory.name}
+                td #{o.suit != nil ? o.suit.quantity : o.accessory.quantity}
+                td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost, unit: "$", eparator: ",") : number_to_currency(o.accessory.formatted_cost, unit: "$", eparator: ",")}
+                td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost * o.suit.quantity, unit: "$", eparator: ",") : number_to_currency(order_object.accessory.formatted_cost * order_object.accessory.quantity, unit: "$", eparator: ",")}
+                td
+                  = link_to "Remove Order", order_object_path(o.id), method: :delete
+            end
+            tr
+              - 5.times do
+                td
+              end
+              td Total: #{number_to_currency(@total_price, unit: "$", eparator: ",")}

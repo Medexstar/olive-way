@@ -17,23 +17,30 @@
   @include set_flex(row, flex-start, center);
   .section--slanted__title{
     height: 100%;
-    transform: skew(-30deg) translateX(5%);
+    transform:  translateX(5%);
     text-align: right;
-    border-right: 1px solid black;
     /* wrapper, unskew and place the text back as if it is normal */
-    >div{
-      transform: skew(30deg) translateX(-5%);
+    &:after{
+      content: "";
+       background: black;
+       width: 1px;
+       height: 500px;
+       transform: rotate(30deg);
+       position: absolute;
+       right: 100px;
+       top: -20px;
+       z-index: -1;
     }
   }
   .section--slanted__content{
     height: 100%;
     width: 200%;
-    transform: skew(-30deg) translateX(5%);
+    transform:ranslateX(5%);
     overflow: hidden;
     .section--slanted__content__text{
       padding: 20px;
       width: 75%;
-      transform: skew(30deg) translateX(-1%);
+      transform: translateX(-1%);
     }
     .content__one, .content__two{
       position: absolute;

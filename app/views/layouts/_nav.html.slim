@@ -4,7 +4,7 @@ nav.navbar.navbar-default
       ul.nav.navbar-nav
         - if user_signed_in?
           li
-            = link_to "CHECKOUT", new_order_path
+            = link_to "CHECKOUT", checkout_path
           li
             = link_to "ACCOUNT", hub_path
           li
@@ -37,7 +37,7 @@ nav.navbar.navbar-default
           = link_to "OUR STORY", story_path
         - if user_signed_in?
           li#nav__checkout
-            = link_to "CHECKOUT", new_order_path
+            = link_to "CHECKOUT", checkout_path
           li#nav__user
             = link_to "ACCOUNT", hub_path
           li#nav__sign_out
