@@ -17,4 +17,8 @@ class Order < ActiveRecord::Base
     has_one     :shipping_address
     has_one     :billing_address
     scope :checked_out, -> (cur_user) { where(user: cur_user) }
+    
+    def formatted_cost
+        total_price/100.0
+    end
 end
