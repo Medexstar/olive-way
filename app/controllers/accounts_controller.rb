@@ -34,13 +34,19 @@ class AccountsController < ApplicationController
 
   def update_addresses
     @user = current_user
-    @user.update_attributes!(address_params)
-    if @user.save
-        flash[:success] = "Changes saved successfully!"
-      redirect_to profile_path
+    if @user.update_attributes(address_params)
+      if @user.save
+          flash[:success] = "Changes saved successfully!"
+        redirect_to profile_path
+      else
+        if @user.errors.any?
+          flash[:error] = @user.errors.full_messages[0]
+        end
+        redirect_to profile_path
+      end
     else
-      if @users.errors.any?
-        flash[:error] = @users.errors.full_messages[0]
+      if @user.errors.any?
+        flash[:error] = @user.errors.full_messages[0]
       end
       redirect_to profile_path
     end

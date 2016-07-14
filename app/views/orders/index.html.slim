@@ -20,4 +20,4 @@
                       tr
                         td #{order.created_at.in_time_zone('Melbourne')}
                         td #{order.order_objects.count}
-                        td #{number_to_currency(order.total_price, unit: "$", eparator: ",")}
+                        td #{number_to_currency(order.formatted_cost, unit: "$", eparator: ",")}

@@ -9,8 +9,8 @@ class OrdersController < ApplicationController
       @order_objects = OrderObject.pending(current_user);
       @total_price = 0
       @order_objects.find_each do |order_object|
-          order_object.suit != nil ? @total_price += (order_object.suit.formatted_cost * order_object.suit.quantity)
-          : @total_price += (order_object.accessory.formatted_cost * order_object.accessory.quantity)
+          order_object.suit != nil ? @total_price += order_object.suit.formatted_cost
+          : @total_price += order_object.accessory.formatted_cost
       end
   end
 
@@ -21,34 +21,63 @@ class OrdersController < ApplicationController
     @order_objects = OrderObject.pending(current_user);
     @order.total_price = 0
     @order_objects.find_each do |order_object|
-        order_object.suit != nil ? @order.total_price += (order_object.suit.formatted_cost * order_object.suit.quantity)
-        : @order.total_price += (order_object.accessory.formatted_cost * order_object.accessory.quantity)
+        order_object.suit != nil ? @order.total_price += order_object.suit.unit_price
+        : @order.total_price += order_object.accessory.unit_price
     end
   end
 
   def create
-    @order = Order.new()
+    @order = Order.new(order_params)
     @order.user = current_user
     @order.user.update_attributes!(address_params)
 
     @order_objects = OrderObject.pending(current_user);
-    @order.total_price = 0
-    @order_objects.find_each do |order_object|
-        order_object.suit != nil ? @order.total_price += (order_object.suit.formatted_cost * order_object.suit.quantity)
-        : @order.total_price += (order_object.accessory.formatted_cost * order_object.accessory.quantity)
+    
+    if order_object.suit != nil
+      if order_object.suit.quantity <= 0
+        flash[:error] = "This item is out of stock!"
+        redirect_to checkout_path
+        return
+      end
+    else
+      if order_object.accessory.quantity <= 0
+        flash[:error] = "This item is out of stock!"
+        redirect_to checkout_path
+        return
+      end
     end
+    
     if @order.save!
       @order_objects.find_each do |order_object|
         order_object.checked_out!
         order_object.order = @order
+        order_object.suit != nil ? order_object.suit.decrement(:quantity)
+        : order_object.accessory.decrement(:quantity)
         order_object.save
       end
-      flash[:success] = "Your Oder was placed successfully!"
-      redirect_to orders_path
+      flash[:success] = "Your Order was placed successfully!"
     else
       flash[:error] = @order.errors.full_messages[0]
       redirect_to checkout_path
+      return
     end
+    
+    customer = Stripe::Customer.create(
+    :email => stripe_params["stripeEmail"],
+    :source  => stripe_params["stripeToken"],
+    )
+
+    charge = Stripe::Charge.create(
+    :customer    => customer.id,
+    :amount      => @order.total_price,
+    :description => 'Rails Stripe customer',
+    :currency    => 'aud'
+    )
+    redirect_to orders_path
+    
+  rescue Stripe::CardError => e
+    flash[:error] = e.message
+    redirect_to checkout_path
   end
 
   private
@@ -61,5 +90,13 @@ class OrdersController < ApplicationController
     billing_address_attributes: [:first_name, :last_name,
       :postcode, :suburb, :company, :state, :street, :country, :phone,
       :address_type, :id])
+  end
+  
+  def order_params
+    params.require(:order).permit(:total_price)
+  end
+  
+  def stripe_params
+    params.permit :stripeEmail, :stripeToken
   end
 end

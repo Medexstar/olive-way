@@ -43,6 +43,4 @@ Rails.application.routes.draw do
     get '/apply' => 'ambassadors#new'
     get '/thanks' => 'ambassadors#thanks'
   end
-
-  resources :charges, only: [:create]
 end
