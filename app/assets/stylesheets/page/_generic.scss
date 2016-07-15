@@ -14,7 +14,10 @@
     -moz-columns: 2 200px;
     columns: 2 200px;
     >div{
-      margin-bottom: 20px;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-bottom: 5px;
     }
   }
 }
