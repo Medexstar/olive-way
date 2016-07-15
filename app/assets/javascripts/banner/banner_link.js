@@ -8,7 +8,7 @@ var triangleTransition = function(){
   });
 
   $("#triangle_collection").click(function(){
-    window.location = "collection";
+    window.location = "collections";
   });
 }
 
