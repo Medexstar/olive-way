@@ -10,7 +10,7 @@
             - @accessories.find_each do |accessory|
               .catalogue__product
                 .product__photo
-                  = link_to image_tag(accessory.main_image.url(:thumb)), accesory_path(accessory)
+                  = link_to image_tag(accessory.main_image.url(:thumb)), accessory_path(accessory)
                 .product__info
                   .product__name #{accessory.name}
                   .product__cost #{number_to_currency(accessory.formatted_cost, unit: "$", eparator: ",")}
