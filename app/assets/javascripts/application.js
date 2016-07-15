@@ -7,3 +7,4 @@
 //= require order/order_objects
 //= require banner/banner_link
 //= require banner/imageMapResizer.min.js
+//= require ambassador/ambassador
