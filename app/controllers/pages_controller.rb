@@ -21,7 +21,7 @@ class PagesController < ApplicationController
   def faq
   end
 
-  def guarantee
+  def contact_us
   end
 
   def how
