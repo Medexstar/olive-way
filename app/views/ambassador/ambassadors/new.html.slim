@@ -1,1 +1,45 @@
-Place Holder
+main#ambassadors
+  #header
+    #amba.header--wrapper
+      #one-amba
+        = image_tag "AmbassadorLeft.png"
+      #two-amba
+        = image_tag "AmbassadorRight.png"
+  #explain
+    .explain-box
+      .explain__title
+        h3 DEFINE
+      .explain__content
+        div - A representative of the olive way family.
+    .explain-box
+      .explain__title
+        h3 YOU
+      .explain__content
+        div - Sell Olive Way
+        div - Organise University and College Partnerships to use our brand.
+    .explain-box
+      .explain__title
+        h3 WHY?
+      .explain__content
+        div - Startup Experience
+        div - Intern positions
+        div - Easy way to earn rewards (Suit, Accessories + many more)
+  #form
+    section.ambassador__signup
+      .signup__title
+        h3 SIGN UP
+      .signup__content
+        = form_for @ambassador, url: ambassador_ambassadors_path, method: "post" do |f|
+          .form-group
+            = f.text_field :first_name, placeholder: "FIRST NAME"
+          .form-group
+            = f.text_field :last_name, placeholder: "LAST NAME"
+          .form-group
+            = f.text_field :email, placeholder: "EMAIL"
+          .form-group
+            = f.text_field :mobile, placeholder: "MOBILE"
+          .form-group
+            = f.text_field :university, placeholder: "UNIVERSITY"
+          .form-group
+            #submit-ambassador.btn.btn-primary SUBMIT
+        end
