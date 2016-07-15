@@ -13,3 +13,43 @@ $customisation-vents: rgb(194, 101, 88);
 $customisation-buttons: rgb(94, 92, 112);
 
 $footer-color: rgb(209, 209, 209);
+
+@font-face {
+  font-family: 'Katahdin Round';
+  src: font-url('/assets/KatahdinRound.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: font-url('/assets/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: font-url('/assets/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: font-url('/assets/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3 {
+  font-family: 'Roboto-Medium';
+}
+
+h2 {
+  font-family: 'Roboto-Light';
+}
+
+th, td, div {
+  font-family: 'Roboto-Light';
+}

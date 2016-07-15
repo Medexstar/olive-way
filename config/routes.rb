@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get   '/foundation' => 'pages#foundation'
   get   '/story' => 'pages#story'
   get   '/faq' => 'pages#faq'
-  get   '/guarantee' => 'pages#guarantee'
+  get   '/contact_us' => 'pages#contact_us'
   get   '/how' => 'pages#how'
   get   '/privacy' => 'pages#privacy'
   get   '/ship_return' => 'pages#ship_return'

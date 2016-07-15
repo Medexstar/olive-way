@@ -36,12 +36,14 @@
 
 @media (min-width: 768px) {
   .navbar .navbar-nav {
+      font-family: 'Katahdin Round';
       display: inline-block;
       float: none;
       vertical-align: top;
   }
   .navbar-brand, #nav__account, #nav__subscribe, #nav__checkout
   ,#nav__sign_out, #nav__user{
+    font-family: 'Katahdin Round';
     display: none;
   }
 
@@ -62,8 +64,21 @@
 #accessories_index #nav__accessories,
 #pages_collections #nav__collection,
 #pages_foundation #nav__foundation,
-#pages_story #nav__story{
+#pages_story #nav__story {
   a{
     font-weight: bold;
   }
+}
+
+#nav__landing,
+#nav__mens,
+#nav__womens,
+#nav__accessories,
+#nav__collection,
+#nav__foundation {
+  font-family: 'Roboto-Light';
+}
+
+#nav__story {
+  font-family: 'Roboto-Medium';
 }
