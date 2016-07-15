@@ -27,6 +27,8 @@ gem 'airbrake'
 
 gem 'sitemap_generator'
 
+gem "passenger"
+
 group :development do
   gem 'awesome_print'
   gem 'quiet_assets'

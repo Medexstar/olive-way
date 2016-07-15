@@ -32,10 +32,7 @@
 .section__content--measurement{
   width: 100%;
   min-width: 820px;
-}
-
-.section__content--measurement-form, .section__content--measurement-video{
-  display: inline-block;
+  @include set_flex(row, flex-start, center);
 }
 
 .section__content--measurement-form{

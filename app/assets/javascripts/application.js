@@ -8,3 +8,7 @@
 //= require banner/banner_link
 //= require banner/imageMapResizer.min.js
 //= require ambassador/ambassador
+
+//= require accounts/measurement
+
+//= require products/switch_image

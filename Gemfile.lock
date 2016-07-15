@@ -209,6 +209,9 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    passenger (5.0.29)
+      rack
+      rake (>= 0.8.1)
     pg (0.18.4)
     pg (0.18.4-x64-mingw32)
     pg (0.18.4-x86-mingw32)
@@ -366,6 +369,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   paperclip (~> 4.3)
+  passenger
   pg
   pry-byebug
   pry-rails

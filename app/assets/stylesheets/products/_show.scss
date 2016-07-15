@@ -21,6 +21,9 @@
     border: 1px solid black;
     margin: 0 10px 10px 10px;
     padding: 2px;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .product__image--main div, .product__image--selection div{
     @include set_flex(row, center, center);
