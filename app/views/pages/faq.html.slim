@@ -5,14 +5,15 @@
         .section--double-column__title
           h3 FAQ
           h4 Your 'Frequently Asked Questions!'
-        .col-xs-8.col-xs-offset-2.col-lg-4.col-lg-offset-4.section--double-column__text-wrapper
-          .col-lg-offset-4.section--double-column__text
+        .col-xs-12.col-lg-12.section--double-column__text-wrapper
+          .section--double-column__text
             div
               b Where is Olive Way located?
               p Olive Way was founded in the heart of of Melbourne, in the beautiful suburb of Parkville!
             div
               b How can I get in contact with Olive Way?
-              p You can visit our contact page. Or
+              p
+                | You can visit our contact page. Or 
                 = link_to 'contact us', contact_us_path
                 |  on any forms of social media, located at the bottom of this page.
             div
@@ -28,9 +29,10 @@
                 The suit should be delivered to your door between 2 to 3 weeks.
             div
               b What if the suit is not here between 2-3 weeks?
-              p Although this very rarely occurs, shipping can sometimes take longer than expected.
-                  This is usually due to an influx of orders. If you need the suit for a special occasion,
-                  feel free to
+              p
+                | Although this very rarely occurs, shipping can sometimes take longer than expected.
+                | This is usually due to an influx of orders. If you need the suit for a special occasion,
+                | feel free to 
                 = link_to 'contact us', contact_us_path
                 | , and we will be sure to have it to you before your special day.
             div
@@ -41,11 +43,13 @@
               p Although we don’t believe this will be the case, a family member can work just as well!
             div
               b “The suit doesn’t fit well.” What can I do?
-              p Olive Way has a 100% return policy, if the suit is not exact to the measurements that you requested.
-                  You can either request to have your money back, or for us to make a new suit for you.
-                  Additionally, if you are located in Melbourne or are willing to send your suit to our head offices in Melbourne,
-                  we can do a free tailoring service for you at our local tailor. For more information, you can view our return policy
-                = link_to 'here.', ship_return_path
+              p
+                | Olive Way has a 100% return policy, if the suit is not exact to the measurements that you requested.
+                | You can either request to have your money back, or for us to make a new suit for you.
+                | Additionally, if you are located in Melbourne or are willing to send your suit to our head offices in Melbourne,
+                | we can do a free tailoring service for you at our local tailor. For more information, you can view our return policy 
+                = link_to 'here', ship_return_path
+                | .
             div
               b How does the ambassador program work?
               p You simply sign up with your name, email and university, and we will conduct a short interview.

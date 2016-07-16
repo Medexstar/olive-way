@@ -12,6 +12,10 @@
 .catalogue__contents{
   height: 90%;
   width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
   .catalogue__filter, .catalogue__products{
     height: 100%;
   }
@@ -19,6 +23,7 @@
     border-right: 1px solid black;
   }
   .catalogue__products{
+    max-width: 1000px;
     overflow-y: auto;
     @include set_flex(row, space-around, flex-start);
     flex-wrap: wrap;
