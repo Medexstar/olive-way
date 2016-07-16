@@ -25,18 +25,19 @@ class ApplicationController < ActionController::Base
   private
 
   def store_current_location
-    store_location_for(:user, request.url)
+    # store last url as long as it isn't a /users path
+    session[:previous_url] = request.fullpath unless request.fullpath =~ /\/account/
   end
 
   def after_sign_in_path_for(resource)
     if resource.is_a?(User)
-      request.referrer || landing_path
+      session[:previous_url] || landing_path
     elsif resource.is_a?(AdminUser) 
       admin_dashboard_path(resource)
     end
   end
 
   def after_sign_out_path_for(resource)
-    request.referrer || landing_path
+    session[:previous_url] || landing_path
   end
 end

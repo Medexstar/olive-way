@@ -2,7 +2,6 @@ class AccountsController < ApplicationController
   before_action :require_log_in, except: [:account]
 
   def account
-    redirect_to landing_path if user_signed_in?
   end
 
   def account_hub

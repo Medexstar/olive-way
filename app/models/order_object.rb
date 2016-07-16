@@ -28,4 +28,8 @@ class OrderObject < ActiveRecord::Base
 
   scope :pending, -> (cur_user) { where(user: cur_user, status: 0) }
   scope :checked_out, -> (cur_user, order_id) { where(user: cur_user, status: 1, order_id: order_id) }
+  
+  def formatted_cost
+        price/100.0
+  end
 end
