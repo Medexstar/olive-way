@@ -1,47 +1,47 @@
 var measurement_videos = function(){
   function changeVideoURL(videoID){
-    $("#measurement__video").attr("src", "http://www.youtube.com/embed/" + videoID);
+    $("#measurement__video").attr("src", "https://player.vimeo.com/video/" + videoID);
   }
 
   $("#measurement_shoulder").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
   $("#measurement_half_chest").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_half_jacket_waist").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
   $("#measurement_half_hem").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_back_length").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
   $("#measurement_sleeve_outstem").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_bicep").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
 
   $("#measurement_pant_outseam").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_half_pant_waist").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
   $("#measurement_half_bottom").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_crotch").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
   $("#measurement_thigh").focus(function(){
-    changeVideoURL("fNxUnAwUbBI");
+    changeVideoURL("47793390");
   });
   $("#measurement_hip").focus(function(){
-    changeVideoURL("4hLcrVH2XpE");
+    changeVideoURL("54763818");
   });
 }
 
