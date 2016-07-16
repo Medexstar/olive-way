@@ -12564,17 +12564,22 @@ th, td, div {
 .catalogue__contents {
   height: 90%;
   width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
 }
-/* line 15, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__filter, .catalogue__contents .catalogue__products {
   height: 100%;
 }
-/* line 18, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__filter {
   border-right: 1px solid black;
 }
-/* line 21, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__products {
+  max-width: 1000px;
   overflow-y: auto;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -12593,7 +12598,7 @@ th, td, div {
   align-items: stretch;
   flex-wrap: wrap;
 }
-/* line 26, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 31, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product {
   height: 440px;
   width: 300px;
@@ -12603,7 +12608,7 @@ th, td, div {
   display: inline-block;
   margin: 5px;
 }
-/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 39, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__photo {
   height: 380px;
   display: -ms-flexbox;
@@ -12622,7 +12627,7 @@ th, td, div {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 38, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__info {
   text-align: center;
   font-family: 'Roboto-Light';
@@ -12721,7 +12726,7 @@ th, td, div {
 }
 
 /* line 23, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
-#accounts_edit #profile-edit a,
+#accounts_edit_addresses #profile-edit a,
 #registrations_edit #password-edit a,
 #orders_index #order-show a,
 #accounts_edit_measurement #measurement-edit a {
@@ -12860,15 +12865,17 @@ svg polygon {
 .section--double-column .section--double-column__text-wrapper {
   height: 90%;
   overflow-y: auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 13, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text {
   margin-bottom: 10px;
   -webkit-columns: 2 200px;
   -moz-columns: 2 200px;
   columns: 2 200px;
 }
-/* line 16, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 18, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text > div {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -12876,7 +12883,7 @@ svg polygon {
   margin-bottom: 5px;
 }
 
-/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted {
   height: 100%;
   overflow-x: hidden;
@@ -12896,14 +12903,14 @@ svg polygon {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 29, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 31, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title {
   height: 100%;
   transform: translateX(5%);
   text-align: right;
   /* wrapper, unskew and place the text back as if it is normal */
 }
-/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 36, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title:after {
   content: "";
   background: black;
@@ -12915,25 +12922,25 @@ svg polygon {
   top: -20px;
   z-index: -1;
 }
-/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 48, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content {
   height: 100%;
   width: 200%;
   transform: translateX(5%);
   overflow-y: auto;
 }
-/* line 51, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 53, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .section--slanted__content__text {
   padding-left: 40px;
   padding-top: 20px;
   width: 75%;
   transform: translateX(-1%);
 }
-/* line 57, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 59, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .header {
   font-weight: bold;
 }
-/* line 60, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 62, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .content__one, .section--slanted .section--slanted__content .content__two {
   position: absolute;
   height: 40%;
@@ -13317,46 +13324,73 @@ svg polygon {
 }
 
 /* line 2, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+#ambassadors_new main {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  /* container-fluid */
+  /* row */
+  /* col */
+}
+/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+#ambassadors_new main > div {
+  height: auto;
+  min-height: auto;
+  padding: 10px;
+}
+/* line 10, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+#ambassadors_new main > div > div {
+  height: auto;
+  min-height: auto;
+}
+/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+#ambassadors_new main > div > div > div {
+  height: auto;
+  min-height: auto;
+}
+
+/* line 18, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header, #ambassadors #explain, #ambassadors #form {
   height: 33%;
 }
-/* line 5, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 21, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header {
   height: 300px;
   width: 80%;
   margin: 0 auto;
 }
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper {
   overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;
 }
-/* line 14, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 30, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #one-amba, #ambassadors #header .header--wrapper #two-amba {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: absolute;
 }
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 35, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #one-amba > img, #ambassadors #header .header--wrapper #two-amba > img {
   width: 100%;
   height: 100%;
   transform-origin: inherit;
 }
-/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 41, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #one-amba {
   left: -.25em;
   transform-origin: 100% 0;
 }
-/* line 29, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #two-amba {
   right: -.25em;
   transform-origin: 0 100%;
 }
-/* line 32, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 48, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #two-amba img {
   position: absolute;
   width: 50%;
@@ -13364,7 +13398,7 @@ svg polygon {
   bottom: 0;
   right: 0;
 }
-/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 58, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain {
   margin: 25px 50px;
   display: -ms-flexbox;
@@ -13384,11 +13418,11 @@ svg polygon {
   align-items: stretch;
   height: 300px;
 }
-/* line 47, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 63, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain__title h3 {
   font-family: 'Katahdin Round';
 }
-/* line 51, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 67, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div {
   border: 1px solid lightblue;
   margin: 10px;
@@ -13397,44 +13431,44 @@ svg polygon {
   width: 30%;
   overflow-y: auto;
 }
-/* line 58, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 74, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div .explain__title {
   text-align: center;
 }
-/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div > div {
   height: auto;
 }
-/* line 66, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 82, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form {
   width: 100%;
   height: 60%;
   background-color: lightblue;
   text-align: center;
 }
-/* line 71, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 87, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form h3 {
   color: white;
   font-family: 'Katahdin Round';
 }
-/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 91, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-webkit-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 80, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 96, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-moz-placeholder {
   /* Firefox 18- */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 85, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 101, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-moz-placeholder {
   /* Firefox 19+ */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 90, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 106, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-ms-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
@@ -13454,46 +13488,77 @@ main {
   height: 100%;
   margin-top: 20px;
   /* container-fluid */
-  /* row */
   /* col */
 }
 /* line 43, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 main > div {
+  min-height: 100%;
+  padding: 10px;
+}
+/* line 44, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+main > div > div {
+  min-height: 100%;
+}
+/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+main > div > div > div {
+  min-height: 100%;
+}
+
+/* line 52, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_collections main, #accounts_edit_measurement main,
+#orders_index main, #registrations_edit main, #accounts_edit_addresses main,
+#pages_contact_us main, #pages_story main, #pages_how main, #pages_landing main, #accounts_account_hub main {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  /* container-fluid */
+  /* row */
+  /* col */
+}
+/* line 58, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_collections main > div, #accounts_edit_measurement main > div,
+#orders_index main > div, #registrations_edit main > div, #accounts_edit_addresses main > div,
+#pages_contact_us main > div, #pages_story main > div, #pages_how main > div, #pages_landing main > div, #accounts_account_hub main > div {
   height: 100%;
   padding: 10px;
 }
-/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-main > div > div {
-  height: 100%;
-}
-/* line 47, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-main > div > div > div {
-  height: 100%;
-}
-
-/* line 50, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-.alert {
-  height: 0;
-}
-
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-#pages_beta {
-  height: 100%;
-}
-/* line 56, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-#pages_beta > div {
-  height: 100%;
-}
-/* line 58, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-#pages_beta > div > div {
-  height: 100%;
-}
 /* line 60, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
-#pages_beta > div > div > div {
+#pages_collections main > div > div, #accounts_edit_measurement main > div > div,
+#orders_index main > div > div, #registrations_edit main > div > div, #accounts_edit_addresses main > div > div,
+#pages_contact_us main > div > div, #pages_story main > div > div, #pages_how main > div > div, #pages_landing main > div > div, #accounts_account_hub main > div > div {
+  height: 100%;
+}
+/* line 62, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_collections main > div > div > div, #accounts_edit_measurement main > div > div > div,
+#orders_index main > div > div > div, #registrations_edit main > div > div > div, #accounts_edit_addresses main > div > div > div,
+#pages_contact_us main > div > div > div, #pages_story main > div > div > div, #pages_how main > div > div > div, #pages_landing main > div > div > div, #accounts_account_hub main > div > div > div {
   height: 100%;
 }
 
 /* line 67, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+.alert {
+  height: 0;
+}
+
+/* line 71, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_beta {
+  height: 100%;
+}
+/* line 73, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_beta > div {
+  height: 100%;
+}
+/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_beta > div > div {
+  height: 100%;
+}
+/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#pages_beta > div > div > div {
+  height: 100%;
+}
+
+/* line 84, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #beta {
   height: 100%;
   text-align: center;
@@ -13512,4 +13577,11 @@ main > div > div > div {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
   align-items: stretch;
+}
+
+@media only screen and (max-width: 801px) {
+  /* line 92, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+  h3 {
+    font-size: 1rem;
+  }
 }
