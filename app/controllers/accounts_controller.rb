@@ -61,7 +61,7 @@ class AccountsController < ApplicationController
   end
 
   def address_params
-    params.require(:user).permit(
+    params.require(:user).permit(:sex,
       shipping_address_attributes: [:first_name, :last_name,
         :postcode, :suburb, :company, :state, :street, :country, :phone,
         :address_type, :id],

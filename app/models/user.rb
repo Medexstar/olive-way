@@ -43,6 +43,8 @@ class User < ActiveRecord::Base
 
   validates :password, presence: true, length: {minimum: 5, maximum: 120}, on: :create
 
+  enum sex: { male: 0, female: 1, other: 2}
+
   attr_accessor :login
   private
 
