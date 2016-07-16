@@ -3,6 +3,14 @@ var measurement_videos = function(){
     $("#measurement__video").attr("src", "https://www.youtube.com/embed/" + videoID);
   }
 
+  $("#measurement_neck").focus(function(){
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("LOt9odA15pE");
+    }else{
+      changeVideoURL("cQ3t8dDKug8");
+    }
+  });
+
   $("#measurement_shoulder").focus(function(){
     if($("#user-gender").text()=="male"){
       changeVideoURL("MJyS4NOBono");
@@ -10,35 +18,7 @@ var measurement_videos = function(){
       changeVideoURL("D4rk9u0bwZE");
     }
   });
-  $("#measurement_half_chest").focus(function(){
-    if($("#user-gender").text()=="male"){
-      changeVideoURL("TjqULAgDKHE");
-    }else{
-      changeVideoURL("zhbyFnP-Ps8");
-    }
-  });
-  $("#measurement_half_jacket_waist").focus(function(){
-    if($("#user-gender").text()=="male"){
-      changeVideoURL("-3yWSdy-ESQ");
-    }else{
-      changeVideoURL("NvmOKHtaBkc");
-    }
-  });
-  $("#measurement_half_hem").focus(function(){
-    if($("#user-gender").text()=="male"){
-      changeVideoURL("54763818");
-    }else{
-      changeVideoURL("54763818");
-    }
-  });
-  $("#measurement_back_length").focus(function(){
-    if($("#user-gender").text()=="male"){
-      changeVideoURL("MgRxtD4SoTw");
-    }else{
-      changeVideoURL("mXS6JucO8_Y");
-    }
-  });
-  $("#measurement_sleeve_outstem").focus(function(){
+  $("#measurement_sleeve_length").focus(function(){
     if($("#user-gender").text()=="male"){
       changeVideoURL("HYL3EmHN0Uk");
     }else{
@@ -52,33 +32,42 @@ var measurement_videos = function(){
       changeVideoURL("xGeFkF8ySvY");
     }
   });
-
-  $("#measurement_pant_outseam").focus(function(){
+  $("#measurement_wrist").focus(function(){
     if($("#user-gender").text()=="male"){
-      changeVideoURL("TgMaiwl81Vs");
+      changeVideoURL("ZWAAlWhiU3o");
     }else{
-      changeVideoURL("6hMRaLCCsw0");
+      changeVideoURL("bn0OgTZ5u7w");
     }
   });
-  $("#measurement_half_pant_waist").focus(function(){
+  $("#measurement_chest").focus(function(){
+    changeVideoURL("TjqULAgDKHE");
+  });
+  $("#measurement_bust").focus(function(){
+    changeVideoURL("zhbyFnP-Ps8");
+  });
+  $("#measurement_underbust").focus(function(){
+    changeVideoURL("Rzp5R-8e5vU");
+  });
+  $("#measurement_back_length").focus(function(){
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("MgRxtD4SoTw");
+    }else{
+      changeVideoURL("mXS6JucO8_Y");
+    }
+  });
+
+  $("#measurement_waist").focus(function(){
     if($("#user-gender").text()=="male"){
       changeVideoURL("-3yWSdy-ESQ");
     }else{
       changeVideoURL("NvmOKHtaBkc");
     }
   });
-  $("#measurement_half_bottom").focus(function(){
+  $("#measurement_hips").focus(function(){
     if($("#user-gender").text()=="male"){
-      changeVideoURL("54763818");
+      changeVideoURL("7f0N58nVULg");
     }else{
-      changeVideoURL("54763818");
-    }
-  });
-  $("#measurement_crotch").focus(function(){
-    if($("#user-gender").text()=="male"){
-      changeVideoURL("BHgnvqp-1BA");
-    }else{
-      changeVideoURL("-bMmuHAXnos");
+      changeVideoURL("grcEkz63SXU");
     }
   });
   $("#measurement_thigh").focus(function(){
@@ -88,11 +77,32 @@ var measurement_videos = function(){
       changeVideoURL("f9mGeGE5Lrc");
     }
   });
-  $("#measurement_hip").focus(function(){
+  $("#measurement_rise").focus(function(){
     if($("#user-gender").text()=="male"){
-      changeVideoURL("7f0N58nVULg");
+      changeVideoURL("BHgnvqp-1BA");
     }else{
-      changeVideoURL("grcEkz63SXU");
+      changeVideoURL("-bMmuHAXnos");
+    }
+  });
+  $("#measurement_outleg").focus(function(){
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("TgMaiwl81Vs");
+    }else{
+      changeVideoURL("6hMRaLCCsw0");
+    }
+  });
+  $("#measurement_inleg").focus(function(){
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("bfEn7gk_BeI");
+    }else{
+      changeVideoURL("x4QCHafwrwQ");
+    }
+  });
+  $("#measurement_ankle").focus(function(){
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("T2rkEWGfs-w");
+    }else{
+      changeVideoURL("h_r4MqS-l_A");
     }
   });
 }
