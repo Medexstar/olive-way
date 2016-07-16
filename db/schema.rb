@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160716084556) do
+ActiveRecord::Schema.define(version: 20160716150651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -87,23 +87,24 @@ ActiveRecord::Schema.define(version: 20160716084556) do
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
 
   create_table "measurements", force: :cascade do |t|
-    t.float    "shoulder"
-    t.float    "half_chest"
-    t.float    "half_jacket_waist"
-    t.float    "half_hem"
-    t.float    "back_length"
-    t.float    "sleeve_outstem"
-    t.float    "bicep"
-    t.float    "pant_outseam"
-    t.float    "half_pant_waist"
-    t.float    "half_bottom"
-    t.float    "crotch"
-    t.float    "thigh"
-    t.float    "hip"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.integer  "user_id"
-    t.integer  "order_object_id"
+    t.integer "neck"
+    t.integer "shoulder"
+    t.integer "sleeve_length"
+    t.integer "bicep"
+    t.integer "wrist"
+    t.integer "bust"
+    t.integer "underbust"
+    t.integer "back_length"
+    t.integer "waist"
+    t.integer "hips"
+    t.integer "thigh"
+    t.integer "rise"
+    t.integer "outleg"
+    t.integer "inleg"
+    t.integer "ankle"
+    t.integer "chest"
+    t.integer "user_id"
+    t.integer "order_object_id"
   end
 
   add_index "measurements", ["order_object_id"], name: "index_measurements_on_order_object_id", using: :btree
