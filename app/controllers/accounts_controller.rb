@@ -54,9 +54,9 @@ class AccountsController < ApplicationController
   private
 
   def measurement_params
-    params.require(:measurement).permit(:shoulder, :half_chest, :half_jacket_waist,
-      :half_hem, :back_length, :sleeve_outstem, :bicep, :pant_outseam, :half_pant_waist,
-      :half_bottom, :crotch, :thigh, :hip)
+    params.require(:measurement).permit(:neck, :shoulder, :sleeve_length,
+      :bicep, :wrist, :chest, :bust, :underbust,
+      :back_length, :waist, :hips, :thigh, :rise, :outleg, :inleg, :ankle)
   end
 
   def address_params
