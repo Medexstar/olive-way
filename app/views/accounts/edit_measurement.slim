@@ -18,73 +18,58 @@
               .section__title--account JACKET
               .section__content--account
                 .row
-                  .col-xs-6
-                    = f.label :shoulder, '1. Shoulder'
+                  .col-xs-3
+                    = f.text_field :neck, placeholder: "Neck"
+                .row
                   .col-xs-3
                     = f.text_field :shoulder, placeholder: "Shoulder"
                 .row
-                  .col-xs-6
-                    = f.label :half_chest, '2. Half Chest'
                   .col-xs-3
-                    = f.text_field :half_chest, placeholder: "Half Chest"
+                    = f.text_field :sleeve_length, placeholder: "Sleeve Length"
                 .row
-                  .col-xs-6
-                    = f.label :half_jacket_waist, '3. Half Waist'
-                  .col-xs-3
-                    = f.text_field :half_jacket_waist, placeholder: "Half Waist"
-                .row
-                  .col-xs-6
-                    = f.label :half_hem, '4. Half Hem'
-                  .col-xs-3
-                    = f.text_field :half_hem, placeholder: "Half Hem"
-                .row
-                  .col-xs-6
-                    = f.label :back_length, '5. Back Length'
-                  .col-xs-3
-                    = f.text_field :back_length, placeholder: "Back Length"
-                .row
-                  .col-xs-6
-                    = f.label :sleeve_outstem, '6. Sleeve Outstem'
-                  .col-xs-3
-                    = f.text_field :sleeve_outstem, placeholder: "Sleeve Outstem"
-                .row
-                  .col-xs-6
-                    = f.label :bicep, '7. Bicep'
                   .col-xs-3
                     = f.text_field :bicep, placeholder: "Bicep"
+                .row
+                  .col-xs-3
+                    = f.text_field :wrist, placeholder: "Wrist"
+                - if current_user.sex == "male"
+                  .row
+                    .col-xs-3
+                      = f.text_field :chest, placeholder: "Chest"
+                -else
+                  .row
+                    .col-xs-3
+                      = f.text_field :bust, placeholder: "Bust"
+                  .row
+                    .col-xs-3
+                      = f.text_field :underbust, placeholder: "Underbust"
+                .row
+                  .col-xs-3
+                    = f.text_field :back_length, placeholder: "Back Length"
             .row.section--account
               .section__title--account PANTS
               .section__content--account
                 .row
-                  .col-xs-6
-                    = f.label :pant_outseam, '1. Pant Outseam'
                   .col-xs-3
-                    = f.text_field :pant_outseam, placeholder: "Pant Outseam"
+                    = f.text_field :waist, placeholder: "Waist"
                 .row
-                  .col-xs-6
-                    = f.label :half_pant_waist, '2. Half Waist'
                   .col-xs-3
-                    = f.text_field :half_pant_waist, placeholder: "Half Waist"
+                    = f.text_field :hips, placeholder: "Hips"
                 .row
-                  .col-xs-6
-                    = f.label :half_bottom, '3. Half Bottom'
-                  .col-xs-3
-                    = f.text_field :half_bottom, placeholder: "Half Bottom"
-                .row
-                  .col-xs-6
-                    = f.label :crotch, '4. Crotch'
-                  .col-xs-3
-                    = f.text_field :crotch, placeholder: "Crotch"
-                .row
-                  .col-xs-6
-                    = f.label :thigh, '5. Thigh'
                   .col-xs-3
                     = f.text_field :thigh, placeholder: "Thigh"
                 .row
-                  .col-xs-6
-                    = f.label :hip, '6. Hip'
                   .col-xs-3
-                    = f.text_field :hip, placeholder: "Hip"
+                    = f.text_field :rise, placeholder: "Rise"
+                .row
+                  .col-xs-3
+                    = f.text_field :outleg, placeholder: "Out Leg"
+                .row
+                  .col-xs-3
+                    = f.text_field :inleg, placeholder: "In Leg"
+                .row
+                  .col-xs-3
+                    = f.text_field :ankle, placeholder: "Ankle"
             .row.section--account
               .col-xs-9
                 = submit_tag 'Save'

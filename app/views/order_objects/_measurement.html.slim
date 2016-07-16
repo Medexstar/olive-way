@@ -10,79 +10,65 @@
       .section__content--measurement
         .section__content--measurement-form
           = f.fields_for :measurement do |ff|
+            span#user-gender.hidden #{current_user.sex}
             .measurement__section
               .measurement__section-title YOUR PRESET MEASUREMENTS
             .measurement__section
               .measurement__section-title JACKET
               .measurement__section-content.container-fluid
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :shoulder, '1. Shoulder'
                   .field__field.col-xs-3
-                    = ff.number_field :shoulder, :value => @measurement.shoulder, id: "measurement_shoulder"
+                    = ff.number_field :neck, :value => @measurement.neck, id: "measurement_neck",  placeholder: "Neck"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :half_chest, '2. Half Chest'
                   .field__field.col-xs-3
-                    = ff.number_field :half_chest, :value => @measurement.half_chest, id: "measurement_half_chest"
+                    = ff.number_field :shoulder, :value => @measurement.shoulder, id: "measurement_shoulder",  placeholder: "Shoulder"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :half_jacket_waist, '3. Half Waist'
                   .field__field.col-xs-3
-                    = ff.number_field :half_jacket_waist, :value => @measurement.half_jacket_waist, id: "measurement_half_jacket_waist"
+                    = ff.number_field :sleeve_length, :value => @measurement.sleeve_length, id: "measurement_sleeve_length",  placeholder: "Sleeve Length"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :half_hem, '4. Half Hem'
                   .field__field.col-xs-3
-                    = ff.number_field :half_hem, :value => @measurement.half_hem, id: "measurement_half_hem"
+                    = ff.number_field :bicep, :value => @measurement.bicep, id: "measurement_bicep",  placeholder: "Bicep"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :back_length, '5. Back Length'
                   .field__field.col-xs-3
-                    = ff.number_field :back_length, :value => @measurement.back_length, id: "measurement_back_length"
+                    = ff.number_field :wrist, :value => @measurement.wrist, id: "measurement_wrist",  placeholder: "Wrist"
+                - if current_user.sex == "male"
+                  .field.row
+                    .field__field.col-xs-3
+                      = ff.number_field :chest, :value => @measurement.chest, id: "measurement_chest",  placeholder: "Chest"
+                -else
+                  .field.row
+                    .field__field.col-xs-3
+                      = ff.number_field :bust, :value => @measurement.bust, id: "measurement_bust",  placeholder: "Bust"
+                  .field.row
+                    .field__field.col-xs-3
+                      = ff.number_field :underbust, :value => @measurement.underbust, id: "measurement_underbust",  placeholder: "Underbust"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :sleeve_outstem, '6. Sleeve Outstem'
                   .field__field.col-xs-3
-                    = ff.number_field :sleeve_outstem, :value => @measurement.sleeve_outstem, id: "measurement_sleeve_outstem"
-                .field.row
-                  .field__label.col-xs-6
-                    = ff.label :bicep, '7. Bicep'
-                  .field__field.col-xs-3
-                    = ff.number_field :bicep, :value => @measurement.bicep, id: "measurement_bicep"
+                    = ff.number_field :back_length, :value => @measurement.underbust, id: "measurement_back_length",  placeholder: "Back Length"
             .measurement__section
               .measurement__section-title PANTS
               .measurement__section-content.container-fluid
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :pant_outseam, '1. Pant Outseam', id: "measurement_pant_outseam"
                   .field__field.col-xs-3
-                    = ff.number_field :pant_outseam, :value => @measurement.pant_outseam
+                    = ff.number_field :waist, :value => @measurement.waist, id:"measurement_waist",  placeholder: "Waist"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :half_pant_waist, '2. Half Waist', id: "measurement_half_pant_waist"
                   .field__field.col-xs-3
-                    = ff.number_field :half_pant_waist, :value => @measurement.half_pant_waist
+                    = ff.number_field :hips, :value => @measurement.hips, id: "measurement_hips",  placeholder: "Hips"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :half_bottom, '3. Half Bottom', id: "measurement_half_bottom"
                   .field__field.col-xs-3
-                    = ff.number_field :half_bottom, :value => @measurement.half_bottom
+                    = ff.number_field :thigh, :value => @measurement.thigh, id: "measurement_thigh",  placeholder: "Thigh"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :crotch, '4. Crotch', id: "measurement_crotch"
                   .field__field.col-xs-3
-                    = ff.number_field :crotch, :value => @measurement.crotch
+                    = ff.number_field :rise, :value => @measurement.rise, id: "measurement_rise",  placeholder: "Rise"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :thigh, '5. Thigh', id: "measurement_thigh"
                   .field__field.col-xs-3
-                    = ff.number_field :thigh, :value => @measurement.thigh
+                    = ff.number_field :outleg, :value => @measurement.outleg, id: "measurement_outleg",  placeholder: "Out Leg"
                 .field.row
-                  .field__label.col-xs-6
-                    = ff.label :hip, '6. Hip', id: "measurement_hip"
                   .field__field.col-xs-3
-                    = ff.number_field :hip, :value => @measurement.hip
+                    = ff.number_field :inleg, :value => @measurement.inleg, id: "measurement_inleg",  placeholder: "In Leg"
+                .field.row
+                  .field__field.col-xs-3
+                    = ff.number_field :ankle, :value => @measurement.ankle, id: "measurement_ankle",  placeholder: "Ankle"
             .measurement__section
               .measurement__section-content.container-fluid
                 .field.row
