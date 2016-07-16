@@ -47,8 +47,8 @@ class OrderObjectsController < ApplicationController
 
   def order_object_params
     params.require(:order_object).permit(:jacket_lapels, :jacket_vents,
-      :jacket_buttons, :status, measurement_attributes: [:shoulder, :half_chest,
-        :half_jacket_waist, :half_hem, :back_length, :sleeve_outstem, :bicep,
-        :pant_outseam, :half_pant_waist, :half_bottom, :crotch, :thigh, :hip])
+      :jacket_buttons, :status, measurement_attributes: [:neck, :shoulder, :sleeve_length,
+        :bicep, :wrist, :chest, :bust, :underbust,
+        :back_length, :waist, :hips, :thigh, :rise, :outleg, :inleg, :ankle])
   end
 end
