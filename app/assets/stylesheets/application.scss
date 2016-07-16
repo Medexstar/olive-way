@@ -40,12 +40,29 @@ main{
   height: $content-height;
   margin-top: $content-top-margin;
   /* container-fluid */
-  >div { height: 100%; padding: 10px;}
-  /* row */
-  >div>div { height: 100%; }
+  >div { min-height: 100%; padding: 10px;}
+  >div>div { min-height: 100%; }
   /* col */
-  >div>div>div {height: 100%; }
+  >div>div>div { min-height: 100%; }
 }
+
+#pages_collections, #accounts_edit_measurement,
+#orders_index, #registrations_edit, #accounts_edit_addresses,
+#pages_contact_us, #pages_story, #pages_how, #pages_landing, #accounts_account_hub{
+  main{
+    display: block;
+    width: 100%;
+    height: $content-height;
+    margin-top: $content-top-margin;
+    /* container-fluid */
+    >div { height: 100%; padding: 10px;}
+    /* row */
+    >div>div { height: 100%; }
+    /* col */
+    >div>div>div {height: 100%; }
+  }
+}
+
 
 .alert{
   height: 0;
@@ -68,4 +85,10 @@ main{
   height: 100%;
   text-align: center;
   @include set_flex(column, center, center);
+}
+
+@media only screen and (max-width: 801px) {
+
+   h3 { font-size: 1rem; }
+
 }

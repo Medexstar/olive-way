@@ -1,3 +1,19 @@
+#ambassadors_new{
+  main{
+    display: block;
+    width: 100%;
+    height: $content-height;
+    margin-top: $content-top-margin;
+    /* container-fluid */
+    >div { height: auto; min-height:auto; padding: 10px;}
+    /* row */
+    >div>div { height: auto; min-height:auto;}
+    /* col */
+    >div>div>div {height: auto; min-height:auto;}
+  }
+}
+
+
 #ambassadors{
   #header, #explain, #form{
     height: 33%;

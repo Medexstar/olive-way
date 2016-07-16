@@ -13,6 +13,7 @@
       .section__content--measurement
         .section__content--measurement-form
           = form_for @measurement, url: measurements_path, method: "post" do |f|
+            span#user-gender.hidden #{current_user.sex}
             .row.section--account
               .section__title--account JACKET
               .section__content--account

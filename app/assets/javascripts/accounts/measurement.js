@@ -1,47 +1,99 @@
 var measurement_videos = function(){
   function changeVideoURL(videoID){
-    $("#measurement__video").attr("src", "https://player.vimeo.com/video/" + videoID);
+    $("#measurement__video").attr("src", "http://www.youtube.com/embed/" + videoID);
   }
 
   $("#measurement_shoulder").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("MJyS4NOBono");
+    }else{
+      changeVideoURL("D4rk9u0bwZE");
+    }
   });
   $("#measurement_half_chest").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("TjqULAgDKHE");
+    }else{
+      changeVideoURL("zhbyFnP-Ps8");
+    }
   });
   $("#measurement_half_jacket_waist").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("-3yWSdy-ESQ");
+    }else{
+      changeVideoURL("NvmOKHtaBkc");
+    }
   });
   $("#measurement_half_hem").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("54763818");
+    }else{
+      changeVideoURL("54763818");
+    }
   });
   $("#measurement_back_length").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("MgRxtD4SoTw");
+    }else{
+      changeVideoURL("mXS6JucO8_Y");
+    }
   });
   $("#measurement_sleeve_outstem").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("HYL3EmHN0Uk");
+    }else{
+      changeVideoURL("Ofqdakg0Wac");
+    }
   });
   $("#measurement_bicep").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("qrbTJJaou98");
+    }else{
+      changeVideoURL("xGeFkF8ySvY");
+    }
   });
 
   $("#measurement_pant_outseam").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("TgMaiwl81Vs");
+    }else{
+      changeVideoURL("6hMRaLCCsw0");
+    }
   });
   $("#measurement_half_pant_waist").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("-3yWSdy-ESQ");
+    }else{
+      changeVideoURL("NvmOKHtaBkc");
+    }
   });
   $("#measurement_half_bottom").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("54763818");
+    }else{
+      changeVideoURL("54763818");
+    }
   });
   $("#measurement_crotch").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("BHgnvqp-1BA");
+    }else{
+      changeVideoURL("-bMmuHAXnos");
+    }
   });
   $("#measurement_thigh").focus(function(){
-    changeVideoURL("47793390");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("29O4lgy9t9Y");
+    }else{
+      changeVideoURL("f9mGeGE5Lrc");
+    }
   });
   $("#measurement_hip").focus(function(){
-    changeVideoURL("54763818");
+    if($("#user-gender").text()=="male"){
+      changeVideoURL("7f0N58nVULg");
+    }else{
+      changeVideoURL("grcEkz63SXU");
+    }
   });
 }
 
