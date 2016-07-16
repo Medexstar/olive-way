@@ -1,6 +1,6 @@
 var measurement_videos = function(){
   function changeVideoURL(videoID){
-    $("#measurement__video").attr("src", "http://www.youtube.com/embed/" + videoID);
+    $("#measurement__video").attr("src", "https://www.youtube.com/embed/" + videoID);
   }
 
   $("#measurement_shoulder").focus(function(){
