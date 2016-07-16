@@ -8799,25 +8799,25 @@ button.close {
 }
 @font-face {
   font-family: 'Katahdin Round';
-  src: url(/assets/KatahdinRound.otf) format("truetype");
+  src: url(/assets/KatahdinRound-9fb095b0cea444f2567db20a69ce2040017a9ab82e050f8fd0a05a6dc7fb2ba8.otf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto-Light';
-  src: url(/assets/Roboto-Light.ttf) format("truetype");
+  src: url(/assets/Roboto-Light-94df4e4976db8ddaec27f8e8c33eef912e744fb200ca09051794b38e5a502fc0.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url(/assets/Roboto-Medium.ttf) format("truetype");
+  src: url(/assets/Roboto-Medium-02868d6a7e80d4e7836b6263dd50d26a63e923a1223c9e027aad6dc2501c27cc.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto-Thin';
-  src: url(/assets/Roboto-Thin.ttf) format("truetype");
+  src: url(/assets/Roboto-Thin-2843669daf030733f6b7c541a98ebbff5ce5c2d8cbae423bd8d278a36e169399.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -12601,10 +12601,9 @@ th, td, div {
   min-width: 300px;
   padding: 10px;
   display: inline-block;
-  border: 1px solid black;
   margin: 5px;
 }
-/* line 35, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__photo {
   height: 380px;
   display: -ms-flexbox;
@@ -12623,7 +12622,7 @@ th, td, div {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 39, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 38, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__info {
   text-align: center;
   font-family: 'Roboto-Light';
@@ -12664,17 +12663,19 @@ th, td, div {
   padding: 10px;
   height: 400px;
   width: 300px;
-  border: 1px solid black;
 }
-/* line 18, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 17, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--selection div {
   height: 100px;
   width: 85px;
-  border: 1px solid black;
   margin: 0 10px 10px 10px;
   padding: 2px;
 }
-/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+.product__contents .product__image--selection div:hover {
+  cursor: pointer;
+}
+/* line 26, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--main div, .product__contents .product__image--selection div {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -12770,20 +12771,30 @@ th, td, div {
 .section__content--measurement {
   width: 100%;
   min-width: 820px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
 }
 
-/* line 37, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
-.section__content--measurement-form, .section__content--measurement-video {
-  display: inline-block;
-}
-
-/* line 41, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 38, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement-form {
   width: 40%;
   min-width: 400px;
 }
 
-/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement-video {
   width: 50%;
   min-width: 400px;
@@ -12842,22 +12853,26 @@ svg polygon {
   margin: 20px 0 50px 0;
 }
 /* line 7, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+.section--double-column .section--double-column__text-wrapper {
+  height: 90%;
+  overflow-y: auto;
+}
+/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text {
   margin-bottom: 10px;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  overflow-y: auto;
-  height: 100%;
+  -webkit-columns: 2 200px;
+  -moz-columns: 2 200px;
+  columns: 2 200px;
 }
-/* line 14, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-.section--double-column .section--double-column__text div {
+/* line 16, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+.section--double-column .section--double-column__text > div {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
-  break-inside: avoid-column;
+  break-inside: avoid;
+  margin-bottom: 5px;
 }
 
-/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted {
   height: 100%;
   overflow-x: hidden;
@@ -12877,14 +12892,14 @@ svg polygon {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 26, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 29, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title {
   height: 100%;
   transform: translateX(5%);
   text-align: right;
   /* wrapper, unskew and place the text back as if it is normal */
 }
-/* line 31, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title:after {
   content: "";
   background: black;
@@ -12896,25 +12911,25 @@ svg polygon {
   top: -20px;
   z-index: -1;
 }
-/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content {
   height: 100%;
   width: 200%;
   transform: translateX(5%);
   overflow-y: auto;
 }
-/* line 48, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 51, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .section--slanted__content__text {
   padding-left: 40px;
   padding-top: 20px;
   width: 75%;
   transform: translateX(-1%);
 }
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 57, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .header {
   font-weight: bold;
 }
-/* line 57, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 60, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .content__one, .section--slanted .section--slanted__content .content__two {
   position: absolute;
   height: 40%;

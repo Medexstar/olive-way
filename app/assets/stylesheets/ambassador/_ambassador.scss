@@ -30,7 +30,7 @@
         right: -.25em;
         transform-origin: 0 100%;
         img{
-          position: absolute;;
+          position: absolute;
           width: 50%;
           height: 50%;
           bottom: 0;
@@ -51,7 +51,13 @@
       overflow-y: auto;
       > div{
         height: auto;
+        padding-left: 50px;
+        padding-right: 50px;
       }
+    }
+    h2{
+      font-family: 'Katahdin Round';
+      text-align: center;
     }
   }
   #form{
@@ -59,27 +65,32 @@
     height: 60%;
     background-color: lightblue;
     text-align: center;
-    h3{
+    h2{
+      font-family: 'Katahdin Round';
       color: white;
     }
     ::-webkit-input-placeholder {
       color: black;
       font-weight: bold;
+      font-family: 'Katahdin Round';
     }
 
     :-moz-placeholder { /* Firefox 18- */
       color: black;
       font-weight: bold;
+      font-family: 'Katahdin Round';
     }
 
     ::-moz-placeholder {  /* Firefox 19+ */
       color: black;
       font-weight: bold;
+      font-family: 'Katahdin Round';
     }
 
     :-ms-input-placeholder {
        color: black;
        font-weight: bold;
+       font-family: 'Katahdin Round';
     }
   }
 }

@@ -40,7 +40,7 @@ class OrderObjectsController < ApplicationController
   def destroy
     @order_object = OrderObject.find(params[:id])
     @order_object.destroy
-    redirect_to new_order_path
+    redirect_to checkout_path
   end
 
   private
