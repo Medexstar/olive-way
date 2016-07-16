@@ -88,6 +88,11 @@ main{
   }
 }
 
+.alert-success, .alert-warning{
+  background-color: transparent;
+  border-color: transparent;
+}
+
 #beta{
   height: 100%;
   text-align: center;
