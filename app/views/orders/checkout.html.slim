@@ -14,7 +14,7 @@
               th.col-xs-2 Product Name
               th.col-xs-2 Quantity
               th.col-xs-2 Product Price
-              th.col-xs-2 Total Price
+              th.col-xs-2 Discount Price
               th.col-xs-2 Remove
           tbody
             - @order_objects.find_each do |o|
@@ -24,7 +24,7 @@
                 td #{o.suit != nil ? o.suit.name : o.accessory.name}
                 td 1
                 td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost, unit: "$", eparator: ",") : number_to_currency(o.accessory.formatted_cost, unit: "$", eparator: ",")}
-                td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost, unit: "$", eparator: ",") : number_to_currency(order_object.accessory.formatted_cost, unit: "$", eparator: ",")}
+                td #{number_to_currency(o.formatted_cost, unit: "$", eparator: ",")}
                 td
                   = link_to "Remove Order", order_object_path(o.id), method: :delete
             end
@@ -32,4 +32,4 @@
               - 5.times do
                 td
               end
-              td Total: #{number_to_currency(@total_price, unit: "$", eparator: ",")}
+              td Total: #{number_to_currency(@total_price/100.0, unit: "$", eparator: ",")}

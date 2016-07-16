@@ -22,8 +22,17 @@ class OrderObjectsController < ApplicationController
       @order_object.price = @order_object.accessory.unit_price
     end
 
-    if params.has_key?(:promo_code)
+    if (ambassador = Ambassador.where(promotion_code: promo_params[:promo_code]).first) != [] && ambassador.approved
       @order_object.price *= 0.9
+      @order_object.ambassador = ambassador
+    elsif promo_params[:promo_code] != '' || !ambassador.approved
+      flash[:error] = "Promotion code is incorrect/not approved!"
+      if params.has_key?(:suit_id)
+        redirect_to controller: 'suits', action: 'show', id: params[:suit_id]
+      else
+        redirect_to controller: 'accessories', action: 'show', id: params[:accessory_id]
+      end
+      return
     end
 
     @order_object.user = current_user
@@ -31,10 +40,17 @@ class OrderObjectsController < ApplicationController
 
     if @order_object.save
       flash[:notice] = 'Success! New Item Added to Cart!'
+      redirect_to landing_path
+      return
     else
       flash[:alert] = "Oops! Invalid input. #{@offer.errors.full_messages.join('. ')}"
+      if params.has_key?(:suit_id)
+        redirect_to controller: 'suits', action: 'show', id: params[:suit_id]
+      else
+        redirect_to controller: 'accessories', action: 'show', id: params[:accessory_id]
+      end
+      return
     end
-    redirect_to landing_path
   end
 
   def destroy
@@ -50,5 +66,9 @@ class OrderObjectsController < ApplicationController
       :jacket_buttons, :status, measurement_attributes: [:shoulder, :half_chest,
         :half_jacket_waist, :half_hem, :back_length, :sleeve_outstem, :bicep,
         :pant_outseam, :half_pant_waist, :half_bottom, :crotch, :thigh, :hip])
+  end
+  
+  def promo_params
+    params.permit :promo_code
   end
 end

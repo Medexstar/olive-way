@@ -9,8 +9,7 @@ class OrdersController < ApplicationController
       @order_objects = OrderObject.pending(current_user);
       @total_price = 0
       @order_objects.find_each do |order_object|
-          order_object.suit != nil ? @total_price += order_object.suit.formatted_cost
-          : @total_price += order_object.accessory.formatted_cost
+          @total_price += order_object.price
       end
   end
 
@@ -21,8 +20,7 @@ class OrdersController < ApplicationController
     @order_objects = OrderObject.pending(current_user);
     @order.total_price = 0
     @order_objects.find_each do |order_object|
-        order_object.suit != nil ? @order.total_price += order_object.suit.unit_price
-        : @order.total_price += order_object.accessory.unit_price
+        @order.total_price += order_object.price
     end
   end
 
@@ -33,17 +31,19 @@ class OrdersController < ApplicationController
 
     @order_objects = OrderObject.pending(current_user);
     
-    if order_object.suit != nil
-      if order_object.suit.quantity <= 0
-        flash[:error] = "This item is out of stock!"
-        redirect_to checkout_path
-        return
-      end
-    else
-      if order_object.accessory.quantity <= 0
-        flash[:error] = "This item is out of stock!"
-        redirect_to checkout_path
-        return
+    @order_objects.find_each do |order_object|
+      if order_object.suit != nil
+        if order_object.suit.quantity <= 0
+          flash[:error] = "This item is out of stock!"
+          redirect_to checkout_path
+          return
+        end
+      else
+        if order_object.accessory.quantity <= 0
+          flash[:error] = "This item is out of stock!"
+          redirect_to checkout_path
+          return
+        end
       end
     end
     
@@ -64,7 +64,7 @@ class OrdersController < ApplicationController
     
     customer = Stripe::Customer.create(
     :email => stripe_params["stripeEmail"],
-    :source  => stripe_params["stripeToken"],
+    :source => stripe_params["stripeToken"],
     )
 
     charge = Stripe::Charge.create(
