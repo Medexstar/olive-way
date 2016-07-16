@@ -41,6 +41,7 @@ main{
   margin-top: $content-top-margin;
   /* container-fluid */
   >div { min-height: 100%; padding: 10px;}
+  >div.alert {min-height: 0;}
   >div>div { min-height: 100%; }
   /* col */
   >div>div>div { min-height: 100%; }
@@ -56,13 +57,19 @@ main{
     margin-top: $content-top-margin;
     /* container-fluid */
     >div { height: 100%; padding: 10px;}
+    >div.alert {height: 0;}
     /* row */
     >div>div { height: 100%; }
     /* col */
     >div>div>div {height: 100%; }
   }
 }
-
+#measurement{
+  height: 100%;
+  >div{
+    height: 100%;
+  }
+}
 
 .alert{
   height: 0;

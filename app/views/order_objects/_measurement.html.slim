@@ -1,15 +1,14 @@
-.section__content.container-fluid
+.container-fluid
   .row
-    .col-xs-3.measurement__title
-      div
-        h3 MEASUREMENTS
-    .col-xs-9.measurement__content
-      .row.measurement__guide Choose your best fitting Jacket and Pants and
+    .col-xs-3.account__title
+      h3 MEASUREMENTS
+    .col-xs-9.account__content
+      .measurement__guide Choose your best fitting Jacket and Pants and
         enter the measurements below. For standard size tweaking, the
         measurements provided below are from all InStitchu finished standard
         size garment.
-      .row.measurement__input
-        .col-xs-6.col-remove-padding
+      .section__content--measurement
+        .section__content--measurement-form
           = f.fields_for :measurement do |ff|
             .measurement__section
               .measurement__section-title YOUR PRESET MEASUREMENTS
@@ -20,68 +19,68 @@
                   .field__label.col-xs-6
                     = ff.label :shoulder, '1. Shoulder'
                   .field__field.col-xs-3
-                    = ff.number_field :shoulder, :value => @measurement.shoulder
+                    = ff.number_field :shoulder, :value => @measurement.shoulder, id: "measurement_shoulder"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :half_chest, '2. Half Chest'
                   .field__field.col-xs-3
-                    = ff.number_field :half_chest, :value => @measurement.half_chest
+                    = ff.number_field :half_chest, :value => @measurement.half_chest, id: "measurement_half_chest"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :half_jacket_waist, '3. Half Waist'
                   .field__field.col-xs-3
-                    = ff.number_field :half_jacket_waist, :value => @measurement.half_jacket_waist
+                    = ff.number_field :half_jacket_waist, :value => @measurement.half_jacket_waist, id: "measurement_half_jacket_waist"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :half_hem, '4. Half Hem'
                   .field__field.col-xs-3
-                    = ff.number_field :half_hem, :value => @measurement.half_hem
+                    = ff.number_field :half_hem, :value => @measurement.half_hem, id: "measurement_half_hem"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :back_length, '5. Back Length'
                   .field__field.col-xs-3
-                    = ff.number_field :back_length, :value => @measurement.back_length
+                    = ff.number_field :back_length, :value => @measurement.back_length, id: "measurement_back_length"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :sleeve_outstem, '6. Sleeve Outstem'
                   .field__field.col-xs-3
-                    = ff.number_field :sleeve_outstem, :value => @measurement.sleeve_outstem
+                    = ff.number_field :sleeve_outstem, :value => @measurement.sleeve_outstem, id: "measurement_sleeve_outstem"
                 .field.row
                   .field__label.col-xs-6
                     = ff.label :bicep, '7. Bicep'
                   .field__field.col-xs-3
-                    = ff.number_field :bicep, :value => @measurement.bicep
+                    = ff.number_field :bicep, :value => @measurement.bicep, id: "measurement_bicep"
             .measurement__section
               .measurement__section-title PANTS
               .measurement__section-content.container-fluid
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :pant_outseam, '1. Pant Outseam'
+                    = ff.label :pant_outseam, '1. Pant Outseam', id: "measurement_pant_outseam"
                   .field__field.col-xs-3
                     = ff.number_field :pant_outseam, :value => @measurement.pant_outseam
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :half_pant_waist, '2. Half Waist'
+                    = ff.label :half_pant_waist, '2. Half Waist', id: "measurement_half_pant_waist"
                   .field__field.col-xs-3
                     = ff.number_field :half_pant_waist, :value => @measurement.half_pant_waist
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :half_bottom, '3. Half Bottom'
+                    = ff.label :half_bottom, '3. Half Bottom', id: "measurement_half_bottom"
                   .field__field.col-xs-3
                     = ff.number_field :half_bottom, :value => @measurement.half_bottom
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :crotch, '4. Crotch'
+                    = ff.label :crotch, '4. Crotch', id: "measurement_crotch"
                   .field__field.col-xs-3
                     = ff.number_field :crotch, :value => @measurement.crotch
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :thigh, '5. Thigh'
+                    = ff.label :thigh, '5. Thigh', id: "measurement_thigh"
                   .field__field.col-xs-3
                     = ff.number_field :thigh, :value => @measurement.thigh
                 .field.row
                   .field__label.col-xs-6
-                    = ff.label :hip, '6. Hip'
+                    = ff.label :hip, '6. Hip', id: "measurement_hip"
                   .field__field.col-xs-3
                     = ff.number_field :hip, :value => @measurement.hip
             .measurement__section
@@ -91,6 +90,7 @@
                     = label_tag "Promotion Code"
                   .field__field.col-xs-3
                     = text_field_tag "promo_code", nil, placeholder: "Type Promo Code"
-        .col-xs-6
+        .section__content--measurement-video
+          = render partial: "layouts/videos"
       .row
         = f.submit 'Save'
