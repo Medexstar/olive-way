@@ -40,7 +40,7 @@ class OrderObjectsController < ApplicationController
 
     if @order_object.save
       flash[:notice] = 'Success! New Item Added to Cart!'
-      redirect_to landing_path
+      redirect_to checkout_path
       return
     else
       flash[:alert] = "Oops! Invalid input. #{@offer.errors.full_messages.join('. ')}"
