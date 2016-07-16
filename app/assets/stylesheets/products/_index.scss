@@ -30,6 +30,7 @@
     min-width: 300px;
     padding: 10px;
     display: inline-block;
+    border: 1px solid black;
     margin: 5px;
     .product__photo{
       height: 380px;
@@ -38,11 +39,6 @@
     .product__info{
       text-align: center;
       font-family: 'Roboto-Light';
-      .product__name{
-        .header{
-          font-family: 'Katahdin Round';
-        }
-      }
     }
   }
 }

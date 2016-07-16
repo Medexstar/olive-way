@@ -28,12 +28,12 @@ var submitAmbassador = function(){
       },
       success: function(d){
         $("#form").html("<section><h3>THANK YOU!</h3></section> \
-          <section><h3>We will be in contact with you as soon as possible</h3></section>");
+          <section><h3>We will in contact with you as soon as possible</h3></section>");
         return false;
       },
       error: function(d){
         $("#form").html("<section><h3>Something Went Wrong</h3></section> \
-          <section><h3>We will be in contact with you as soon as possible</h3></section>");
+          <section><h3>We will in contact with you as soon as possible</h3></section>");
         return false;
       }
 
