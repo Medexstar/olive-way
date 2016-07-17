@@ -19,7 +19,6 @@ class OrderObjectsController < ApplicationController
       @order_object.suit = Suit.find(params[:suit_id])
       @order_object.price = @order_object.suit.unit_price
     else
-      binding.pry
       @order_object = OrderObject.new()
       @order_object.accessory = Accessory.find(params[:accessory_id])
       @order_object.price = @order_object.accessory.unit_price
