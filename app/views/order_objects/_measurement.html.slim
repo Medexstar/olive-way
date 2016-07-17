@@ -78,5 +78,10 @@
                     = text_field_tag "promo_code", nil, placeholder: "Type Promo Code"
         .section__content--measurement-video-margin
           = render partial: "layouts/videos"
-      .row
-        = f.submit 'Save'
+      .section__content--measurement
+        .section__cotnent--measurement-form
+          .measurement__section
+            .measurement__section-content.container-fluid
+              .field.row
+                .field__field.col-xs-3
+                  = f.submit 'Save'
