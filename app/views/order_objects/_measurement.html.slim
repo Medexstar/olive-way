@@ -10,7 +10,7 @@
       .section__content--measurement
         .section__content--measurement-form
           = f.fields_for :measurement do |ff|
-            span#user-gender.hidden #{current_user.sex}
+            span#suit-gender.hidden #{@order_object.suit.sex}
             .measurement__section
               .measurement__section-title YOUR PRESET MEASUREMENTS
             .measurement__section
@@ -31,7 +31,7 @@
                 .field.row
                   .field__field.col-xs-3
                     = ff.number_field :wrist, :value => @measurement.wrist, id: "measurement_wrist",  placeholder: "Wrist"
-                - if current_user.sex == "male"
+                - if @order_object.suit.sex == "male"
                   .field.row
                     .field__field.col-xs-3
                       = ff.number_field :chest, :value => @measurement.chest, id: "measurement_chest",  placeholder: "Chest"
