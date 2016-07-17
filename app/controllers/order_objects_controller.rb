@@ -8,6 +8,8 @@ class OrderObjectsController < ApplicationController
     @order_object.measurement ||= Measurement.new
     if params.has_key?(:suit_id)
       @order_object.suit = Suit.find(params[:suit_id])
+    else
+      @order_object.accessory = Accessory.find(params[:accessory_id])
     end
   end
 
@@ -17,22 +19,27 @@ class OrderObjectsController < ApplicationController
       @order_object.suit = Suit.find(params[:suit_id])
       @order_object.price = @order_object.suit.unit_price
     else
+      binding.pry
       @order_object = OrderObject.new()
-      @order_object.accessory = Accessory.find(params[:accesory_id])
+      @order_object.accessory = Accessory.find(params[:accessory_id])
       @order_object.price = @order_object.accessory.unit_price
     end
 
-    if (ambassador = Ambassador.where(promotion_code: promo_params[:promo_code]).first) != [] && ambassador.approved
-      @order_object.price *= 0.9
-      @order_object.ambassador = ambassador
-    elsif promo_params[:promo_code] != '' || !ambassador.approved
-      flash[:error] = "Promotion code is incorrect/not approved!"
-      if params.has_key?(:suit_id)
-        redirect_to controller: 'suits', action: 'show', id: params[:suit_id]
+
+    if params[:promo_code] != ''
+      ambassador = Ambassador.where(promotion_code: promo_params[:promo_code]).first
+      if ambassador != nil && ambassador.approved
+        @order_object.price *= 0.9
+        @order_object.ambassador = ambassador
       else
-        redirect_to controller: 'accessories', action: 'show', id: params[:accessory_id]
+        flash[:error] = "Promotion code is incorrect/not approved!"
+        if params.has_key?(:suit_id)
+          redirect_to controller: 'suits', action: 'show', id: params[:suit_id]
+        else
+          redirect_to controller: 'accessories', action: 'show', id: params[:accessory_id]
+        end
+        return
       end
-      return
     end
 
     @order_object.user = current_user
@@ -67,7 +74,7 @@ class OrderObjectsController < ApplicationController
         :bicep, :wrist, :chest, :bust, :underbust,
         :back_length, :waist, :hips, :thigh, :rise, :outleg, :inleg, :ankle])
   end
-  
+
   def promo_params
     params.permit :promo_code
   end

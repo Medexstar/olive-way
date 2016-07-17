@@ -1,21 +1,22 @@
-- if current_user.sex == "male"
-  - if !(defined?(@order_object.suit.sex)).nil?
-    - if @order_object.suit.sex == "male"
+div
+  - if current_user.sex == "male"
+    - if !(defined?(@order_object.suit.sex)).nil?
+      - if @order_object.suit.sex == "male"
+        <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/NhErrnIqf2E" frameborder="0"></iframe>
+      - else
+        <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/Z56HH1Fb7SA" frameborder="0"></iframe>
+      end
+    - else
       <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/NhErrnIqf2E" frameborder="0"></iframe>
+    end
+  - else
+    - if !(defined?(@order_object.suit.sex)).nil?
+      - if @order_object.suit.sex == "male"
+        <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/NhErrnIqf2E" frameborder="0"></iframe>
+      - else
+        <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/Z56HH1Fb7SA" frameborder="0"></iframe>
+      end
     - else
       <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/Z56HH1Fb7SA" frameborder="0"></iframe>
     end
-  - else
-    <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/NhErrnIqf2E" frameborder="0"></iframe>
   end
-- else
-  - if !(defined?(@order_object.suit.sex)).nil?
-    - if @order_object.suit.sex == "male"
-      <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/NhErrnIqf2E" frameborder="0"></iframe>
-    - else
-      <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/Z56HH1Fb7SA" frameborder="0"></iframe>
-    end
-  - else
-    <iframe id="measurement__video" width="480" height="315" src="https://www.youtube.com/embed/Z56HH1Fb7SA" frameborder="0"></iframe>
-  end
-end
