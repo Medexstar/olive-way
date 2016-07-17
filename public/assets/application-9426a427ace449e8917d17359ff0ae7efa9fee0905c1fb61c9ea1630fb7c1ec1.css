@@ -12811,28 +12811,49 @@ th, td, div {
 
 /* line 2, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main {
+  display: block;
+  width: 100%;
   height: 70%;
+  /* container-fluid */
+  /* col */
 }
-/* line 4, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+#pages_landing main > div {
+  height: 100%;
+  padding: 10px;
+}
+/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+#pages_landing main > div.alert {
+  height: 0;
+}
+/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+#pages_landing main > div > div {
+  height: 100%;
+}
+/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+#pages_landing main > div > div > div {
+  height: 100%;
+}
+/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main #landing {
   height: 100%;
 }
 
-/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main {
   height: 100%;
 }
-/* line 13, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 21, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections {
   height: 100%;
 }
-/* line 15, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 23, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections div {
   height: 110%;
   margin-top: -60px;
   width: 100%;
 }
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections div img {
   display: block;
   max-height: 100%;
@@ -12841,13 +12862,13 @@ th, td, div {
   margin: auto;
 }
 
-/* line 31, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 39, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 svg {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 35, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
 svg polygon {
   cursor: pointer;
 }
@@ -13511,7 +13532,7 @@ main > div > div > div {
 /* line 54, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main, #accounts_edit_measurement main,
 #orders_index main, #registrations_edit main, #accounts_edit_addresses main,
-#pages_contact_us main, #pages_story main, #pages_how main, #pages_landing main, #accounts_account_hub main,
+#pages_contact_us main, #pages_story main, #pages_how main, #accounts_account_hub main,
 #suits_show main, #orders_checkout main {
   display: block;
   width: 100%;
@@ -13524,7 +13545,7 @@ main > div > div > div {
 /* line 60, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div, #accounts_edit_measurement main > div,
 #orders_index main > div, #registrations_edit main > div, #accounts_edit_addresses main > div,
-#pages_contact_us main > div, #pages_story main > div, #pages_how main > div, #pages_landing main > div, #accounts_account_hub main > div,
+#pages_contact_us main > div, #pages_story main > div, #pages_how main > div, #accounts_account_hub main > div,
 #suits_show main > div, #orders_checkout main > div {
   height: 100%;
   padding: 10px;
@@ -13532,21 +13553,21 @@ main > div > div > div {
 /* line 61, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div.alert, #accounts_edit_measurement main > div.alert,
 #orders_index main > div.alert, #registrations_edit main > div.alert, #accounts_edit_addresses main > div.alert,
-#pages_contact_us main > div.alert, #pages_story main > div.alert, #pages_how main > div.alert, #pages_landing main > div.alert, #accounts_account_hub main > div.alert,
+#pages_contact_us main > div.alert, #pages_story main > div.alert, #pages_how main > div.alert, #accounts_account_hub main > div.alert,
 #suits_show main > div.alert, #orders_checkout main > div.alert {
   height: 0;
 }
 /* line 63, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div, #accounts_edit_measurement main > div > div,
 #orders_index main > div > div, #registrations_edit main > div > div, #accounts_edit_addresses main > div > div,
-#pages_contact_us main > div > div, #pages_story main > div > div, #pages_how main > div > div, #pages_landing main > div > div, #accounts_account_hub main > div > div,
+#pages_contact_us main > div > div, #pages_story main > div > div, #pages_how main > div > div, #accounts_account_hub main > div > div,
 #suits_show main > div > div, #orders_checkout main > div > div {
   height: 100%;
 }
 /* line 65, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div > div, #accounts_edit_measurement main > div > div > div,
 #orders_index main > div > div > div, #registrations_edit main > div > div > div, #accounts_edit_addresses main > div > div > div,
-#pages_contact_us main > div > div > div, #pages_story main > div > div > div, #pages_how main > div > div > div, #pages_landing main > div > div > div, #accounts_account_hub main > div > div > div,
+#pages_contact_us main > div > div > div, #pages_story main > div > div > div, #pages_how main > div > div > div, #accounts_account_hub main > div > div > div,
 #suits_show main > div > div > div, #orders_checkout main > div > div > div {
   height: 100%;
 }
