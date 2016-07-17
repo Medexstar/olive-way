@@ -31,7 +31,6 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(resource)
     if resource.is_a?(User)
-      binding.pry
       session[:previous_url] || landing_path
     elsif resource.is_a?(AdminUser)
       admin_dashboard_path(resource)
