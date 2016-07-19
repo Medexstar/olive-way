@@ -14912,15 +14912,18 @@ $(document).ready(function() {
     $('map').imageMapResize();
 });
 var submitAmbassador = function(){
-  var height = $("#amba").height();
+  var height = $("#amba").width()*2/3;
   var width = $("#amba").width();
+  var height2 = $("#header").width()*2/3+50;
+  var width2 = $("#header").width();
   var deg = Math.atan2(width, height);
   var skewRate = deg
-  console.log(skewRate);
   $("#one-amba").css("transform", "skewX(" + (-1*skewRate).toString()+"rad)");
   $("#two-amba").css("transform", "skewX(" + (-1*skewRate).toString()+"rad)");
   $("#one-amba img").css("transform", "skewX(" + (skewRate).toString()+"rad)");
   $("#two-amba img").css("transform", "skewX(" + (skewRate).toString()+"rad)");
+  $("#header").css("height", height2.toString()+"px");
+  $("#width").css("width", width2.toString()+"px");
   $("#submit-ambassador").click(function(){
     var first_name = $("#ambassador_first_name").val();
     var last_name = $("#ambassador_last_name").val();
@@ -14957,6 +14960,7 @@ var submitAmbassador = function(){
 
 $(document).ready(submitAmbassador);
 $(document).on('page:load', submitAmbassador);
+$(window).resize(submitAmbassador);
 var measurement_videos = function(){
   function changeVideoURL(videoID){
     $("#measurement__video").attr("src", "https://www.youtube.com/embed/" + videoID);
