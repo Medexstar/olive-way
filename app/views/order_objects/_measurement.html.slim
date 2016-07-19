@@ -72,14 +72,15 @@
             .measurement__section
               .measurement__section-content.container-fluid
                 .field.row
-                  .field__label.col-xs-6
+                  .field__label.col-xs-3
                     = label_tag "Promotion Code"
+                .field.row
                   .field__field.col-xs-3
                     = text_field_tag "promo_code", nil, placeholder: "Type Promo Code"
         .section__content--measurement-video-margin
           = render partial: "layouts/videos"
       .section__content--measurement
-        .section__cotnent--measurement-form
+        .section__content--measurement-form
           .measurement__section
             .measurement__section-content.container-fluid
               .field.row
