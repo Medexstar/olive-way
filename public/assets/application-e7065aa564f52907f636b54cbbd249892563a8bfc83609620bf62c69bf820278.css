@@ -13431,10 +13431,10 @@ svg polygon {
 /* line 48, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper #two-amba img {
   position: absolute;
-  width: 50%;
-  height: 50%;
-  bottom: 0;
-  right: 0;
+  width: 90%;
+  height: 90%;
+  bottom: -10%;
+  right: -30%;
 }
 /* line 58, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain {
