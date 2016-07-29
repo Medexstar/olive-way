@@ -12,4 +12,4 @@
                   = link_to image_tag(accessory.main_image.url(:thumb)), accessory_path(accessory)
                 .product__info
                   .product__name #{accessory.name}
-                  .product__cost #{number_to_currency(accessory.formatted_cost, unit: "$", eparator: ",")}
+                  .product__cost #{number_to_currency(accessory.formatted_cost, precision: 0)}

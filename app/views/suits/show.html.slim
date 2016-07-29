@@ -5,14 +5,14 @@
         .col-xs-2.col-lg-3.product__info
           .product__name
             h2 #{@suit.name}
-          .product__price #{number_to_currency(@suit.formatted_cost, unit: "$", eparator: ",")}
+          .product__price #{number_to_currency(@suit.formatted_cost, precision: 0)}
           .product__description #{@suit.comment}
           .product__purchase
             = link_to "PURCHASE", new_order_object_path(suit_id: @suit.id), 'data-no-turbolink' => true
         .col-xs-10.col-lg-9.product__contents
           .product__image--main
             div#main
-              = image_tag(@suit.image_one.url(:main))
+              = image_tag(@suit.image_one.url(:zoom))
           .product__image--selection
             div#option-one
               = image_tag @suit.image_one.url(:option), data: {large: @suit.image_one.url(:main)}

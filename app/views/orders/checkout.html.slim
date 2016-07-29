@@ -23,18 +23,14 @@
                   = image_tag(o.suit != nil ? o.suit.image_one.url(:option) : o.accessory.image_one.url(:option))
                 td #{o.suit != nil ? o.suit.name : o.accessory.name}
                 td 1
-                td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost, unit: "$", eparator: ",") : number_to_currency(o.accessory.formatted_cost, unit: "$", eparator: ",")}
-                td #{number_to_currency(o.formatted_cost, unit: "$", eparator: ",")}
+                td #{o.suit != nil ? number_to_currency(o.suit.formatted_cost, precision: 0) : number_to_currency(o.accessory.formatted_cost, precision: 0)}
+                td #{number_to_currency(o.formatted_cost, precision: 0)}
                 td
                   = link_to "Remove Order", order_object_path(o.id), method: :delete
             end
-            tr
-              - 5.times do
-                td
-              end
               td Standard Shipping: $25
             tr
               - 5.times do
                 td
               end
-              td Total: #{number_to_currency((@total_price/100.0)+25, unit: "$", eparator: ",")}
+              td Total: #{number_to_currency(@total_price/100.0, precision: 0)}

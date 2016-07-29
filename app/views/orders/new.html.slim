@@ -8,7 +8,7 @@
           .container-fluid
             .row.section--account
               .section__title--account Total Cost
-              .section__content--account #{number_to_currency(@order.formatted_cost, unit: "$", eparator: ",")}
+              .section__content--account #{number_to_currency(@order.formatted_cost, precision: 0)}
             .row.section--account
               = f.fields_for :shipping_address do |ship|
                 = render partial: "accounts/billing_form", locals: {f: ship, title: "Shipping Address"}

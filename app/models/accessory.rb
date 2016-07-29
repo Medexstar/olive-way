@@ -31,13 +31,13 @@ class Accessory < ActiveRecord::Base
     has_many :orders, through: :order_objects
 
     has_attached_file :main_image,
-        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
+        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>', zoom: '440x600>' }
     has_attached_file :image_one,
-        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
+        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>', zoom: '440x600>' }
     has_attached_file :image_two,
-        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
+        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>', zoom: '440x600>' }
     has_attached_file :image_three,
-        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>' }
+        styles: { thumb: '270x380>', main: '280x380>', option: '65x90>', zoom: '440x600>' }
 
     validates_attachment_content_type :main_image, content_type: /\Aimage\/.*\Z/
     validates_attachment_content_type :image_one, content_type: /\Aimage\/.*\Z/
