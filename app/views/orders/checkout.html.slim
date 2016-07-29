@@ -32,4 +32,9 @@
               - 5.times do
                 td
               end
-              td Total: #{number_to_currency(@total_price/100.0, unit: "$", eparator: ",")}
+              td Standard Shipping: $25
+            tr
+              - 5.times do
+                td
+              end
+              td Total: #{number_to_currency((@total_price/100.0)+25, unit: "$", eparator: ",")}
