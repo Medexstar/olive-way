@@ -13,7 +13,7 @@
   height: 90%;
   width: 100%;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: center;
   position: relative;
   .catalogue__filter, .catalogue__products{
@@ -23,19 +23,17 @@
     border-right: 1px solid black;
   }
   .catalogue__products{
-    max-width: 1000px;
-    overflow-y: auto;
-    @include set_flex(row, space-around, flex-start);
-    flex-wrap: wrap;
+    width: 100%;
   }
   .catalogue__product{
     height: 440px;
     width: 300px;
+    border: 1px solid black;
     min-height: 440px;
     min-width: 300px;
     padding: 10px;
     display: inline-block;
-    margin: 5px;
+    margin: 20px;
     .product__photo{
       height: 380px;
       @include set_flex(row, center, center);
