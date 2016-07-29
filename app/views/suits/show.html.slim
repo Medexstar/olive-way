@@ -15,11 +15,11 @@
               = image_tag(@suit.image_one.url(:zoom))
           .product__image--selection
             div#option-one
-              = image_tag @suit.image_one.url(:option), data: {large: @suit.image_one.url(:main)}
+              = image_tag @suit.image_one.url(:option), data: {large: @suit.image_one.url(:zoom)}
             div#option-two
-              = image_tag @suit.image_two.url(:option), data: {large: @suit.image_two.url(:main)}
+              = image_tag @suit.image_two.url(:option), data: {large: @suit.image_two.url(:zoom)}
             div#option-three
-              = image_tag @suit.image_three.url(:option), data: {large: @suit.image_three.url(:main)}
+              = image_tag @suit.image_three.url(:option), data: {large: @suit.image_three.url(:zoom)}
 
 #largeImgPanel
   #largeImg
