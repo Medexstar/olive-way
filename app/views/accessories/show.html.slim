@@ -6,7 +6,7 @@
           .product__name
             h2 #{@accessory.name}
           .product__price #{number_to_currency(@accessory.formatted_cost, precision: 0)}
-          .product__description #{accessory.comment}
+          .product__description #{@accessory.comment}
           .product__purchase
             = link_to "PURCHASE", new_order_object_path(accessory_id: @accessory.id), 'data-no-turbolink' => true
         .col-xs-10.col-lg-9.product__contents
