@@ -12686,9 +12686,24 @@ th, td, div {
   align-items: stretch;
 }
 
-/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
-#suits_show main, #accessories_show main {
-  min-height: 650px !important;
+/* line 35, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+#largeImgPanel {
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+/* line 44, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+#largeImg {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 1, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
