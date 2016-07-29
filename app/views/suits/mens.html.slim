@@ -12,4 +12,4 @@
                   = link_to image_tag(men.main_image.url(:thumb)), suit_path(men)
                 .product__info
                   .product__name #{men.name}
-                  .product__cost #{number_to_currency(men.formatted_cost, unit: "$", eparator: ",")}
+                  .product__cost #{number_to_currency(men.formatted_cost, precision: 0)}
