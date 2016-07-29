@@ -30,7 +30,7 @@ class OrdersController < ApplicationController
     @order.user.update_attributes!(address_params)
 
     @order_objects = OrderObject.pending(current_user);
-    
+
     @order_objects.find_each do |order_object|
       if order_object.suit != nil
         if order_object.suit.quantity <= 0
@@ -46,7 +46,7 @@ class OrdersController < ApplicationController
         end
       end
     end
-    
+
     if @order.save!
       @order_objects.find_each do |order_object|
         order_object.checked_out!
@@ -61,7 +61,7 @@ class OrdersController < ApplicationController
       redirect_to checkout_path
       return
     end
-    
+
     customer = Stripe::Customer.create(
     :email => stripe_params["stripeEmail"],
     :source => stripe_params["stripeToken"],
@@ -69,12 +69,12 @@ class OrdersController < ApplicationController
 
     charge = Stripe::Charge.create(
     :customer    => customer.id,
-    :amount      => @order.total_price,
+    :amount      => @order.total_price + 25,
     :description => 'Rails Stripe customer',
     :currency    => 'aud'
     )
     redirect_to orders_path
-    
+
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to checkout_path
@@ -91,11 +91,11 @@ class OrdersController < ApplicationController
       :postcode, :suburb, :company, :state, :street, :country, :phone,
       :address_type, :id])
   end
-  
+
   def order_params
     params.require(:order).permit(:total_price)
   end
-  
+
   def stripe_params
     params.permit :stripeEmail, :stripeToken
   end

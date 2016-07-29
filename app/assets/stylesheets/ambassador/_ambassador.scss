@@ -15,13 +15,15 @@
 
 
 #ambassadors{
+  margin-top: 0 !important;
   #header, #explain, #form{
     height: 33%;
   }
   #header{
     height: 100%;
-    width: 67%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
     .header--wrapper{
       overflow:hidden;
       position: relative;
