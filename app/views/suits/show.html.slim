@@ -12,7 +12,7 @@
         .col-xs-10.col-lg-9.product__contents
           .product__image--main
             div#main
-              = image_tag(@suit.image_one.url(:main))
+              = image_tag(@suit.image_one.url(:zoom))
           .product__image--selection
             div#option-one
               = image_tag @suit.image_one.url(:option), data: {large: @suit.image_one.url(:main)}

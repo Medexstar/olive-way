@@ -41,13 +41,13 @@ class Suit < ActiveRecord::Base
   scope :collection_female, -> { where(sex: 4) }
 
   has_attached_file :main_image,
-      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>' }
+      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>', zoom: '440x600>' }
   has_attached_file :image_one,
-      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>' }
+      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>', zoom: '440x600>' }
   has_attached_file :image_two,
-      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>' }
+      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>', zoom: '440x600>' }
   has_attached_file :image_three,
-      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>' }
+      styles: { thumb: '270x380>', main: '280x380>', option: '75x90>', zoom: '440x600>' }
 
   validates_attachment_content_type :main_image, content_type: /\Aimage\/.*\Z/
   validates_attachment_content_type :image_one, content_type: /\Aimage\/.*\Z/
