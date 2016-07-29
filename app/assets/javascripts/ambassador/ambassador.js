@@ -1,7 +1,7 @@
 var submitAmbassador = function(){
-  var height = $("#amba").width()*2/4;
+  var height = $("#amba").width()*2/3;
   var width = $("#amba").width();
-  var height2 = $("#header").width()*2/4+50;
+  var height2 = $("#header").width()*2/3+50;
   var width2 = $("#header").width();
   var deg = Math.atan2(width, height);
   var skewRate = deg
