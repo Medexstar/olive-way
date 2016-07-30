@@ -1,5 +1,5 @@
 ActiveAdmin.register Suit do
-  permit_params :name, :quantity, :unit_price, :sex, :main_image,
+  permit_params :name, :quantity, :unit_price, :sex, :comment, :main_image,
                 :image_one, :image_two, :image_three
   index do
     selectable_column
