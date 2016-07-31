@@ -37,7 +37,6 @@ html, body{
 main{
   display: block;
   width: 100%;
-  height: $content-height;
   margin-top: $content-top-margin;
   /* container-fluid */
   >div { min-height: 100%; padding: 10px;}
@@ -54,7 +53,6 @@ main{
   main{
     display: block;
     width: 100%;
-    height: $content-height;
     margin-top: $content-top-margin;
     /* container-fluid */
     >div { height: 100%; padding: 10px;}
