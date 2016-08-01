@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root 'pages#beta'
+  root 'pages#landing'
   get   '/landing' => 'pages#landing'
 
   get   '/collections' => 'pages#collections'
   get   '/collection' => 'pages#collection'
-  get   '/foundation' => 'pages#foundation'
+  get   '/partner' => 'pages#partner'
   get   '/story' => 'pages#story'
   get   '/faq' => 'pages#faq'
   get   '/contact_us' => 'pages#contact_us'

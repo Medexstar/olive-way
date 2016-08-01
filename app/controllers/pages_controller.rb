@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     @collection = Suit.collection
   end
 
-  def foundation
+  def partner
   end
 
   def story

@@ -39,7 +39,9 @@
     margin: 25px 50px;
     @include set_flex(row, center, space-between);
     height: 300px;
+    min-height: 0;
     .explain-box{
+      min-height: 0;
       .explain__title, .explain__content{
         min-height: 0;
       }
