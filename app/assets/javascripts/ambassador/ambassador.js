@@ -1,8 +1,7 @@
 var submitAmbassador = function(){
-  var height = $("#header").width()*2/3+50;
+  var height = $("#header").width()*9/16;
   var width = $("#header").width();
   $("#header").css("height", height.toString()+"px");
-  $("#header").css("width", width.toString()+"px");
   $("#submit-ambassador").click(function(){
     var first_name = $("#ambassador_first_name").val();
     var last_name = $("#ambassador_last_name").val();
@@ -39,3 +38,4 @@ var submitAmbassador = function(){
 
 $(document).ready(submitAmbassador);
 $(document).on('page:load', submitAmbassador);
+$(window).resize(submitAmbassador);
