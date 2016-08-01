@@ -5,11 +5,11 @@
 #  id           :integer          not null, primary key
 #  company      :string           default(""), not null
 #  street       :string           default(""), not null
-#  postcode     :integer          default(0), not null
+#  postcode     :string           default(""), not null
 #  suburb       :string           default(""), not null
 #  state        :string           default(""), not null
 #  country      :string           default(""), not null
-#  phone        :string           default("0"), not null
+#  phone        :string           default(""), not null
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  user_id      :integer

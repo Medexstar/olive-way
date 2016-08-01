@@ -18,6 +18,7 @@
 #  last_sign_in_ip        :inet
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  sex                    :integer
 #
 
 require 'rails_helper'

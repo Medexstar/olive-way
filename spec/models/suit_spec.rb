@@ -25,6 +25,7 @@
 #  main_image_content_type  :string
 #  main_image_file_size     :integer
 #  main_image_updated_at    :datetime
+#  comment                  :text
 #
 
 require 'rails_helper'

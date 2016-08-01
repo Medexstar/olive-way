@@ -13,6 +13,8 @@
 #  accessory_id   :integer
 #  order_id       :integer
 #  user_id        :integer
+#  price          :integer
+#  ambassador_id  :integer
 #
 
 class OrderObject < ActiveRecord::Base
