@@ -12612,6 +12612,7 @@ th, td, div {
 }
 /* line 40, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__info {
+  padding-top: 20px;
   text-align: center;
   font-family: 'Roboto-Light';
 }
