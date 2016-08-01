@@ -190,6 +190,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     nenv (0.3.0)
+    newrelic_rpm (3.16.0.318)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -368,6 +369,7 @@ DEPENDENCIES
   guard-rspec
   jquery-rails
   jquery-turbolinks
+  newrelic_rpm
   paperclip (~> 4.3)
   passenger
   pg
