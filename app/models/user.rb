@@ -47,6 +47,15 @@ class User < ActiveRecord::Base
   enum sex: { male: 0, female: 1, other: 2}
 
   attr_accessor :login
+
+  def formatted_shipping_address
+    shipping_address.street + ", " +
+    shipping_address.suburb + ", " +
+    shipping_address.state + ", " +
+    shipping_address.postcode + ", " +
+    shipping_address.country
+  end
+
   private
 
   def self.find_for_database_authentication(warden_conditions)

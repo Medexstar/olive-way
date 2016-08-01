@@ -5,6 +5,9 @@ ActiveAdmin::register Order do
     id_column
     column :user_id
     column :total_price
+    column 'Shipping Address' do |o|
+      o.user.formatted_shipping_address
+    end
     column :ordered_on
     column :created_at
     column :updated_at
