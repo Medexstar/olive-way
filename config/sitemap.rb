@@ -5,6 +5,8 @@ SitemapGenerator::Sitemap.create do
   add mens_path
   add womens_path
   add accessories_path
+  add partner_path
+  add ambassador_path
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
