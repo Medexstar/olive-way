@@ -15,7 +15,7 @@ class AccountsController < ApplicationController
     measurements = current_user.measurement
     measurements.update_attributes!(measurement_params)
     if measurements.save
-        flash[:success] = "Changes saved successfully!"
+      flash[:success] = "Changes saved successfully!"
       redirect_to measurements_path
     else
       if measurements.errors.any?
@@ -35,7 +35,7 @@ class AccountsController < ApplicationController
     @user = current_user
     if @user.update_attributes(address_params)
       if @user.save
-          flash[:success] = "Changes saved successfully!"
+        flash[:success] = "Changes saved successfully!"
         redirect_to profile_path
       else
         if @user.errors.any?
