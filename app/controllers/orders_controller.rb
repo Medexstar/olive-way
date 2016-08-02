@@ -15,7 +15,6 @@ class OrdersController < ApplicationController
 
   def new
     @order = Order.new
-    @order.billing_address
     @order.user = current_user
     @order_objects = OrderObject.pending(current_user);
     @order.total_price = 0
@@ -27,7 +26,22 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order.user = current_user
-    @order.user.update_attributes!(address_params)
+    if @order.user.update_attributes(address_params)
+      if @order.user.save
+      else
+        if @order.user.errors.any?
+          flash[:error] = @order.user.errors.full_messages[0]
+        end
+        redirect_to new_order_path
+        return
+      end
+    else
+      if @order.user.errors.any?
+        flash[:error] = @order.user.errors.full_messages[0]
+      end
+      redirect_to new_order_path
+      return
+    end
 
     @order_objects = OrderObject.pending(current_user);
 

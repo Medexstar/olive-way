@@ -12479,7 +12479,7 @@ th, td, div {
 #suits_womens #nav__womens a,
 #accessories_index #nav__accessories a,
 #pages_collections #nav__collection a,
-#pages_foundation #nav__foundation a,
+#pages_partner #nav__partner a,
 #pages_story #nav__story a {
   font-weight: bold;
 }
@@ -12490,7 +12490,7 @@ th, td, div {
 #nav__womens,
 #nav__accessories,
 #nav__collection,
-#nav__foundation {
+#nav__partner {
   font-family: 'Roboto-Light';
 }
 
@@ -13424,16 +13424,21 @@ svg polygon {
   -ms-align-items: stretch;
   align-items: stretch;
   height: 300px;
+  min-height: 0;
 }
 /* line 43, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+#ambassadors #explain .explain-box {
+  min-height: 0;
+}
+/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain-box .explain__title, #ambassadors #explain .explain-box .explain__content {
   min-height: 0;
 }
-/* line 48, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 50, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain__title h3 {
   font-family: 'Katahdin Round';
 }
-/* line 52, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div {
   border: 1px solid lightblue;
   margin: 10px;
@@ -13442,44 +13447,44 @@ svg polygon {
   width: 30%;
   overflow-y: auto;
 }
-/* line 59, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div .explain__title {
   text-align: center;
 }
-/* line 62, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 64, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div > div {
   height: auto;
 }
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 70, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form {
   width: 100%;
   height: 60%;
   background-color: lightblue;
   text-align: center;
 }
-/* line 73, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form h3 {
   color: white;
   font-family: 'Katahdin Round';
 }
-/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-webkit-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 82, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 84, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-moz-placeholder {
   /* Firefox 18- */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 87, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 89, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-moz-placeholder {
   /* Firefox 19+ */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 92, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 94, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-ms-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
@@ -13623,4 +13628,8 @@ main > div > div > div {
   h3 {
     font-size: 1rem;
   }
+}
+/* line 107, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+#partner-thank-you {
+  display: block;
 }

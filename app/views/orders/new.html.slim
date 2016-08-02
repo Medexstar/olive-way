@@ -17,11 +17,6 @@
                 = render partial: "accounts/billing_form", locals: {f: bill, title: "Billing Address"}
             .col-xs-12
               = form_tag orders_path do
-                article
-                  - if flash[:error].present?
-                    #error_explanation
-                      p
-                        = flash[:error]
                 input type="hidden" id="order_total_price" name="order[total_price]" value="#{@order.total_price}"
                 | <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="
                 = Rails.configuration.stripe[:publishable_key]
