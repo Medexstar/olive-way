@@ -12969,7 +12969,7 @@ svg polygon {
 }
 
 /* line 74, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-#pages_contact_us main, #pages_story main, #pages_privacy main {
+#pages_contact_us main, #pages_story main {
   display: block;
   width: 100%;
   height: 52%;
@@ -12979,20 +12979,20 @@ svg polygon {
   /* col */
 }
 /* line 80, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-#pages_contact_us main > div, #pages_story main > div, #pages_privacy main > div {
+#pages_contact_us main > div, #pages_story main > div {
   height: 100%;
   padding: 10px;
 }
 /* line 81, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-#pages_contact_us main > div.alert, #pages_story main > div.alert, #pages_privacy main > div.alert {
+#pages_contact_us main > div.alert, #pages_story main > div.alert {
   height: 0;
 }
 /* line 83, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-#pages_contact_us main > div > div, #pages_story main > div > div, #pages_privacy main > div > div {
+#pages_contact_us main > div > div, #pages_story main > div > div {
   height: 100%;
 }
 /* line 85, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
-#pages_contact_us main > div > div > div, #pages_story main > div > div > div, #pages_privacy main > div > div > div {
+#pages_contact_us main > div > div > div, #pages_story main > div > div > div {
   height: 100%;
 }
 
