@@ -6,24 +6,33 @@ class OrdersController < ApplicationController
   end
 
   def checkout
+      @shipping_cost = 10
       @order_objects = OrderObject.pending(current_user);
       @total_price = 0
       @order_objects.find_each do |order_object|
           @total_price += order_object.price
+          if order_object.suit != nil
+            @shipping_cost = 25
+          end
       end
   end
 
   def new
+    @shipping_cost = 10
     @order = Order.new
     @order.user = current_user
     @order_objects = OrderObject.pending(current_user);
     @order.total_price = 0
     @order_objects.find_each do |order_object|
         @order.total_price += order_object.price
+        if order_object.suit != nil
+          @shipping_cost = 25
+        end
     end
   end
 
   def create
+    @shipping_cost = 10
     @order = Order.new(order_params)
     @order.user = current_user
     if @order.user.update_attributes(address_params)
@@ -47,6 +56,7 @@ class OrdersController < ApplicationController
 
     @order_objects.find_each do |order_object|
       if order_object.suit != nil
+        @shipping_cost = 25
         if order_object.suit.quantity <= 0
           flash[:error] = "This item is out of stock!"
           redirect_to checkout_path
@@ -83,7 +93,7 @@ class OrdersController < ApplicationController
 
     charge = Stripe::Charge.create(
     :customer    => customer.id,
-    :amount      => @order.total_price + 2500,
+    :amount      => @order.total_price,
     :description => 'Rails Stripe customer',
     :currency    => 'aud'
     )

@@ -28,9 +28,9 @@
                 td
                   = link_to "Remove Order", order_object_path(o.id), method: :delete
             end
-              td Standard Shipping: $25
+              td Standard Shipping: #{@shipping_cost}
             tr
               - 5.times do
                 td
               end
-              td Total: #{number_to_currency(@total_price/100.0 + 25, precision: 0)}
+              td Total: #{number_to_currency(@total_price/100.0 + @shipping_cost, precision: 0)}
