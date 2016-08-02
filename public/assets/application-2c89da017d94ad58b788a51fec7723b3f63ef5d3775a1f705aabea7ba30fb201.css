@@ -13501,41 +13501,43 @@ html, body {
 main {
   display: block;
   width: 100%;
+  height: 100%;
   margin-top: 20px;
   /* container-fluid */
   /* col */
 }
-/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 main > div {
   min-height: 100%;
   padding: 10px;
 }
-/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 44, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 main > div.alert {
   min-height: 0;
 }
-/* line 44, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 main > div > div {
   min-height: 100%;
 }
-/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 47, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 main > div > div > div {
   min-height: 100%;
 }
 
-/* line 53, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main, #accounts_edit_measurement main,
 #orders_index main, #registrations_edit main, #accounts_edit_addresses main,
 #pages_contact_us main, #pages_story main, #pages_how main, #accounts_account_hub main,
 #suits_show main, #accessories_show main, #orders_checkout main {
   display: block;
   width: 100%;
+  height: 100%;
   margin-top: 20px;
   /* container-fluid */
   /* row */
   /* col */
 }
-/* line 58, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 60, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div, #accounts_edit_measurement main > div,
 #orders_index main > div, #registrations_edit main > div, #accounts_edit_addresses main > div,
 #pages_contact_us main > div, #pages_story main > div, #pages_how main > div, #accounts_account_hub main > div,
@@ -13543,21 +13545,21 @@ main > div > div > div {
   height: 100%;
   padding: 10px;
 }
-/* line 59, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div.alert, #accounts_edit_measurement main > div.alert,
 #orders_index main > div.alert, #registrations_edit main > div.alert, #accounts_edit_addresses main > div.alert,
 #pages_contact_us main > div.alert, #pages_story main > div.alert, #pages_how main > div.alert, #accounts_account_hub main > div.alert,
 #suits_show main > div.alert, #accessories_show main > div.alert, #orders_checkout main > div.alert {
   height: 0;
 }
-/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 63, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div, #accounts_edit_measurement main > div > div,
 #orders_index main > div > div, #registrations_edit main > div > div, #accounts_edit_addresses main > div > div,
 #pages_contact_us main > div > div, #pages_story main > div > div, #pages_how main > div > div, #accounts_account_hub main > div > div,
 #suits_show main > div > div, #accessories_show main > div > div, #orders_checkout main > div > div {
   height: 100%;
 }
-/* line 63, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 65, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div > div, #accounts_edit_measurement main > div > div > div,
 #orders_index main > div > div > div, #registrations_edit main > div > div > div, #accounts_edit_addresses main > div > div > div,
 #pages_contact_us main > div > div > div, #pages_story main > div > div > div, #pages_how main > div > div > div, #accounts_account_hub main > div > div > div,
@@ -13565,44 +13567,44 @@ main > div > div > div {
   height: 100%;
 }
 
-/* line 66, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #measurement {
   height: 100%;
 }
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 70, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #measurement > div {
   height: 100%;
 }
 
-/* line 73, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 .alert {
   height: 0;
 }
 
-/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_beta {
   height: 100%;
 }
-/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 81, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_beta > div {
   height: 100%;
 }
-/* line 81, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 83, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_beta > div > div {
   height: 100%;
 }
-/* line 83, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 85, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #pages_beta > div > div > div {
   height: 100%;
 }
 
-/* line 90, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 92, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 .alert-success, .alert-warning {
   background-color: transparent;
   border-color: transparent;
 }
 
-/* line 95, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 97, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #beta {
   height: 100%;
   text-align: center;
@@ -13624,12 +13626,12 @@ main > div > div > div {
 }
 
 @media only screen and (max-width: 801px) {
-  /* line 103, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+  /* line 105, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
   h3 {
     font-size: 1rem;
   }
 }
-/* line 107, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 109, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
 #partner-thank-you {
   display: block;
 }
