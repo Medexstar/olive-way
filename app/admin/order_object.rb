@@ -4,6 +4,9 @@ ActiveAdmin::register OrderObject do
     id_column
     column :user
     column :order
+    column 'Promotion Code' do |oo|
+      oo.ambassador.promotion_code unless oo.ambassador.nil?
+    end
     column :jacket_lapels
     column :jacket_vents
     column :jacket_buttons
