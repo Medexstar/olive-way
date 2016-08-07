@@ -13431,7 +13431,7 @@ svg polygon {
 /* line 32, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /* line 38, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain {
