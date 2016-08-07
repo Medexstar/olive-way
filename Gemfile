@@ -27,7 +27,7 @@ gem 'airbrake'
 
 gem 'sitemap_generator'
 
-gem "passenger"
+gem 'passenger'
 
 group :development do
   gem 'awesome_print'

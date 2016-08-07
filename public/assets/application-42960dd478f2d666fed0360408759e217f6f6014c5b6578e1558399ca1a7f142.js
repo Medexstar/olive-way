@@ -14912,9 +14912,6 @@ $(document).ready(function() {
     $('map').imageMapResize();
 });
 var submitAmbassador = function(){
-  var height = $("#header").width()*9/16;
-  var width = $("#header").width();
-  $("#header").css("height", height.toString()+"px");
   $("#submit-ambassador").click(function(){
     var first_name = $("#ambassador_first_name").val();
     var last_name = $("#ambassador_last_name").val();
@@ -14951,7 +14948,6 @@ var submitAmbassador = function(){
 
 $(document).ready(submitAmbassador);
 $(document).on('page:load', submitAmbassador);
-$(window).resize(submitAmbassador);
 var measurement_videos = function(){
   function changeVideoURL(videoID){
     $("#measurement__video").attr("src", "https://www.youtube.com/embed/" + videoID);
