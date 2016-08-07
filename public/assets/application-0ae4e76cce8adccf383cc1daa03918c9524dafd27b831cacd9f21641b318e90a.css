@@ -13425,7 +13425,7 @@ svg polygon {
 #ambassadors #header .header--wrapper {
   overflow: hidden;
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 /* line 32, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
