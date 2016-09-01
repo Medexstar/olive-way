@@ -10,6 +10,7 @@
 #  approved       :boolean          default(FALSE)
 #  university     :string
 #  mobile         :string
+#  discount       :float            default(0.9)
 #
 
 class Ambassador < ActiveRecord::Base

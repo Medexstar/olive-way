@@ -28,7 +28,7 @@ class OrderObjectsController < ApplicationController
     if params[:promo_code] != ''
       ambassador = Ambassador.where(promotion_code: promo_params[:promo_code]).first
       if ambassador != nil && ambassador.approved
-        @order_object.price *= 0.9
+        @order_object.price *= ambassador.discount
         @order_object.ambassador = ambassador
       else
         flash[:error] = "Promotion code is incorrect/not approved!"

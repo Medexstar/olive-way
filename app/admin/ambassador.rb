@@ -1,6 +1,6 @@
 ActiveAdmin::register Ambassador do
   permit_params :first_name, :last_name, :promotion_code, :email, :mobile,
-                  :university, :approved
+                  :university, :approved, :discount
   index do
     selectable_column
     id_column
@@ -10,6 +10,7 @@ ActiveAdmin::register Ambassador do
     column :university
     column :promotion_code
     column :approved
+    column :discount
     actions
   end
 
@@ -25,6 +26,7 @@ ActiveAdmin::register Ambassador do
       f.input :university
       f.input :promotion_code
       f.input :approved
+      f.input :discount
     end
     f.actions
   end

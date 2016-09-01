@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160729105046) do
+ActiveRecord::Schema.define(version: 20160901102031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20160729105046) do
     t.boolean "approved",       default: false
     t.string  "university"
     t.string  "mobile"
+    t.float   "discount",       default: 0.9
   end
 
   create_table "billing_addresses", force: :cascade do |t|
