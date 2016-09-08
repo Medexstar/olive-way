@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 4, D:/My Documents/oliveway/app/assets/stylesheets/_override.scss */
+/* line 4, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_override.scss */
 .col-remove-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -8821,17 +8821,17 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/_constants.scss */
+/* line 45, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_constants.scss */
 h3 {
   font-family: 'Roboto-Medium';
 }
 
-/* line 49, D:/My Documents/oliveway/app/assets/stylesheets/_constants.scss */
+/* line 49, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_constants.scss */
 h2 {
   font-family: 'Roboto-Light';
 }
 
-/* line 53, D:/My Documents/oliveway/app/assets/stylesheets/_constants.scss */
+/* line 53, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_constants.scss */
 th, td, div {
   font-family: 'Roboto-Light';
 }
@@ -12373,18 +12373,18 @@ th, td, div {
   clip: auto;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/common/_section.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/common/_section.scss */
 .section__title {
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* line 5, D:/My Documents/oliveway/app/assets/stylesheets/common/_section.scss */
+/* line 5, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/common/_section.scss */
 .section__content {
   height: 90%;
 }
 
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/common/_section.scss */
+/* line 9, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/common/_section.scss */
 #mens, #womens, #accessories, #foundation, #shirts, #collections, #collection,
 #customisation, #measurement, #purchase_accessory, #object, #checkout, #profile {
   height: 100% !important;
@@ -12393,7 +12393,7 @@ th, td, div {
 }
 
 /* Brand */
-/* line 2, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 2, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .nav--brand {
   width: 100%;
   padding: 15px;
@@ -12414,7 +12414,7 @@ th, td, div {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 7, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .nav--brand #brand {
   height: 130px;
   width: 128px;
@@ -12424,30 +12424,30 @@ th, td, div {
 
 /* ================ */
 /* Navigation */
-/* line 17, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 17, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .navbar .nav--misc {
   position: absolute;
   right: 0;
 }
-/* line 20, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 20, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .navbar .nav--misc ul {
   float: right;
 }
-/* line 26, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 26, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .navbar #nav-collapsable a {
   text-decoration: none;
   font-size: 16px;
   color: black;
   font-weight: normal;
 }
-/* line 29, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 29, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 .navbar #nav-collapsable a:hover {
   font-weight: bold;
 }
 
 /* ================ */
 @media (min-width: 768px) {
-  /* line 38, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+  /* line 38, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
   .navbar .navbar-nav {
     font-family: 'Katahdin Round';
     display: inline-block;
@@ -12455,25 +12455,25 @@ th, td, div {
     vertical-align: top;
   }
 
-  /* line 44, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+  /* line 44, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
   .navbar-brand, #nav__account, #nav__subscribe, #nav__checkout
   , #nav__sign_out, #nav__user {
     font-family: 'Katahdin Round';
     display: none;
   }
 
-  /* line 50, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+  /* line 50, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
   .navbar .navbar-collapse {
     text-align: center;
   }
 }
 @media (max-width: 767px) {
-  /* line 56, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+  /* line 56, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
   .nav--misc, .nav--brand {
     display: none;
   }
 }
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 68, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 #pages_landing #nav__landing a,
 #suits_mens #nav__mens a,
 #suits_womens #nav__womens a,
@@ -12484,7 +12484,7 @@ th, td, div {
   font-weight: bold;
 }
 
-/* line 73, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 73, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 #nav__landing,
 #nav__mens,
 #nav__womens,
@@ -12494,12 +12494,12 @@ th, td, div {
   font-family: 'Roboto-Light';
 }
 
-/* line 82, D:/My Documents/oliveway/app/assets/stylesheets/_nav.scss */
+/* line 82, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_nav.scss */
 #nav__story {
   font-family: 'Roboto-Medium';
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer {
   background-color: #d1d1d1;
   height: 200px;
@@ -12522,45 +12522,45 @@ th, td, div {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 8, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer .footer__site-map {
   font-family: 'Roboto-Light';
   list-style-type: none;
 }
-/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 11, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer .footer__site-map a {
   color: black;
   text-decoration: none;
 }
-/* line 14, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 14, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer .footer__site-map a:hover {
   font-weight: bold;
 }
-/* line 20, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 20, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer .footer__social-container li {
   display: inline;
   list-style-type: none;
   padding: 10px 15px;
 }
-/* line 24, D:/My Documents/oliveway/app/assets/stylesheets/_footer.scss */
+/* line 24, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/_footer.scss */
 .footer .footer__social-container li a {
   color: black;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue--suits {
   height: 100%;
   width: 100%;
 }
 
-/* line 6, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 6, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__title {
   text-align: center;
   margin: 25px 0 50px 0;
   width: 100%;
 }
 
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents {
   height: 90%;
   width: 100%;
@@ -12569,19 +12569,19 @@ th, td, div {
   text-align: center;
   position: relative;
 }
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 19, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__filter, .catalogue__contents .catalogue__products {
   height: 100%;
 }
-/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 22, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__filter {
   border-right: 1px solid black;
 }
-/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 25, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__products {
   width: 100%;
 }
-/* line 28, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 28, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product {
   height: 440px;
   width: 300px;
@@ -12591,7 +12591,7 @@ th, td, div {
   display: inline-block;
   margin: 20px;
 }
-/* line 36, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 36, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__photo {
   height: 380px;
   display: -ms-flexbox;
@@ -12610,29 +12610,29 @@ th, td, div {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 40, D:/My Documents/oliveway/app/assets/stylesheets/products/_index.scss */
+/* line 40, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_index.scss */
 .catalogue__contents .catalogue__product .product__info {
   padding-top: 20px;
   text-align: center;
   font-family: 'Roboto-Light';
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__container {
   height: 100%;
 }
-/* line 3, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 3, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__container .product__info {
   height: 100%;
   border-right: 1px solid;
   text-align: right;
 }
-/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 7, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__container .product__info h2 {
   font-family: 'Roboto-Light';
 }
 
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__contents {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -12651,24 +12651,24 @@ th, td, div {
   align-items: stretch;
   height: 100%;
 }
-/* line 15, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 15, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--main {
   padding: 10px;
   height: 600px;
   width: 450px;
 }
-/* line 20, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 20, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--selection div {
   height: 100px;
   width: 85px;
   margin: 0 10px 10px 10px;
   padding: 2px;
 }
-/* line 25, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 25, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--selection div:hover {
   cursor: pointer;
 }
-/* line 29, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 29, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 .product__contents .product__image--main div, .product__contents .product__image--selection div {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -12687,34 +12687,34 @@ th, td, div {
   align-items: stretch;
 }
 
-/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/products/_show.scss */
+/* line 34, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/products/_show.scss */
 #suits_show main, #accessories_show main {
   min-height: 650px !important;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_nav.scss */
 .account__title {
   border-right: 1px solid black;
   text-align: right;
 }
 
-/* line 5, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
+/* line 5, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_nav.scss */
 .account__content {
   overflow-y: auto;
 }
 
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
+/* line 9, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_nav.scss */
 .account_nav a {
   text-align: right;
   color: gray;
   text-decoration: none;
 }
-/* line 13, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
+/* line 13, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_nav.scss */
 .account_nav a:hover {
   color: black;
 }
 
-/* line 23, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_nav.scss */
+/* line 23, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_nav.scss */
 #accounts_edit_addresses #profile-edit a,
 #registrations_edit #password-edit a,
 #orders_index #order-show a,
@@ -12723,49 +12723,49 @@ th, td, div {
   font-weight: bold;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--account {
   margin: 0 5px;
 }
-/* line 3, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 3, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--account .section__title--account {
   text-align: left;
   font-size: 1.25em;
   color: black;
   font-weight: bold;
 }
-/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 7, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--account .section__content--account > div {
   margin: 3px 0;
 }
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 9, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--account .section__content--account > div .input--radio__right {
   text-align: right;
 }
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--account .section__content--account > div input[type="radio"] {
   margin-right: 5px;
 }
 
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 19, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--register {
   border-left: 1px solid black;
 }
 
-/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 22, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--register, .section--login {
   text-align: center;
 }
-/* line 24, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 24, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--register input[type="text"], .section--register input[type="password"], .section--register input[type="email"], .section--login input[type="text"], .section--login input[type="password"], .section--login input[type="email"] {
   background-color: lightgray;
 }
-/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 27, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section--register .section--login__submit, .section--login .section--login__submit {
   text-align: right;
 }
 
-/* line 32, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 32, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement {
   width: 100%;
   min-width: 820px;
@@ -12786,13 +12786,13 @@ th, td, div {
   align-items: stretch;
 }
 
-/* line 38, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 38, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement-form {
   width: 30%;
   min-width: 400px;
 }
 
-/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 42, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement-video {
   width: 50%;
   min-width: 400px;
@@ -12800,13 +12800,13 @@ th, td, div {
   margin-left: -100px;
 }
 
-/* line 49, D:/My Documents/oliveway/app/assets/stylesheets/accounts/_section.scss */
+/* line 49, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/accounts/_section.scss */
 .section__content--measurement-video-margin {
   margin-top: 60px;
   margin-left: -100px;
 }
 
-/* line 2, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 2, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main {
   display: block;
   width: 100%;
@@ -12814,43 +12814,43 @@ th, td, div {
   /* container-fluid */
   /* col */
 }
-/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 7, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main > div {
   height: 100%;
   padding: 10px;
 }
-/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 8, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main > div.alert {
   height: 0;
 }
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 9, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main > div > div {
   height: 100%;
 }
-/* line 11, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 11, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main > div > div > div {
   height: 100%;
 }
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_landing main #landing {
   height: 100%;
 }
 
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 19, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main {
   height: 100%;
 }
-/* line 21, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 21, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections {
   height: 100%;
 }
-/* line 23, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 23, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections div {
   height: 110%;
   margin-top: -60px;
   width: 100%;
 }
-/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 27, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 #pages_collections main #collections div img {
   display: block;
   max-height: 100%;
@@ -12859,41 +12859,41 @@ th, td, div {
   margin: auto;
 }
 
-/* line 39, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 39, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 svg {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/page/_banner.scss */
+/* line 43, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_banner.scss */
 svg polygon {
   cursor: pointer;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--double-column {
   height: 90%;
 }
-/* line 3, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 3, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__title {
   text-align: center;
   margin: 20px 0 50px 0;
 }
-/* line 7, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 7, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text-wrapper {
   height: 90%;
   overflow-y: auto;
   padding-left: 100px;
   padding-right: 100px;
 }
-/* line 13, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 13, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text {
   margin-bottom: 10px;
   -webkit-columns: 2 200px;
   -moz-columns: 2 200px;
   columns: 2 200px;
 }
-/* line 18, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 18, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--double-column .section--double-column__text > div {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -12902,7 +12902,7 @@ svg polygon {
   display: inline-block;
 }
 
-/* line 28, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 28, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted {
   height: 100%;
   overflow-x: hidden;
@@ -12922,14 +12922,14 @@ svg polygon {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 32, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 32, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title {
   height: 100%;
   transform: translateX(5%);
   text-align: right;
   /* wrapper, unskew and place the text back as if it is normal */
 }
-/* line 37, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 37, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__title:after {
   content: "";
   background: black;
@@ -12941,25 +12941,25 @@ svg polygon {
   top: -20px;
   z-index: -1;
 }
-/* line 49, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 49, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content {
   height: 100%;
   width: 200%;
   transform: translateX(5%);
   overflow-y: auto;
 }
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 54, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .section--slanted__content__text {
   padding-left: 40px;
   padding-top: 20px;
   width: 75%;
   transform: translateX(-1%);
 }
-/* line 60, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 60, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .header {
   font-weight: bold;
 }
-/* line 63, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 63, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 .section--slanted .section--slanted__content .content__one, .section--slanted .section--slanted__content .content__two {
   position: absolute;
   height: 40%;
@@ -12968,7 +12968,7 @@ svg polygon {
   margin-right: 10px;
 }
 
-/* line 74, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 74, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 #pages_contact_us main, #pages_story main {
   display: block;
   width: 100%;
@@ -12978,25 +12978,25 @@ svg polygon {
   /* row */
   /* col */
 }
-/* line 80, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 80, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 #pages_contact_us main > div, #pages_story main > div {
   height: 100%;
   padding: 10px;
 }
-/* line 81, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 81, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 #pages_contact_us main > div.alert, #pages_story main > div.alert {
   height: 0;
 }
-/* line 83, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 83, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 #pages_contact_us main > div > div, #pages_story main > div > div {
   height: 100%;
 }
-/* line 85, D:/My Documents/oliveway/app/assets/stylesheets/page/_generic.scss */
+/* line 85, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/page/_generic.scss */
 #pages_contact_us main > div > div > div, #pages_story main > div > div > div {
   height: 100%;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout {
   overflow-x: hidden;
   display: -ms-flexbox;
@@ -13015,27 +13015,27 @@ svg polygon {
   -ms-align-items: stretch;
   align-items: stretch;
 }
-/* line 4, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 4, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__title {
   height: 100%;
   text-align: right;
   border-right: 1px solid black;
 }
-/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 8, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__title .checkout__current {
   font-weight: bold;
 }
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__title .checkout__link a:link, #checkout .checkout__title .checkout__link a:visited {
   text-decoration: none;
   color: black;
 }
-/* line 16, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 16, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__title .checkout__link a:hover, #checkout .checkout__title .checkout__link a:active {
   text-decoration: none;
   color: gray;
 }
-/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 22, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__container {
   height: 90%;
   width: 100%;
@@ -13043,131 +13043,131 @@ svg polygon {
   padding-top: 5px;
   padding-left: 50px;
 }
-/* line 28, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 28, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__container .content__header {
   font-size: 20px;
   text-align: center;
   border-bottom: 1px solid black;
 }
-/* line 32, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 32, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__container .content__header .header__total-price {
   text-align: right;
 }
-/* line 36, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 36, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__container .content__header:first-child {
   text-align: left;
 }
-/* line 39, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 39, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__container .content__total-price {
   padding-top: 10px;
   font-size: 20px;
   font-weight: bold;
   text-align: right;
 }
-/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 46, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content {
   height: 80%;
   width: 100%;
   overflow-y: auto;
   padding-top: 5px;
 }
-/* line 51, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 51, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__photo_container {
   display: inline-block;
   height: 100%;
 }
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 54, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__photo_container .content__photo {
   height: 100px;
   width: 75px;
   border: 1px solid black;
   margin: 10px 0px 10px 0px;
 }
-/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 61, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__text {
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
-/* line 65, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 65, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__text .text__item {
   text-align: left;
 }
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 68, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__text .text__total-price {
   text-align: right;
 }
-/* line 73, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 73, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__link a:link, #checkout .checkout__content .content__link a:visited {
   text-decoration: underline;
   color: black;
 }
-/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/order/_new.scss */
+/* line 77, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_new.scss */
 #checkout .checkout__content .content__link a:hover, #checkout .checkout__content .content__link a:active {
   text-decoration: none;
   color: gray;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/order/_checkout.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_checkout.scss */
 .checkout__title {
   height: 100%;
 }
 
-/* line 4, D:/My Documents/oliveway/app/assets/stylesheets/order/_checkout.scss */
+/* line 4, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_checkout.scss */
 .checkout__content {
   max-height: 100%;
   overflow-y: auto;
 }
 
-/* line 9, D:/My Documents/oliveway/app/assets/stylesheets/order/_checkout.scss */
+/* line 9, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order/_checkout.scss */
 .checkout__title {
   text-align: right;
   border-right: 1px solid black;
 }
 
-/* line 1, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 1, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #new_order_object {
   height: 100%;
 }
-/* line 3, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 3, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #new_order_object #customisation, #new_order_object #measurement, #new_order_object #purchase_accessory {
   height: 100%;
 }
 
-/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 8, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #customisation .section__content {
   width: 100%;
   background-color: gray;
 }
-/* line 10, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 10, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #customisation .section__content > div:first-child {
   height: 90%;
 }
-/* line 13, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 13, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #customisation .section__content > div:last-child {
   height: 10%;
   float: right;
 }
-/* line 16, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 16, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #customisation .section__content > div:last-child > div > div {
   padding: 0 10%;
 }
-/* line 20, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 20, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #customisation .section__content > div > div {
   height: 100%;
 }
 
-/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 27, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper {
   height: 100%;
   padding: 0 10% 10% 10%;
 }
-/* line 30, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 30, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__header {
   text-align: center;
   margin: 10px 0;
 }
-/* line 34, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 34, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container {
   height: 90%;
   display: -ms-flexbox;
@@ -13186,7 +13186,7 @@ svg polygon {
   -ms-align-items: center;
   align-items: center;
 }
-/* line 37, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 37, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container .form-field__selector {
   height: 20%;
   margin: 5px;
@@ -13207,7 +13207,7 @@ svg polygon {
   -ms-align-items: center;
   align-items: center;
 }
-/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 42, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container .form-field__selector > div {
   height: 100%;
   width: 50%;
@@ -13228,17 +13228,17 @@ svg polygon {
   -ms-align-items: center;
   align-items: center;
 }
-/* line 48, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 48, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container .form-field__selector .form-field__name {
   padding: 15px;
   text-align: center;
   color: white;
 }
-/* line 53, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 53, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container .form-field__selector .form-field__tick {
   padding: 15px;
 }
-/* line 55, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 55, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container .form-field__selector .form-field__tick div {
   height: 100%;
   width: 100%;
@@ -13247,139 +13247,139 @@ svg polygon {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 65, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 65, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container div[id^="lapels"] {
   background-color: #4f8999;
 }
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 68, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container div[id^="vent"] {
   background-color: #c26558;
 }
-/* line 71, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 71, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 .form-field--wrapper .form-field__container div[id^="jacket-button"] {
   background-color: #5e5c70;
 }
 
-/* line 77, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 77, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement {
   display: none;
 }
-/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 79, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement > div > div {
   height: 100%;
 }
-/* line 81, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 81, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement > div > div > div {
   height: 100%;
 }
-/* line 85, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 85, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__title {
   text-align: right;
   border-right: 1px solid black;
 }
-/* line 89, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 89, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__content {
   padding-left: 40px;
   overflow-y: auto;
 }
-/* line 93, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 93, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__section {
   margin: 15px 0;
 }
-/* line 95, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 95, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__section .measurement__section-title {
   margin-bottom: 15px;
   font-size: 12px;
   color: black;
   font-weight: bold;
 }
-/* line 99, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 99, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__section .measurement__section-content {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 102, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 102, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__section .measurement__section-content .field {
   padding-right: 0;
   padding-left: 0;
   margin: 2px 0 2px 0;
 }
-/* line 106, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 106, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurement .measurement__section .measurement__section-content .field div {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 116, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 116, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements > div > div {
   height: 100%;
 }
-/* line 118, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 118, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements > div > div > div {
   height: 100%;
 }
-/* line 122, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 122, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__title {
   text-align: right;
   border-right: 1px solid black;
 }
-/* line 125, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 125, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__title .measurement__current {
   font-weight: bold;
 }
-/* line 129, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 129, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__title .measurement__link a:link, #measurements .measurement__title .measurement__link a:visited {
   text-decoration: none;
   color: black;
 }
-/* line 133, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 133, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__title .measurement__link a:hover, #measurements .measurement__title .measurement__link a:active {
   text-decoration: none;
   color: gray;
 }
-/* line 139, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 139, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__content {
   padding-left: 40px;
   overflow-y: auto;
 }
-/* line 143, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 143, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__section {
   margin: 15px 0;
 }
-/* line 145, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 145, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__section .measurement__section-title {
   margin-bottom: 15px;
   font-size: 12px;
   color: black;
   font-weight: bold;
 }
-/* line 149, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 149, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__section .measurement__section-content {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 152, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 152, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__section .measurement__section-content .field {
   padding-right: 0;
   padding-left: 0;
   margin: 2px 0 2px 0;
 }
-/* line 156, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 156, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #measurements .measurement__section .measurement__section-content .field div {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 166, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 166, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #purchase_accessory > div > div {
   height: 100%;
 }
-/* line 168, D:/My Documents/oliveway/app/assets/stylesheets/order_object/_new.scss */
+/* line 168, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/order_object/_new.scss */
 #purchase_accessory > div > div > div {
   height: 100%;
 }
 
-/* line 2, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 2, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors_new main {
   display: block;
   width: 100%;
@@ -13389,51 +13389,51 @@ svg polygon {
   /* row */
   /* col */
 }
-/* line 8, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 8, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors_new main > div {
   height: auto;
   min-height: auto;
   padding: 10px;
 }
-/* line 10, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 10, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors_new main > div > div {
   height: auto;
   min-height: auto;
 }
-/* line 12, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 12, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors_new main > div > div > div {
   height: auto;
   min-height: auto;
 }
 
-/* line 17, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 17, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors {
   margin-top: 0 !important;
 }
-/* line 19, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 19, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header, #ambassadors #explain, #ambassadors #form {
   height: 33%;
 }
-/* line 22, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 22, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header {
   width: 95%;
   height: auto;
   padding: 0 0 0 0;
   margin-top: -1%;
 }
-/* line 27, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 27, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper {
   overflow: hidden;
   position: relative;
   height: auto;
   width: 100%;
 }
-/* line 32, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 32, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #header .header--wrapper img {
   width: 100%;
   height: auto;
 }
-/* line 38, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 38, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain {
   margin: 25px 50px;
   display: -ms-flexbox;
@@ -13454,19 +13454,19 @@ svg polygon {
   height: 300px;
   min-height: 0;
 }
-/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 43, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain-box {
   min-height: 0;
 }
-/* line 45, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 45, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain-box .explain__title, #ambassadors #explain .explain-box .explain__content {
   min-height: 0;
 }
-/* line 50, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 50, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain .explain__title h3 {
   font-family: 'Katahdin Round';
 }
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 54, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div {
   border: 1px solid lightblue;
   margin: 10px;
@@ -13475,57 +13475,57 @@ svg polygon {
   width: 30%;
   overflow-y: auto;
 }
-/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 61, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div .explain__title {
   text-align: center;
 }
-/* line 64, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 64, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #explain > div > div {
   height: auto;
 }
-/* line 70, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 70, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form {
   width: 100%;
   height: 60%;
   background-color: lightblue;
   text-align: center;
 }
-/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 75, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form h3 {
   color: white;
   font-family: 'Katahdin Round';
 }
-/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 79, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-webkit-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 84, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 84, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-moz-placeholder {
   /* Firefox 18- */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 89, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 89, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form ::-moz-placeholder {
   /* Firefox 19+ */
   color: black;
   font-family: 'Katahdin Round';
 }
-/* line 94, D:/My Documents/oliveway/app/assets/stylesheets/ambassador/_ambassador.scss */
+/* line 94, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/ambassador/_ambassador.scss */
 #ambassadors #form :-ms-input-placeholder {
   color: black;
   font-family: 'Katahdin Round';
 }
 
-/* line 31, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 31, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
 /* Set height to 100% on the container */
-/* line 37, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 37, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 main {
   display: block;
   width: 100%;
@@ -13533,25 +13533,25 @@ main {
   /* container-fluid */
   /* col */
 }
-/* line 42, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 42, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 main > div {
   min-height: 100%;
   padding: 10px;
 }
-/* line 43, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 43, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 main > div.alert {
   min-height: 0;
 }
-/* line 44, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 44, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 main > div > div {
   min-height: 100%;
 }
-/* line 46, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 46, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 main > div > div > div {
   min-height: 100%;
 }
 
-/* line 54, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 54, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_collections main, #accounts_edit_measurement main,
 #orders_index main, #registrations_edit main, #accounts_edit_addresses main,
 #pages_how main, #accounts_account_hub main,
@@ -13565,7 +13565,7 @@ main > div > div > div {
   /* row */
   /* col */
 }
-/* line 60, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 60, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_collections main > div, #accounts_edit_measurement main > div,
 #orders_index main > div, #registrations_edit main > div, #accounts_edit_addresses main > div,
 #pages_how main > div, #accounts_account_hub main > div,
@@ -13574,7 +13574,7 @@ main > div > div > div {
   height: 100%;
   padding: 10px;
 }
-/* line 61, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 61, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_collections main > div.alert, #accounts_edit_measurement main > div.alert,
 #orders_index main > div.alert, #registrations_edit main > div.alert, #accounts_edit_addresses main > div.alert,
 #pages_how main > div.alert, #accounts_account_hub main > div.alert,
@@ -13582,7 +13582,7 @@ main > div > div > div {
 #order_objects_new main > div.alert {
   height: 0;
 }
-/* line 63, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 63, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div, #accounts_edit_measurement main > div > div,
 #orders_index main > div > div, #registrations_edit main > div > div, #accounts_edit_addresses main > div > div,
 #pages_how main > div > div, #accounts_account_hub main > div > div,
@@ -13590,7 +13590,7 @@ main > div > div > div {
 #order_objects_new main > div > div {
   height: 100%;
 }
-/* line 65, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 65, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_collections main > div > div > div, #accounts_edit_measurement main > div > div > div,
 #orders_index main > div > div > div, #registrations_edit main > div > div > div, #accounts_edit_addresses main > div > div > div,
 #pages_how main > div > div > div, #accounts_account_hub main > div > div > div,
@@ -13599,44 +13599,44 @@ main > div > div > div {
   height: 100%;
 }
 
-/* line 68, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 68, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #measurement {
   height: 100%;
 }
-/* line 70, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 70, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #measurement > div {
   height: 100%;
 }
 
-/* line 75, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 75, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 .alert {
   height: 0;
 }
 
-/* line 79, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 79, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_beta {
   height: 100%;
 }
-/* line 81, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 81, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_beta > div {
   height: 100%;
 }
-/* line 83, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 83, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_beta > div > div {
   height: 100%;
 }
-/* line 85, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 85, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #pages_beta > div > div > div {
   height: 100%;
 }
 
-/* line 92, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 92, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 .alert-success, .alert-warning {
   background-color: transparent;
   border-color: transparent;
 }
 
-/* line 97, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 97, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #beta {
   height: 100%;
   text-align: center;
@@ -13658,12 +13658,12 @@ main > div > div > div {
 }
 
 @media only screen and (max-width: 801px) {
-  /* line 105, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+  /* line 105, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
   h3 {
     font-size: 1rem;
   }
 }
-/* line 109, D:/My Documents/oliveway/app/assets/stylesheets/application.scss */
+/* line 109, G:/OneDrive/Home Computer/Programming Projects/Olive way/app/assets/stylesheets/application.scss */
 #partner-thank-you {
   display: block;
 }
