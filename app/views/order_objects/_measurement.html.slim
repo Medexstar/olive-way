@@ -15,7 +15,7 @@
               .measurement__section-content.container-fluid
                 .field.row
                   .field__field.col-xs-3
-                    = ff.number_field :neck, :value => @measurement.neck, id: "measurement_neck",  placeholder: "Neck"
+                    = ff.number_field :neck, :value => @measurement.neck, id: "measurement_neck",  placeholder: "Neck", step: "0.01"
                 .field.row
                   .field__field.col-xs-3
                     = ff.number_field :shoulder, :value => @measurement.shoulder, id: "measurement_shoulder",  placeholder: "Shoulder", step: "0.01"
