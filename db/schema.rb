@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901102031) do
+ActiveRecord::Schema.define(version: 20160921070640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -89,22 +89,22 @@ ActiveRecord::Schema.define(version: 20160901102031) do
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
 
   create_table "measurements", force: :cascade do |t|
-    t.integer "neck"
-    t.integer "shoulder"
-    t.integer "sleeve_length"
-    t.integer "bicep"
-    t.integer "wrist"
-    t.integer "bust"
-    t.integer "underbust"
-    t.integer "back_length"
-    t.integer "waist"
-    t.integer "hips"
-    t.integer "thigh"
-    t.integer "rise"
-    t.integer "outleg"
-    t.integer "inleg"
-    t.integer "ankle"
-    t.integer "chest"
+    t.float   "neck"
+    t.float   "shoulder"
+    t.float   "sleeve_length"
+    t.float   "bicep"
+    t.float   "wrist"
+    t.float   "bust"
+    t.float   "underbust"
+    t.float   "back_length"
+    t.float   "waist"
+    t.float   "hips"
+    t.float   "thigh"
+    t.float   "rise"
+    t.float   "outleg"
+    t.float   "inleg"
+    t.float   "ankle"
+    t.float   "chest"
     t.integer "user_id"
     t.integer "order_object_id"
   end
