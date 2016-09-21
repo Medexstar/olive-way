@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160921035213) do
+ActiveRecord::Schema.define(version: 20160921060307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -89,22 +89,28 @@ ActiveRecord::Schema.define(version: 20160921035213) do
   add_index "billing_addresses", ["user_id"], name: "index_billing_addresses_on_user_id", using: :btree
 
   create_table "measurements", force: :cascade do |t|
-    t.float "neck"
-    t.float "shoulder"
-    t.float "sleeve_length"
-    t.float "bicep"
-    t.float "wrist"
-    t.float "bust"
-    t.float "underbust"
-    t.float "back_length"
-    t.float "waist"
-    t.float "hips"
-    t.float "thigh"
-    t.float "rise"
-    t.float "outleg"
-    t.float "inleg"
-    t.float "ankle"
+    t.float   "neck"
+    t.float   "shoulder"
+    t.float   "sleeve_length"
+    t.float   "bicep"
+    t.float   "wrist"
+    t.float   "bust"
+    t.float   "underbust"
+    t.float   "back_length"
+    t.float   "waist"
+    t.float   "hips"
+    t.float   "thigh"
+    t.float   "rise"
+    t.float   "outleg"
+    t.float   "inleg"
+    t.float   "ankle"
+    t.float   "chest"
+    t.integer "user_id"
+    t.integer "order_object_id"
   end
+
+  add_index "measurements", ["order_object_id"], name: "index_measurements_on_order_object_id", using: :btree
+  add_index "measurements", ["user_id"], name: "index_measurements_on_user_id", using: :btree
 
   create_table "order_objects", force: :cascade do |t|
     t.integer  "jacket_lapels"
@@ -204,6 +210,8 @@ ActiveRecord::Schema.define(version: 20160921035213) do
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
   add_foreign_key "billing_addresses", "users"
+  add_foreign_key "measurements", "order_objects"
+  add_foreign_key "measurements", "users"
   add_foreign_key "order_objects", "accessories"
   add_foreign_key "order_objects", "ambassadors"
   add_foreign_key "order_objects", "orders"
