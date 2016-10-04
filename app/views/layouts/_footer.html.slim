@@ -11,6 +11,10 @@
     li
       = link_to "Contact Us", contact_us_path
   ul.footer__social-container
+    li#spotify
+      = link_to "https://open.spotify.com/user/1215302375/playlist/0VBOLhymfEQbW2medKqPBq", target: "_blank" do
+        = fa_icon "spotify", class: "circle-o fa-2x"
+      end
     li#facebook
       = link_to "https://www.facebook.com/Olive-Way-1713482055593941/", target: "_blank" do
         = fa_icon "facebook", class: "circle-o fa-2x"
